@@ -274,7 +274,9 @@ const HookTitle: React.FC<{ text: string; accent: string; accent2: string }> = (
                         ? { color: accent }
                         : { backgroundImage: `linear-gradient(100deg,${accent},${accent2})`, WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }
                       : { color: "#fff" }),
-                    textShadow: emph ? "none" : "0 6px 24px rgba(0,0,0,0.6)",
+                    // layered contact + ambient shadow (same depth language as
+                    // glow()) reads crisper than one wide blur on its own
+                    textShadow: emph ? "none" : "0 2px 6px rgba(0,0,0,0.55), 0 14px 32px rgba(0,0,0,0.45)",
                   }}
                 >
                   {w}

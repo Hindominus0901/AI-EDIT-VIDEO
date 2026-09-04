@@ -115,7 +115,7 @@ const CaptionLine: React.FC<{
                 paintOrder: "stroke fill",
                 textShadow: isActive
                   ? "0 4px 18px rgba(0,0,0,0.6), 0 0 26px rgba(255,255,255,0.22)"
-                  : "0 4px 14px rgba(0,0,0,0.48)",
+                  : "0 1px 3px rgba(0,0,0,0.55), 0 4px 14px rgba(0,0,0,0.48)",
               }}
             >
               {token.text.trim()}
