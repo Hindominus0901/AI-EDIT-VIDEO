@@ -1,0 +1,151 @@
+{
+  "id": "R06",
+  "version": "1.0.0",
+  "name": "Podcast — hook mạnh, body yên",
+  "family": "Talking head",
+  "fit": "Phỏng vấn, chuyên gia, lập luận bằng lời",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Hook condensed/brush và cyan; body sans trắng thường nhỏ hơn hẳn. Font brush gốc chưa rõ.",
+    "assetGrammar": "Micro và người nói là hình chính; body không có lớp ảnh trang trí lặp.",
+    "motion": "Hook vào theo lớp; flare 2,3–2,5s; punch +9% trong một frame ở 19,5s.",
+    "storyFlow": "Hook mạnh → chuyển một lần → giải thích sạch → punch đúng ý → kết.",
+    "avoid": "Không dùng chữ hook suốt bài; không biến punch cut thành zoom ngẫu nhiên.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "podcast-hook",
+      "punch-cut",
+      "warm-flare"
+    ],
+    "maxGraphicOccupancy": 0.12,
+    "maxGraphicBeatsPerMinute": 1,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R06",
+    "name": "AQN9RtMZZHm3xwQMs3z77mtA2rtefdJE1utTg9OY8dxQOkIYh3gC6f7gG3PlcPooWQsMkhGoDoZEOnS5ZqalkWT0sRX4B8gcidWwS_I.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQN9RtMZZHm3xwQMs3z77mtA2rtefdJE1utTg9OY8dxQOkIYh3gC6f7gG3PlcPooWQsMkhGoDoZEOnS5ZqalkWT0sRX4B8gcidWwS_I.mp4",
+    "bytes": 5957712,
+    "modified": "2026-09-22T21:13:30.440783",
+    "durationSec": 41.515873,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "The hook uses a very tall condensed white YOUR, cyan emphasis, wide heavy capitals and an italic brush accent. The body switches to a much quieter regular white sans. Treating the whole clip as one font preset would miss its defining contrast.",
+    "captionMotion": "Large hook words arrive in stages. From about 2.5s, small one-line body captions mostly replace directly and hold near the lower chest. Source English phrases can exceed the preferred Vietnamese word count.",
+    "footageMotion": "Abrupt crop changes rather than continuous body motion. Frame 584 at 19.4667s to frame 585 at 19.5000s has about 9.0% image enlargement plus a small downward/left reframe. This is a one-frame punch-in, independently verified with background matching.",
+    "layoutAndAssets": "Side-angle speaker with microphone and soft background. No recurring photo-card layer in the body. The hook is intentionally louder than the sustained edit.",
+    "transitions": "Orange/red film-burn-like flare around 2.3–2.4s covers a framing reset. This differs from the white flash in R07. Later crop changes are clean hard changes.",
+    "colorAndLighting": "Soft warm podcast environment with blue clothing and cyan hook accents. Flare warmth is transient, not the whole-video grade.",
+    "visualFlow": "High-energy opening, clean explanatory body, occasional reframing. Preserve that contrast rather than applying hook typography to every sentence."
+  },
+  "events": [
+    {
+      "sourceTime": "0–2.20s",
+      "observation": "Tall condensed and mixed-width/brush hook typography."
+    },
+    {
+      "sourceTime": "2.30–2.50s",
+      "observation": "Warm flare, crop reset, then quiet caption mode."
+    },
+    {
+      "sourceTime": "4.5–4.67; 19.4667–19.5000; 20.83–21s",
+      "observation": "Measured or visually supported framing-change passages."
+    },
+    {
+      "sourceTime": "2.5–41s",
+      "observation": "Mostly quiet single-line white captions and podcast footage."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R06",
+      "startSec": 19.466666666666665,
+      "endSec": 19.5,
+      "startFrame": 584,
+      "endFrame": 585,
+      "matches": 227,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 1.090156064880869,
+      "scaleChangePct": 9.015606488086902,
+      "rotationDeg": -0.06025525630835014,
+      "imageCenterDxPct": -0.9203855956711757,
+      "imageCenterDyPct": 3.0124046942273353,
+      "inliers": 215,
+      "inlierFraction": 0.947136563876652,
+      "medianResidualPx": 0.33388119149388457,
+      "matrix": [
+        [
+          1.0901554620392173,
+          0.0011464652642063137,
+          -29.862360294032058
+        ],
+        [
+          -0.0011464652642063137,
+          1.0901554620392173,
+          -14.04599109290623
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R06/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 6,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R06/evidence/R06-timeline-01.jpg",
+      "R06/evidence/R06-timeline-02.jpg"
+    ],
+    "denseMotionSheets": [
+      "R06/evidence/R06-punch-in.jpg",
+      "R06/evidence/R06-hook-motion.jpg"
+    ],
+    "typographyFrames": [
+      "R06/evidence/R06-caption.png",
+      "R06/evidence/R06-hook.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R06-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R06/recipe.json"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "R08",
+  "version": "1.0.0",
+  "name": "Danh sách hai cột — dùng có chọn lọc",
+  "family": "Giải thích",
+  "fit": "Checklist nhiều mục khi người dùng chủ động cần",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Pill trắng tiêu đề đen; nguồn có chữ danh sách rất nhỏ và viền mạnh.",
+    "assetGrammar": "Hai cột tích lũy. Bản Việt chia trang 4–6 mục để đọc được trên điện thoại.",
+    "motion": "Hàng thêm trực tiếp tại vị trí cố định; không đo được tween phức tạp.",
+    "storyFlow": "Nêu nhóm → hiện từng mục → giữ đủ đọc → xóa nhóm rồi sang nhóm mới.",
+    "avoid": "Không sao lỗi 30 mục phủ kín mặt; mặc định không chọn gói này cho clean.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "list-page"
+    ],
+    "maxGraphicOccupancy": 0.6,
+    "maxGraphicBeatsPerMinute": 4,
+    "maxConsecutiveGraphicBeats": 6,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R08",
+    "name": "AQMbta8ULZYO0zOpyIxcL45h_ge6tJmBPOOxy2jEmmcWc9RXKxgZ1VIUb2UuwmuSI1ru-iVArGElD_eLwBCWBx18ySrdai0RoP032AQ.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQMbta8ULZYO0zOpyIxcL45h_ge6tJmBPOOxy2jEmmcWc9RXKxgZ1VIUb2UuwmuSI1ru-iVArGElD_eLwBCWBx18ySrdai0RoP032AQ.mp4",
+    "bytes": 1313922,
+    "modified": "2026-09-22T21:12:05.214321",
+    "durationSec": 21.059093,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Large black regular sans in a white rounded headline pill; small white supporting text and very small outlined list text. The source uses outlines much more heavily than the clean editorial examples.",
+    "captionMotion": "Items append abruptly into fixed rows. In the close sample, additional rows become visible around 1.4s and 1.8s. No elaborate tween is established for those additions.",
+    "footageMotion": "Talking-head plate appears stable while gestures continue. Dense overlays dominate the image; global-motion analysis is not a reliable substitute for layer separation here.",
+    "layoutAndAssets": "Two columns, numbered 1–15 on the left and 16–30 on the right. Approximate left edges x=14% and 62% of the 720px canvas. Row spacing is roughly 2.3% of canvas height; visible letter height around 1.7% is very small.",
+    "transitions": "Mostly accumulative appearance and hold, without clearing early rows. Little negative space remains at the end.",
+    "colorAndLighting": "White pill, white text with dark outline over normal room footage. No restrained accent palette distinguishes list levels.",
+    "visualFlow": "The list is a completion/counting device. It shows a mechanism for accumulation but also demonstrates the clutter and readability risks the user wants to avoid."
+  },
+  "events": [
+    {
+      "sourceTime": "0–10s",
+      "observation": "Left column fills progressively."
+    },
+    {
+      "sourceTime": "10–20s",
+      "observation": "Right column fills to thirty items."
+    },
+    {
+      "sourceTime": "20–21s",
+      "observation": "Dense completed list remains visible."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R08/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 6,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R08/evidence/R08-timeline-01.jpg"
+    ],
+    "denseMotionSheets": [
+      "R08/evidence/R08-list-fill.jpg"
+    ],
+    "typographyFrames": [
+      "R08/evidence/R08-dense-list.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R08-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R08/recipe.json"
+}

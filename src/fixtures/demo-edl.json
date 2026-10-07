@@ -1,0 +1,60 @@
+{
+  "source": {
+    "clip": "samples/setup-test.mp4",
+    "durationSec": 3.0,
+    "width": 960,
+    "height": 540,
+    "volume": 1
+  },
+  "format": {
+    "w": 1080,
+    "h": 1920,
+    "fps": 30
+  },
+  "style": {
+    "layout": "focused",
+    "ambient": "none",
+    "accent": "#C6D7D2",
+    "accent2": "#C6D7D2",
+    "recipe": {
+      "accent": "#C6D7D2",
+      "accent2": "#C6D7D2",
+      "highlightColor": "#C6D7D2",
+      "captionColor": "#F2F1ED",
+      "captionCase": "sentence",
+      "textFx": "solid",
+      "captionStrokePx": 0,
+      "scrimAlpha": 0
+    },
+    "premiumSet": "studio"
+  },
+  "tracks": {
+    "captions": [
+      {
+        "startMs": 100,
+        "endMs": 1450,
+        "text": "Bắt đầu từ điều nhỏ",
+        "motion": {
+          "entry": "silk-rise",
+          "keyword": "điều nhỏ",
+          "mark": "color",
+          "strong": false
+        }
+      },
+      {
+        "startMs": 1500,
+        "endMs": 2900,
+        "text": "Dựng video rõ ý hơn",
+        "motion": {
+          "entry": "silk-rise",
+          "mark": "color"
+        }
+      }
+    ],
+    "graphics": [],
+    "sfx": [],
+    "broll": [],
+    "effects": [],
+    "transitions": []
+  }
+}

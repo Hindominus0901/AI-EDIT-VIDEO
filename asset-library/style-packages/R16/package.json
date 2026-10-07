@@ -1,0 +1,163 @@
+{
+  "id": "R16",
+  "version": "1.0.0",
+  "name": "Collage — mỗi cụm một luận điểm",
+  "family": "Ảnh trực tiếp",
+  "fit": "Một ý cần 2–3 hình khác nhau để làm rõ",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Caption sans trắng đậm gọn, neo trên cụm ảnh; Inter 700 gần mẫu đã đối chiếu.",
+    "assetGrammar": "Ba thẻ thẳng hàng dưới ngực, gutter 17–18px/720; hình mỗi cụm phải mới và đúng ý.",
+    "motion": "Fade vào 0,22s; stagger 0/0,25/0,54s; giữ; rời lần lượt; pullback nguồn −17,1% độc lập.",
+    "storyFlow": "Người nói → một cụm ảnh cho một ý → giữ → xóa hết → người nói → ý mới.",
+    "avoid": "Không tái dùng bộ tranh bằng cách đảo thứ tự; tối đa hai cụm collage mỗi phút mặc định.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "collage",
+      "pullback",
+      "wide-reset"
+    ],
+    "maxGraphicOccupancy": 0.35,
+    "maxGraphicBeatsPerMinute": 2,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R16",
+    "name": "AQMHpyAmir6ORCMtes5G0Q6T1l-r8TZeka3msMIO__IAQUIWtEQ7unsfb3vHr61WNQKNc2Lr82qwpCS-Vu01mguCTEY0sYTyjELmQZM.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQMHpyAmir6ORCMtes5G0Q6T1l-r8TZeka3msMIO__IAQUIWtEQ7unsfb3vHr61WNQKNc2Lr82qwpCS-Vu01mguCTEY0sYTyjELmQZM.mp4",
+    "bytes": 15674378,
+    "modified": "2026-09-22T21:02:17.362302",
+    "durationSec": 107.853832,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Bold white compact phrase captions above the cards. Caption scale is stronger than R14 but quieter than a large hook. Most accents come from illustrations; a later CTA uses lime. No exact font family confirmed.",
+    "captionMotion": "Captions retain size and screen anchoring while the image underneath pushes or recedes. Three cards arrive sequentially: first partially visible at 6.01s, second 6.21s, third 6.51s, all stable around 6.72s. They hold rather than constantly floating.",
+    "footageMotion": "Multiple push/pull/reset passages. From 13.013 to 15.015s, background features shrink about 17.1%, with near-zero rotation/center drift. At 11.89s, a closer framing change coincides with the collage finishing its exit.",
+    "layoutAndAssets": "Mostly two- or three-image collages on the lower torso, mixed monochrome drawings and restrained color. Around 6.715s, visible card bounds are (47,831,191,182), (256,831,189,184), (462,833,210,184) on 720×1280: top around 65% height, gutters about 17–18px. These are visible light-card boxes, not original asset bounds.",
+    "transitions": "Staggered fades in and out. Group 1 holds through about 11.59s; left clears first around 11.72s, other cards follow, all absent by 11.89s. The simultaneous reframe makes the removal feel like a deliberate new passage.",
+    "colorAndLighting": "Natural green background, dark shirt and bright restrained illustration cards. No need for a colored background panel around every caption.",
+    "visualFlow": "Illustration clusters occur in selected passages, separated by clean speaker time and occasional context shots. Clearing a group, reframing, then building a new group creates the rhythm."
+  },
+  "events": [
+    {
+      "sourceTime": "0–2; 2.21–4.38s",
+      "observation": "Opening pullback followed by short context footage."
+    },
+    {
+      "sourceTime": "6.01–11.89s",
+      "observation": "First three-card build, hold, staggered exit and framing reset."
+    },
+    {
+      "sourceTime": "13.013–15.015s",
+      "observation": "Smooth pullback under fixed caption styling; next collage starts around 14.8s."
+    },
+    {
+      "sourceTime": "15–17; 21–23; 26–32; 34s",
+      "observation": "Further collage groups."
+    },
+    {
+      "sourceTime": "43–49.84; 52–54; 57–58; 68–70s",
+      "observation": "Selected illustration groups, with clear intervals."
+    },
+    {
+      "sourceTime": "76–78; 87–91; 99; 101–105s",
+      "observation": "Single centered asset, later collages, lime waterfall CTA, final collage group."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R16",
+      "startSec": 13.013013013013014,
+      "endSec": 15.015015015015015,
+      "startFrame": 312,
+      "endFrame": 360,
+      "matches": 115,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 0.8291244858278242,
+      "scaleChangePct": -17.087551417217583,
+      "rotationDeg": 0.011185216408727305,
+      "imageCenterDxPct": 0.05094823573966988,
+      "imageCenterDyPct": 0.0009676151895080901,
+      "inliers": 96,
+      "inlierFraction": 0.8347826086956521,
+      "medianResidualPx": 0.6652520526607979,
+      "matrix": [
+        [
+          0.8291244700286909,
+          -0.00016186073081937702,
+          46.48920671604099
+        ],
+        [
+          0.00016186073081937702,
+          0.8291244700286909,
+          81.98584109472641
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R16/reference.mp4",
+    "sourceStartSec": 5.6,
+    "sourceEndSec": 12.4,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R16/evidence/R16-timeline-01.jpg",
+      "R16/evidence/R16-timeline-02.jpg",
+      "R16/evidence/R16-timeline-03.jpg",
+      "R16/evidence/R16-timeline-04.jpg"
+    ],
+    "denseMotionSheets": [
+      "R16/evidence/R16-pullback.jpg",
+      "R16/evidence/R16-collage-exit.jpg"
+    ],
+    "typographyFrames": [
+      "R16/evidence/R16-caption-collage.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R16-metrics.json"
+  },
+  "screenshots": [
+    "R16/evidence/codex-clipboard-8ed9f4a9-89a4-4447-8c48-464afb77ecb2.png",
+    "R16/evidence/codex-clipboard-505a0f56-fc9b-4f50-820c-0e5845cae329.png"
+  ],
+  "recipeFile": "R16/recipe.json"
+}

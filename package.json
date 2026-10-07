@@ -1,6 +1,6 @@
 {
   "name": "video-editor-kit",
-  "version": "1.3.0",
+  "version": "1.6.3",
   "description": "Local-first talking-head reel editor: STT -> silence cut -> EDL -> Remotion render",
   "engines": {
     "node": ">=18"
@@ -11,7 +11,7 @@
     "render": "remotion render Reel out/reel.mp4",
     "render:edl": "node scripts/make-render-props.mjs && remotion render Reel out/final.mp4 --props=out/edl-props.json",
     "doctor": "python scripts/doctor.py",
-    "goldens": "node scripts/render-goldens.mjs",
+    "motion:catalog": "remotion render MotionCatalog asset-library/motion-kit/motion-catalog.mp4 --concurrency=3 --crf=17 --x264-preset=fast --image-format=png",
     "typecheck": "tsc"
   },
   "license": "ISC",
@@ -19,16 +19,16 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
-    "@remotion/captions": "^4.0.474",
-    "@remotion/cli": "^4.0.474",
-    "@remotion/google-fonts": "^4.0.474",
-    "@remotion/paths": "^4.0.475",
-    "@remotion/three": "^4.0.475",
+    "@remotion/captions": "4.0.475",
+    "@remotion/cli": "4.0.475",
+    "@remotion/google-fonts": "4.0.475",
+    "@remotion/paths": "4.0.475",
+    "@remotion/three": "4.0.475",
     "gsap": "^3.15.0",
     "lucide-react": "^1.17.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "remotion": "^4.0.474",
+    "remotion": "4.0.475",
     "three": "^0.184.0",
     "zod": "^4.3.6"
   },

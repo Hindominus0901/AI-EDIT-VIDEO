@@ -1,108 +1,69 @@
-# Video Editor Kit — Bộ dựng video AI chạy trên máy của bạn
+# Hướng dẫn cho người dùng Việt
 
-## Bộ Kit này là gì?
+Bắt đầu nhanh ở [BAT-DAU.md](BAT-DAU.md). Bạn giao việc bằng lời; AI phụ trách kiểm tra máy, chọn cách dựng, tìm tài nguyên phù hợp và xuất tệp.
 
-Đây là một "editor AI" hoàn chỉnh chạy ngay trên máy tính của bạn, điều khiển
-bằng cách **nói chuyện với Claude**. Bạn đưa video thô, mô tả gu mình thích,
-và nhận về video đã dựng hoàn chỉnh: cắt gọn, caption theo lời nói, đồ họa
-nhấn ý, nhạc nền. Không cần biết dùng Premiere hay CapCut, không cần API key,
-video của bạn **không bị tải lên mạng** (mọi thứ xử lý trên máy).
+## Chuẩn bị lần đầu
 
-### Làm được 2 loại video
+Đưa một video nguồn và cho AI biết kênh đang làm. Nếu đã có ảnh, logo, nhạc hoặc video mẫu, gửi cùng. File video mẫu giúp đánh giá chuyển động và nhịp cắt; ảnh chụp chỉ cho thấy bố cục tại một thời điểm. Link không đọc được thì AI phải nói rõ, không giả vờ đã xem.
 
-| Loại | Dành cho | Kit tự làm gì |
+AI kiểm tra Python, Node.js, FFmpeg/ffprobe, Remotion và công cụ nhận giọng. Phần phụ thuộc của dự án được cài vào thư mục riêng khi cần; lần đầu cần mạng để tải. Không cần tài khoản Claude hay API key cho luồng clean dùng AI trong cuộc trò chuyện. Thiếu phần mềm hệ thống hoặc quyền thì AI nêu đúng thứ còn thiếu, không chạy vòng lặp cài đặt.
+
+Sau kiểm tra, AI xuất thử một đoạn ngắn có dấu tiếng Việt. Việc tìm thấy công cụ chưa chứng minh xuất video thành công. Tốc độ thực tế tùy thời lượng, cấu hình máy và độ phức tạp.
+
+## Chọn cách dựng
+
+| Cách nói với AI | Kiểu dựng | Hợp với |
 |---|---|---|
-| **Video người nói** (talking-head) | Bạn ngồi nói trước máy quay: chia sẻ kiến thức, bán hàng, kể chuyện | Cắt khoảng lặng và từ thừa, chèn caption karaoke theo từng lời, thêm đồ họa nhấn đúng ý đang nói (con số, so sánh, lộ trình...), zoom nhấn nhá |
-| **Video b-roll + hook** | Cảnh quay đẹp (biển, quán, sản phẩm...) cần chèn chữ thu hút | Tiêu đề lớn trên nền dải đen, dòng chữ viết tay đồng cảm, lời kêu gọi hành động, nhạc nền tự lặp và fade mượt |
+| Gọn và chuyên nghiệp | Studio | Chia sẻ chuyên môn, người nói trước máy quay |
+| Nhẹ và tinh tế | Paper | Kể chuyện, ảnh, nội dung có khoảng thở |
+| Đen trắng rõ ý | Mono | Quan điểm, so sánh, câu chốt ngắn |
+| Giữ gu sạch đang dùng | Clean | Tiếp tục bản dựng đã quen |
 
-### Điểm khác biệt
+Không phải chọn mỗi lần. Người mới chưa có gu dùng Studio; người đã có hồ sơ giữ gu cũ. Mặc định một bản dựng, một tỷ lệ; chỉ thêm bản ngang/dọc khi bạn cần. Không đổi chất lượng cuối để giảm thời gian mà không nói rõ.
 
-- **Nói chuyện tự nhiên**: "sửa chữ ở giây 20", "bớt đồ họa đi", "đổi màu ấm hơn" — kit hiểu và chỉ sửa đúng chỗ đó.
-- **Có gu**: 7 phong cách dựng sẵn (bán hàng rực rỡ, tối giản chuyên gia, nữ tính nhẹ nhàng...) — hoặc bạn tự mô tả gu bằng lời, kit tự hiểu.
-- **Càng dùng càng hiểu bạn**: mỗi lần bạn nói "keep it", kit ghi nhớ gu của bạn và lần sau hỏi ít hơn.
-- **Tiếng Việt chuẩn**: nhận giọng nói tiếng Việt, font chữ hiển thị dấu đẹp.
+## Bạn sẽ nhận gì?
 
-## Máy cần có gì?
+- MP4 có hình, phụ đề được thiết kế và âm thanh đã chọn.
+- SRT chứa lời và thời gian để dùng lại. SRT không lưu màu, font hay hiệu ứng chữ.
+- Một ghi chú ngắn về thay đổi chính và phần cần kiểm tra nếu công cụ không xem/nghe được.
 
-- Windows 10/11 (macOS/Linux cũng chạy được)
-- [Node.js 18+](https://nodejs.org) và [Python 3.10+](https://python.org)
-- ffmpeg (nếu thiếu, kit sẽ chỉ cách cài hoặc cài giúp bạn)
-- [Claude Code](https://claude.ai/code) (gói Claude có Claude Code)
-- Khoảng 3GB trống (lần đầu kit tự tải mô hình nhận giọng nói ~460MB)
+AI chia phụ đề thường 4–5 từ, có thể ngắn hơn để trọn ý; không tách cụm như “thương hiệu” chỉ để đủ số. Giữ đúng dấu Việt, tên riêng, số liệu và từ phủ định. Nguồn tiếng Anh không tự đổi thành tiếng Việt trừ khi bạn yêu cầu dịch.
 
-## Cài đặt (một lần duy nhất, ~10 phút)
+## Đưa nhạc, ảnh và hiệu ứng
 
-1. Giải nén file zip ra chỗ tùy thích, ví dụ `C:\video-editor-kit`
-2. Mở folder đó, gõ vào thanh địa chỉ chữ `cmd` rồi Enter (mở terminal tại đây)
-3. Chạy lần lượt 2 lệnh:
-   ```
-   npm install
-   pip install -r requirements.txt
-   ```
-4. Gõ `claude` để mở Claude Code ngay trong folder này
-5. Gõ `/biz-help` — kit tự kiểm tra máy, thiếu gì sẽ chỉ cách sửa (hoặc sửa giúp), xong hiện menu
+Bạn có thể đưa tài nguyên sẵn hoặc nói “tự tìm nhạc nhẹ, ấm, không lời”. AI ưu tiên tài nguyên của bạn rồi nguồn có giấy phép rõ; ghi nguồn và credit nếu giấy phép yêu cầu. Thư viện kèm gói có nhạc CC0 và âm thanh Kenney CC0. Giấy phép sử dụng không đảm bảo mọi nền tảng sẽ không phát sinh Content ID.
 
-> Từ lần sau chỉ cần: mở folder → `cmd` → `claude` → làm việc.
+Ví dụ: “chỉ dùng ảnh tôi gửi”, “không nhạc”, “thêm tiếng chuyển nhẹ ở hai ý chính”, “có thể tạo thêm ảnh khi thật sự cần”. Nếu cần công cụ tạo ảnh/video có phí, AI phải tuân theo ngân sách và quyền đang có; gói này không tự cung cấp tài khoản dịch vụ tạo video.
 
-## Cách dùng
+## Nhớ gu và nhiều kênh
 
-### Tạo video người nói
+Nói “nhớ cho kênh kiến thức: dọc, gọn, không nhạc”. AI lưu những lựa chọn đó vào hồ sơ riêng của kênh, chỉ báo đã nhớ khi ghi thành công. Video tiếp theo có thể dùng lại. Nói “riêng video này dùng ngang” chỉ thay đổi lượt này.
 
-```
-/biz-edit-video C:\Videos\clip-cua-toi.mp4 tối giản trắng đen
-```
+Hồ sơ nằm trong `.video-editor/profiles/` ở thư mục làm việc. Chuyển máy hoặc đổi thư mục thì cần mang đúng hồ sơ theo; đây không phải bộ nhớ tự đồng bộ giữa mọi tài khoản ChatGPT. Không dùng hồ sơ của khách hàng khác. Bạn có thể yêu cầu xem, sửa hoặc xóa hồ sơ kênh cụ thể.
 
-- Dán đường dẫn video (mẹo: chuột phải vào file → "Copy as path" → dán)
-- Tả gu ngay trong lệnh nếu muốn: "tối giản", "rực rỡ bán hàng", "sang trọng vàng đen"... — không tả thì kit hỏi 1 câu với các lựa chọn dễ hiểu
-- Không nhớ video nằm đâu? Cứ nói **"tìm video tôi quay hôm qua"** — kit quét máy, đưa danh sách, hiện khung hình để bạn xác nhận
-- Kit báo trước: **chờ khoảng 7-12 phút**, xong tự mở video
+## Góp ý dễ sửa nhất
 
-### Tạo video b-roll + hook
+> 00:08–00:11 giữ nhịp nói chậm hơn. Phụ đề nhỏ lại một chút, không đổi nội dung. Bỏ ảnh ở 00:18. Giữ các phần khác.
 
-```
-/biz-broll-video C:\Videos\canh-bien.mp4 chủ đề: 3 thói quen buổi sáng, vibe nữ nhẹ nhàng
-```
+Chỉ sửa chữ, âm lượng hay gu thì dùng lại nguồn và transcript. Đổi điểm cắt phải cập nhật thời gian phụ đề. AI bảo vệ EDL đã chỉnh tay và giữ tệp nguồn; các bản xuất cần lưu phiên bản khi bạn muốn giữ bản cũ.
 
-- Chỉ cần đưa chủ đề — kit soạn sẵn **3 phương án chữ hoàn chỉnh** cho bạn chọn
-- Kit hỏi file nhạc nền (mp3); chưa có thì render không nhạc trước
-- Nhanh hơn nhiều: **chờ khoảng 1-3 phút**
+## Khi có vấn đề
 
-### Sau khi có video: chỉnh bằng lời nói
-
-Kit luôn kết thúc bằng menu. Bạn chỉ cần:
-
-- **Muốn sửa**: nói tự nhiên — "sửa chữ ở giây 20", "nhiều đồ họa quá, bớt đi", "đổi nhạc", "hạ tiêu đề xuống thấp hơn". Mỗi lần sửa chờ ~5-7 phút (b-roll ~1-2 phút).
-- **Muốn soi kỹ trước khi đăng**: gõ `/biz-review-video` — hội đồng ảo (giám đốc nghệ thuật + editor + khán giả) xem và góp ý, kèm đề nghị sửa luôn.
-- **Ưng rồi**: nói **"keep it"** — kit lưu video thành file riêng và ghi nhớ gu của bạn.
-
-### Video nằm ở đâu?
-
-- Video vừa dựng: `out\final.mp4` (kit tự mở cho bạn xem)
-- Khi nói "keep it": lưu thêm bản tên riêng trong `out\`
-- Làm video mới: bản cũ tự cất vào `out\archive\` — **không bao giờ mất**
-
-## Bảng lệnh (chỉ có 4)
-
-| Lệnh | Việc |
+| Hiện tượng | Cách xử lý |
 |---|---|
-| `/biz-help` | Kiểm tra máy + xem menu (gõ đầu tiên) |
-| `/biz-edit-video` | Dựng video người nói |
-| `/biz-broll-video` | Dựng video cảnh quay + chữ hook + nhạc |
-| `/biz-review-video` | Hội đồng chuyên môn review video vừa dựng |
+| AI không đọc được video trên máy | Dùng Work locally với quyền thư mục, hoặc đưa tệp vào môi trường cloud |
+| Không tự nhận skill trong chat mới | Kiểm tra plugin đã cài/bật; thử gọi skill trực tiếp hoặc đưa BAT-DAU.md vào chat |
+| Thiếu công cụ dựng | AI chạy kiểm tra, cài phần phụ thuộc được phép, hướng dẫn phần còn thiếu |
+| Nhận giọng sai | Xác minh ngôn ngữ nguồn, nghe tên riêng; chỉ xử lý lại phần cần thiết |
+| Dấu Việt lỗi hoặc chữ che mặt | Kiểm tra font hỗ trợ tiếng Việt và frame thực tế ở đúng tỷ lệ |
+| Video mờ | Kiểm tra nguồn gốc; xuất 1080p không khôi phục chi tiết đã mất |
+| Render lâu | Dùng lại transcript, xuất một tỷ lệ trước, thử ngắn trước khi xuất dài |
+| Máy báo thiếu dung lượng | Giữ nguồn/bản cuối; chỉ dọn file tạm trong đúng dự án sau khi xác định |
 
-## Câu hỏi thường gặp
+## Khả năng hiện tại
 
-**Video đầu tiên sao lâu thế / máy như bị treo?**
-Lần đầu kit tải mô hình nhận giọng nói (~460MB) trong im lặng. Máy không treo, đợi vài phút là chạy tiếp. Chỉ lần đầu.
+Có bộ dựng local, MP4/SRT, ba bộ gu mới, phụ đề và motion tiếng Việt, lưu gu theo kênh, hướng dẫn AI và gói plugin. Chưa có timeline kéo thả hoàn chỉnh. Gói plugin cần được cài bằng cơ chế host hỗ trợ; chưa được kiểm thử đầu-cuối trên một tài khoản ChatGPT Work thật.
 
-**Caption sai chính tả vài chỗ?**
-Nhận giọng tiếng Việt đôi khi nhầm dấu. Cứ nói "sửa chữ ở giây X thành ..." — kit sửa và render lại phần đó.
+Xử lý media bằng engine local khi chạy local; nội dung đưa vào trò chuyện, công cụ tạo/tìm tài nguyên và môi trường cloud vẫn theo chính sách của dịch vụ đó. Không coi mọi chế độ là “không dữ liệu nào rời máy”.
 
-**Nhạc dài hơn video thì sao?**
-Kit tự cắt đúng độ dài video kèm fade nhỏ dần ở cuối. Nhạc ngắn hơn thì tự lặp. Muốn vào thẳng đoạn hay của bài: nói "bắt đầu nhạc từ giây 15".
-
-**Video của tôi có bị gửi đi đâu không?**
-Không. Nhận giọng nói, dựng, render đều chạy trên máy bạn.
-
-**Tôi lỡ tay muốn làm lại từ đầu?**
-Nói "làm lại từ đầu" — kit sẽ hỏi xác nhận trước (vì các chỉnh sửa tay sẽ mất) rồi mới chạy lại.
+Tài liệu nền tảng: [Work](https://learn.chatgpt.com/docs/get-started-with-work), [Skills](https://learn.chatgpt.com/docs/build-skills), [Plugins](https://learn.chatgpt.com/docs/build-plugins), đối chiếu ngày 20/09/2026.

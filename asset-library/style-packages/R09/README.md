@@ -1,0 +1,88 @@
+# R09 — Đối chiếu — hai làn luân phiên
+
+Gói phương pháp dựng, form và bằng chứng. Không phải preset renderer một nút.
+
+[Thông số lớp hình, chữ và motion](recipe.json) · [Form kế hoạch](form.json)
+
+Recipe mô tả một cảnh đặc trưng với vị trí 9:16/16:9, font, vào/giữ/ra và cue theo nghĩa. Thông số chuyển thể tách khỏi bằng chứng đo; các layout còn lại phải đọc ref và triển khai riêng.
+
+## Dùng khi
+
+So hai cách, hai công cụ hoặc hai phương án có tiêu chí
+
+## Font đề xuất
+
+Inter — chưa xác nhận font gốc
+
+## Phân cấp chữ
+
+Nhãn làn đỏ/xanh đậm; caption cùng màu làn đang nói; heading cố định.
+
+## Ảnh / graphic
+
+Hai cột ổn định; logo/vật thể thuộc đúng làn; chỉ một bên hoạt động mỗi lúc.
+
+## Motion
+
+Logo trái rời sang trái với blur khoảng 2,0–2,1s; bên phải tiếp lời sau đó.
+
+## Flow
+
+Tiêu chí → phương án A → chuyển chú ý → phương án B → kết luận theo tiêu chí.
+
+## Cắt cảnh
+
+Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.
+
+## Màu / ánh sáng
+
+Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.
+
+## Nhạc / SFX
+
+Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.
+
+## 9:16
+
+Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.
+
+## 16:9
+
+Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu.
+
+## Không làm
+
+Không cho hai làn nhấp nháy cùng lúc; không tô tốt/xấu khi nội dung không nói vậy.
+
+## Form sử dụng
+
+1. Chọn đúng gói cho nội dung.
+2. Chốt câu chuyện và điểm cắt.
+3. Mỗi beat ghi ý nghĩa, layout, ref-event, ảnh mới và vào/giữ/ra.
+4. Gặp thiếu ảnh thì giữ người nói, không lặp tranh cũ.
+5. Chạy kiểm tra plan, đối chiếu đoạn thử với ref, rồi mới xuất dài.
+
+Giới hạn mặc định là quyết định để tránh lặp/rối của dự án, không phải số liệu đo được của bản gốc. Mỗi ảnh chỉ xuất hiện một lần; callback phải cùng ý, ghi rõ beat trước và cách ít nhất 30 giây.
+
+## Những gì đã quan sát ở ref
+
+- **typography:** Permanent white AI plus red BRO and green PRO, using heavy capitals with dark stroke/shadow. Matching red and green local captions identify each comparison lane.
+- **captionMotion:** Lane captions hand off focus; one side clears as the other starts. The logo card has its own motion: around 2.0s the left card moves off-screen left with horizontal blur, gone by 2.1s.
+- **footageMotion:** Two figures occupy a stable outdoor two-lane composition. Observations do not establish whether this was one take, a composite or a cloned performance. No unsupported identity/compositing claim is needed.
+- **layoutAndAssets:** Fixed side-by-side lanes, colored label near each torso and a white rounded logo/object card below. The permanent heading provides orientation while the active lane changes.
+- **transitions:** Directional logo exits and alternating caption emphasis, rather than full-frame transitions. At 2.2s the right green caption begins after the left clears.
+- **colorAndLighting:** Natural outdoor backdrop with red/green comparison coding. Dark outlines improve separation but feel louder than the preferred premium baseline.
+- **visualFlow:** Turn-taking is expressed through the active color, label and logo. Attention is directed to one lane at a time.
+
+## Các sự kiện nguồn
+
+- **1.50–2.60s** — Left logo hold → leftward blurred exit → right caption handoff.
+- **3–42s** — Recurring lane-specific tool/logo and caption changes under a stable heading.
+
+## Chưa xác minh
+
+- Exact font family and font-file version
+- Original keyframes and easing curves
+- Original LUT or grading parameters
+- Music, SFX and synchronization: not listened to in this audit
+- Speech-edit semantics and natural audio joins: not assessed

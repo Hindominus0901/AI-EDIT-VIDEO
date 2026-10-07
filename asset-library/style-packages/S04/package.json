@@ -1,0 +1,75 @@
+{
+  "id": "S04",
+  "version": "1.0.0",
+  "name": "Title break — chữ trắng nền đen",
+  "family": "Headline",
+  "fit": "Câu chuyển ý thực sự cần một nhịp nghỉ thị giác",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Hai dòng sans trắng đậm trên đen, dòng chốt lớn hơn và canh giữa.",
+    "assetGrammar": "Một vùng chữ, không thêm ảnh/icon; không lặp caption lời nói lần hai.",
+    "motion": "Chỉ có ảnh: motion chưa xác minh. Có thể dùng direct cut hoặc resolve nhẹ như một đề xuất.",
+    "storyFlow": "Người nói → title theo ý → giữ đủ đọc → trở về hình.",
+    "avoid": "Không chèn title break sau mỗi câu; không giả định ảnh chụp chứng minh blur-in.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "dark-title"
+    ],
+    "maxGraphicOccupancy": 0.15,
+    "maxGraphicBeatsPerMinute": 2,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "still",
+  "source": {
+    "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png",
+    "name": "codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png"
+  },
+  "observed": {
+    "typography": "Hai dòng sans trắng đậm trên đen, dòng chốt lớn hơn và canh giữa.",
+    "layoutAndAssets": "Một vùng chữ, không thêm ảnh/icon; không lặp caption lời nói lần hai."
+  },
+  "events": [],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Motion/easing/timing: không xác minh từ screenshot",
+    "Font gốc chưa định danh",
+    "Nhạc/SFX không có bằng chứng từ ảnh"
+  ],
+  "referencePreview": {
+    "file": "S04/reference.png",
+    "kind": "provided-screenshot"
+  },
+  "evidence": {
+    "timelineSheets": [],
+    "denseMotionSheets": [],
+    "typographyFrames": []
+  },
+  "screenshots": [
+    "S04/evidence/codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png"
+  ],
+  "recipeFile": "S04/recipe.json"
+}

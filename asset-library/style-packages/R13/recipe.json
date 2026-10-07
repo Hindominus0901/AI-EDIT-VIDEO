@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "packageId": "R13",
+  "packageVersion": "1.0.0",
+  "status": "adaptation-spec-not-render-adapter",
+  "provenance": "All layer coordinates, typography tokens, colors and tweens are proposed adaptation defaults unless separately marked as measured evidence. Still images do not prove motion.",
+  "coordinateSystem": {
+    "rect": "normalized [x,y,width,height] before safe-area reflow",
+    "baseCanvases": {
+      "9:16": [
+        720,
+        1280
+      ],
+      "16:9": [
+        1280,
+        720
+      ]
+    },
+    "scalePixelsBy": "output short edge / 720",
+    "landscapeStatus": "proposed adaptation, no landscape reference audit"
+  },
+  "signature": {
+    "layout": "window-reveal",
+    "semanticTrigger": "Một đoạn mở yên, mở cửa sổ hình dần theo chiều dọc.",
+    "layers": [
+      {
+        "id": "background",
+        "kind": "solid",
+        "zIndex": 0,
+        "rect": {
+          "9:16": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "16:9": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "contentBinding": "palette.background"
+      },
+      {
+        "id": "window",
+        "kind": "masked-video",
+        "zIndex": 10,
+        "rect": {
+          "9:16": [
+            0.1111111111111111,
+            0.3296875,
+            0.7736111111111111,
+            0.3390625
+          ],
+          "16:9": [
+            0.18,
+            0.19,
+            0.64,
+            0.6
+          ]
+        },
+        "motion": "window-open",
+        "delayMs": 0,
+        "contentBinding": "beat.sourceRange",
+        "instruction": "Animate mask height, không scale footage; radius đề xuất 20px ở short edge 720."
+      },
+      {
+        "id": "pov",
+        "kind": "text",
+        "zIndex": 30,
+        "rect": {
+          "9:16": [
+            0.19,
+            0.26,
+            0.62,
+            0.07
+          ],
+          "16:9": [
+            0.24,
+            0.08,
+            0.52,
+            0.08
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "textToken": "support",
+        "contentBinding": "beat.pov"
+      }
+    ]
+  },
+  "coverage": {
+    "parameterizedLayouts": [
+      "window-reveal"
+    ],
+    "remainingLayoutsReadSourceEvidence": [
+      "window-shot",
+      "speaker"
+    ],
+    "warning": "One signature scene is parameterized per package. Implement and inspect other layouts explicitly; this is not full renderer coverage."
+  },
+  "typography": {
+    "caption": {
+      "familyCandidate": "Inter",
+      "weight": 700,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "headline": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 58,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "support": {
+      "familyCandidate": "Inter",
+      "weight": 500,
+      "fontPxAtShortEdge720": 28,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "accent": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 54,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#D0F14B",
+      "align": "center"
+    },
+    "ink": {
+      "familyCandidate": "Inter",
+      "weight": 700,
+      "fontPxAtShortEdge720": 40,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#151515",
+      "align": "center"
+    },
+    "laneA": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#41DD57",
+      "align": "center"
+    },
+    "laneB": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#EF4141",
+      "align": "center"
+    },
+    "serif": {
+      "familyCandidate": "Times New Roman",
+      "weight": 400,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#171717",
+      "align": "center"
+    },
+    "emphasis": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 64,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    }
+  },
+  "motions": {
+    "cut-hold": {
+      "entryMs": 0,
+      "exitMs": 0,
+      "hold": "until next semantic cue; stable geometry"
+    },
+    "window-open": {
+      "entryMs": 2002,
+      "exitMs": 0,
+      "property": "mask height only",
+      "keyframes": [
+        {
+          "timeMs": 0,
+          "heightRatio": 0
+        },
+        {
+          "timeMs": 167,
+          "heightRatio": 0.013824884792626729
+        },
+        {
+          "timeMs": 501,
+          "heightRatio": 0.1497695852534562
+        },
+        {
+          "timeMs": 1001,
+          "heightRatio": 0.5
+        },
+        {
+          "timeMs": 1502,
+          "heightRatio": 0.8778801843317973
+        },
+        {
+          "timeMs": 2002,
+          "heightRatio": 1
+        }
+      ],
+      "interpolation": "linear between measured samples as approximation; original curve unknown"
+    }
+  },
+  "palette": {
+    "background": "#0B0B0C",
+    "paper": "#F7F6F2",
+    "scrim": "rgba(0,0,0,0.30)"
+  },
+  "captionRules": {
+    "targetWordsPerPhrase": [
+      4,
+      5
+    ],
+    "maxWords": 5,
+    "shorterAtMeaningfulPause": true,
+    "maxLines": 2,
+    "highlight": "one meaningful word/span only; stable font size and position through the cue",
+    "measureVietnameseDiacritics": true,
+    "neverSplit": "a proper name, negation or short inseparable phrase purely to fill a row",
+    "fit": "measure with the actual loaded font; rewrap or move before shrinking; ensure all marks remain visible",
+    "collision": "Move the group away from face/mouth/hands and platform UI; proposed rects are not guarantees."
+  },
+  "timelineRules": {
+    "timebase": "edited-clip",
+    "layerTimeOrigin": "beat.startMs + delayMs",
+    "assetSlots": "Map a/b/c to registered asset IDs in the beat; these must also appear in beat.assetIds for reuse checks.",
+    "hold": "until explicit exit cue; entry + latest stagger + readable hold + exit must fit inside beat",
+    "minimumReadableHoldMs": 900,
+    "playbackDirection": "forward unless reversed motion is verified and explicitly requested",
+    "separateTracks": [
+      "source cuts",
+      "footage transform",
+      "window/mask",
+      "graphic",
+      "caption",
+      "audio"
+    ],
+    "footageTransform": "Use measuredFootageTransforms as source evidence; choose explicit new cue/duration. Do not apply camera scale to text/cards.",
+    "assetExit": "clear the complete group before the next concept; do not recycle it under another sentence"
+  },
+  "audioCuePolicy": {
+    "defaultSfx": null,
+    "automaticWhooshPerCaption": false,
+    "optionalCue": "one quiet cue for a meaningful layout change, after listening and checking the license",
+    "maxSfxPerMinute": 4,
+    "sourceSoundtrackIsProductionAsset": false
+  },
+  "implementationChecks": [
+    "No missing glyphs or font substitution.",
+    "No one-frame caption holes, re-entry on emphasis, or unintentional scale resets.",
+    "Source trims preserve meaning, breaths and final consonants; listen across joins.",
+    "Compare entry, hold and exit on a short render at normal speed.",
+    "Verify separate portrait/landscape compositions, mask edges and face clearance."
+  ],
+  "measuredGeometry": {
+    "sourceCanvas": [
+      720,
+      1280
+    ],
+    "method": "Thresholded visible image bounds, not recovered original masks or asset dimensions.",
+    "samples": [
+      {
+        "sec": 0.0,
+        "frame": 0,
+        "visibleContentBoundsPx": null,
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 0.16683350016683351,
+        "frame": 4,
+        "visibleContentBoundsPx": [
+          186,
+          614,
+          449,
+          6
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 0.5005005005005005,
+        "frame": 12,
+        "visibleContentBoundsPx": [
+          81,
+          590,
+          556,
+          65
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 1.001001001001001,
+        "frame": 24,
+        "visibleContentBoundsPx": [
+          81,
+          525,
+          556,
+          217
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 1.5015015015015016,
+        "frame": 36,
+        "visibleContentBoundsPx": [
+          80,
+          449,
+          557,
+          381
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 2.002002002002002,
+        "frame": 48,
+        "visibleContentBoundsPx": [
+          80,
+          422,
+          557,
+          434
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      },
+      {
+        "sec": 2.2522522522522523,
+        "frame": 54,
+        "visibleContentBoundsPx": [
+          80,
+          422,
+          557,
+          434
+        ],
+        "qualification": "Thresholded visible content within the window region; dark edges and rounded corners may under-estimate the actual matte."
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "R12",
+  "version": "1.0.0",
+  "name": "Kể chuyện — sơ đồ lược bỏ",
+  "family": "Giải thích",
+  "fit": "Giải thích hệ thống sau các ví dụ thật",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Caption trắng gọn; sơ đồ chữ đen trên trắng, một dải highlight lime.",
+    "assetGrammar": "Sơ đồ đi từ nhiều chủ đề xuống một hệ thống, connector rồi luận điểm.",
+    "motion": "Thu/xóa nhãn → lớn lên → dời lên → vẽ dây → quét highlight; khác camera zoom.",
+    "storyFlow": "Ví dụ thật → vấn đề phức tạp → lược bỏ → một cơ chế → trở về người nói.",
+    "avoid": "Không thêm graph nếu không có quan hệ thật; không sao lỗi chữ bị cắt bên trái.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "context-shot",
+      "subtract-diagram",
+      "connector",
+      "marker-phrase"
+    ],
+    "maxGraphicOccupancy": 0.4,
+    "maxGraphicBeatsPerMinute": 3,
+    "maxConsecutiveGraphicBeats": 6,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R12",
+    "name": "AQNK5gC5MoUv1MHJaplWSnqlLNsqwO5BkvyL9rTUfyxjUbBU-m7mtzGHjWYXHxSzY_GLQe3wO5xC3mdFR-tPqGNCKUiIZpX9jYQGV48.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQNK5gC5MoUv1MHJaplWSnqlLNsqwO5BkvyL9rTUfyxjUbBU-m7mtzGHjWYXHxSzY_GLQe3wO5xC3mdFR-tPqGNCKUiIZpX9jYQGV48.mp4",
+    "bytes": 6516113,
+    "modified": "2026-09-22T21:06:28.057070",
+    "durationSec": 60.183265,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Compact white sans phrase captions around the center of the portrait canvas, medium weight in the inspected sample. The graphic sequence switches to black labels on white and one lime highlighter accent.",
+    "captionMotion": "Short caption fragments hold while the background changes. In the conceptual graphic, topic labels shrink away; SYSTEMS grows from tiny, moves upward, a connector draws, then a lime highlight wipes left-to-right as a phrase builds.",
+    "footageMotion": "Varied archival/context shots and current talking head. A slow push is supported in the speaker passage around 22–24s. Graphic label scaling must not be mistaken for camera movement.",
+    "layoutAndAssets": "The white diagram is a landscape band letterboxed on black inside the portrait export. It is a sustained explanatory scene, not a white flash. The final sentence is clipped at the left edge in the source.",
+    "transitions": "Context footage mostly hard cuts. The diagram uses scale-down/removal, scale-up, repositioning, line drawing, highlight wipe and staged phrase addition. It cuts back to the speaker around 48.17s.",
+    "colorAndLighting": "Mixed archival lighting and warmer current footage. Diagram mode uses white, black and lime. Source clipping is a layout defect to avoid reproducing.",
+    "visualFlow": "Examples and biography lead into a simplifying visual argument: remove excess topics, leave a system, explain what it does, return to the speaker. The order of animation carries meaning."
+  },
+  "events": [
+    {
+      "sourceTime": "0–21s",
+      "observation": "Archival, interview and process coverage intercut with a speaker."
+    },
+    {
+      "sourceTime": "22–28s",
+      "observation": "Current talking head with a gentle push."
+    },
+    {
+      "sourceTime": "29–39s",
+      "observation": "Work/process and close interview coverage."
+    },
+    {
+      "sourceTime": "39.5–43.9s",
+      "observation": "Topic network on a white landscape band; topics recede and clear."
+    },
+    {
+      "sourceTime": "44.29–45.90s",
+      "observation": "SYSTEMS grows, shifts upward, connector begins."
+    },
+    {
+      "sourceTime": "45.75–48.17s",
+      "observation": "Lime wipe plus building → building profitable → personal brands phrase development; then cut back."
+    },
+    {
+      "sourceTime": "48.17–60s",
+      "observation": "Speaker and event/network/stage coverage."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R12/reference.mp4",
+    "sourceStartSec": 39.3,
+    "sourceEndSec": 48.4,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R12/evidence/R12-timeline-01.jpg",
+      "R12/evidence/R12-timeline-02.jpg"
+    ],
+    "denseMotionSheets": [
+      "R12/evidence/R12-graphic-subtraction.jpg",
+      "R12/evidence/R12-highlight-reveal.jpg"
+    ],
+    "typographyFrames": [
+      "R12/evidence/R12-caption.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R12-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R12/recipe.json"
+}

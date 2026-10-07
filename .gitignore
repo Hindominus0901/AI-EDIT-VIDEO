@@ -1,0 +1,11 @@
+.venv/
+node_modules/
+out/
+dist/
+public/raw/
+public/music/
+__pycache__/
+*.pyc
+.env
+.video-editor/
+.cache/

@@ -1,0 +1,101 @@
+{
+  "id": "R04",
+  "version": "1.0.0",
+  "name": "Teaser — headline giữ nguyên",
+  "family": "Headline",
+  "fit": "Thông điệp ngắn 5–10 giây, dẫn người xem đọc thêm",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Headline in hoa đậm, dòng phụ thường, số liệu đậm; CTA nghiêng.",
+    "assetGrammar": "Một cảnh chuyển động làm nền; một cụm chữ phân cấp, không thêm sticker.",
+    "motion": "Chữ giữ suốt cảnh; chuyển động đến từ video phía sau. Không có bằng chứng tween chữ.",
+    "storyFlow": "Một lời hứa rõ → thời gian đọc → CTA.",
+    "avoid": "Không dùng form sáu giây này cho cả bài nói dài; không tự tạo phần trăm.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "held-headline"
+    ],
+    "maxGraphicOccupancy": 1.0,
+    "maxGraphicBeatsPerMinute": 1,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R04",
+    "name": "AQOLG0FH4Tye6zTrTaywlqRHGMcCmk3S5FGaghetiAy9MslU-DtSv6MP6t49-1HEhnLqTPfIwjsRMobVwZd8HflCyMXa43ekT9siatA.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQOLG0FH4Tye6zTrTaywlqRHGMcCmk3S5FGaghetiAy9MslU-DtSv6MP6t49-1HEhnLqTPfIwjsRMobVwZd8HflCyMXa43ekT9siatA.mp4",
+    "bytes": 611384,
+    "modified": "2026-09-22T21:14:35.408992",
+    "durationSec": 6.034331,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "White all-cap bold heading, regular support, bold percentage statement, downward arrow and italic CTA. The hierarchy mixes weight and case rather than multiple unrelated decorative faces.",
+    "captionMotion": "The text stack stays present through the six-second shot. No distinct caption entrance animation established; holding the message is an intentional part of this reference.",
+    "footageMotion": "Meeting-room footage contains a handheld pan and moving people. A failed global transform fit does not mean the video is static.",
+    "layoutAndAssets": "Centered text stack over a darkened room, with a small upper-right watermark. Generous separation between headline, explanation, arrow and CTA.",
+    "transitions": "One held composition; no full-scene cut observed in the timeline samples.",
+    "colorAndLighting": "Dark exposure treatment increases white-text contrast while the room remains visible. No exact grading parameters recovered.",
+    "visualFlow": "A brief teaser designed to send viewers to the caption. It does not demonstrate a long-form talking-head edit flow."
+  },
+  "events": [
+    {
+      "sourceTime": "0–5.9s decoded picture",
+      "observation": "Text stack remains stable while the meeting footage moves beneath it."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R04/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 6,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R04/evidence/R04-timeline-01.jpg"
+    ],
+    "denseMotionSheets": [],
+    "typographyFrames": [
+      "R04/evidence/R04-headline.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R04-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R04/recipe.json"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "R01",
+  "version": "1.0.0",
+  "name": "Editorial Việt — chiều sâu",
+  "family": "Editorial",
+  "fit": "Nội dung quan điểm, thương hiệu cá nhân",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Sans nặng, chữ trắng; dòng chốt lớn hơn dòng dẫn; hook có chữ sau đầu.",
+    "assetGrammar": "Cảnh ngữ cảnh, trang hồ sơ, title card trắng; mỗi hình chứng minh đúng một ý.",
+    "motion": "Hook fade khoảng 0,07–0,23s; footage lùi độc lập; body giữ chữ sau khi vào.",
+    "storyFlow": "Luận điểm → ngữ cảnh thật → câu chốt toàn màn → trở về người nói.",
+    "avoid": "Không mask từng phụ đề; không dùng cùng cảnh ngữ cảnh cho nhiều luận điểm.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "depth-hook",
+      "context-shot",
+      "light-title",
+      "profile-card",
+      "cutout"
+    ],
+    "maxGraphicOccupancy": 0.3,
+    "maxGraphicBeatsPerMinute": 3,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R01",
+    "name": "Xây kênh thế nào khi mọi người đều theo trào lưu AI hóa-.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\Xây kênh thế nào khi mọi người đều theo trào lưu AI hóa-.mp4",
+    "bytes": 62184493,
+    "modified": "2026-09-22T21:17:27.249621",
+    "durationSec": 149.815011,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Heavy compact sans serif with Vietnamese diacritics, tight letter spacing and a soft dark shadow. Large opening letters pass visually behind the head. Captions use different sizes within one phrase: the second line can become the emphasis. Font identity remains unconfirmed.",
+    "captionMotion": "A phrase fades in and holds; a more important second line can arrive later. At the opening, faint text is visible around 0.07–0.10s, layered headline by 0.13s, strong opacity around 0.23s; it clears around 0.9–1.1s. The text does not continuously bounce. Some stretches deliberately have no caption.",
+    "footageMotion": "Opening image pulls back quickly and decelerates, independently of the typography. Background feature match estimates about 25% shrink from 0 to 1s, with some rotation/translation; this walking shot has lower transform confidence than the stationary-camera examples. Later footage contains real walking, hand movement and handheld parallax. These are separate from an edit zoom.",
+    "layoutAndAssets": "Base talking head alternates with contextual meeting/working footage, full off-white title cards, tilted profile-page cards, and an isolated speaker over dark explanatory material. Strong hierarchy and temporary changes of visual mode provide variety.",
+    "transitions": "Most contextual changes are direct cuts. Title text uses a readable fade/build. The opening masking effect and simultaneous image pullback are distinct layers; the original masking method cannot be recovered from the flattened MP4.",
+    "colorAndLighting": "Natural daylight and green foliage; interiors are warmer. Black/white editorial cards create contrast. Context footage is sometimes darkened behind text. No exact LUT or camera exposure values identified.",
+    "visualFlow": "Talking head establishes the argument, a context insert illustrates it, a large title punctuates a key idea, then attention returns to the speaker. Graphic treatment is episodic rather than continuously busy."
+  },
+  "events": [
+    {
+      "sourceTime": "0–1.1s",
+      "observation": "Layered headline entrance over a decelerating pullback."
+    },
+    {
+      "sourceTime": "5.07–8.60; 13.63–16.90; 25.17–30.60s",
+      "observation": "Meeting, outdoor group and workshop coverage."
+    },
+    {
+      "sourceTime": "39.27–43.63; 50.10–54.13s",
+      "observation": "Computer and meeting coverage, then speaker returns."
+    },
+    {
+      "sourceTime": "59.73–61.43; 74.90–77.50; 88.20–91.17; 128.03–131.93s",
+      "observation": "Full off-white headline cards with black type."
+    },
+    {
+      "sourceTime": "66.60–70.30; 82.87–85.03s",
+      "observation": "Projection and whiteboard context."
+    },
+    {
+      "sourceTime": "102.77–105.10s",
+      "observation": "Floating page/profile cards on a light field."
+    },
+    {
+      "sourceTime": "110.43–114.07; 118.30–120.90s",
+      "observation": "Isolated speaker over dark note/checklist material."
+    },
+    {
+      "sourceTime": "120.90–124.20; 132–149s",
+      "observation": "Seminar insert, then seated outdoor closing; large final like prompt."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R01",
+      "startSec": 0.0,
+      "endSec": 1.0,
+      "startFrame": 0,
+      "endFrame": 30,
+      "matches": 65,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 0.7483852053044492,
+      "scaleChangePct": -25.161479469555083,
+      "rotationDeg": -1.9491146235413879,
+      "imageCenterDxPct": -3.642302944174463,
+      "imageCenterDyPct": -0.10062515142833443,
+      "inliers": 43,
+      "inlierFraction": 0.6615384615384615,
+      "medianResidualPx": 0.4904502074344973,
+      "matrix": [
+        [
+          0.7479522103758517,
+          0.025454007787777726,
+          36.16654356184465
+        ],
+        [
+          -0.025454007787777726,
+          0.7479522103758517,
+          126.88951966857918
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R01/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 8,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R01/evidence/R01-timeline-01.jpg",
+      "R01/evidence/R01-timeline-02.jpg",
+      "R01/evidence/R01-timeline-03.jpg",
+      "R01/evidence/R01-timeline-04.jpg",
+      "R01/evidence/R01-timeline-05.jpg"
+    ],
+    "denseMotionSheets": [
+      "R01/evidence/R01-opening-pullback.jpg"
+    ],
+    "typographyFrames": [
+      "R01/evidence/R01-caption.png",
+      "R01/evidence/R01-hook.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R01-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R01/recipe.json"
+}

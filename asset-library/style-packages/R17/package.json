@@ -1,0 +1,143 @@
+{
+  "id": "R17",
+  "version": "1.0.0",
+  "name": "Motion explainer — bố cục theo ý",
+  "family": "Giải thích",
+  "fit": "Bài giải thích cơ chế/quy trình có nội dung đồ họa cụ thể",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Trắng/vàng; headline outline + solid + underline; body ngắn, không nhảy từng từ.",
+    "assetGrammar": "Grid tối, glow amber thấp; cửa sổ người nói di chuyển nhường chỗ cho sơ đồ thật.",
+    "motion": "Window dời/thu 17,4–17,8s; graph vẽ 32,27–33s; cutout dissolve 51,9–52,23s.",
+    "storyFlow": "Đặt câu hỏi → chọn layout → dựng một cơ chế → giữ để hiểu → xóa → layout tiếp.",
+    "avoid": "Không dùng một card ba lần để giả vờ đa dạng; không bịa số liệu cho biểu đồ.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker-window",
+      "card-stack",
+      "branch-diagram",
+      "line-chart",
+      "strike-label",
+      "cutout",
+      "outline-headline",
+      "roadmap"
+    ],
+    "maxGraphicOccupancy": 0.75,
+    "maxGraphicBeatsPerMinute": 6,
+    "maxConsecutiveGraphicBeats": 10,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R17",
+    "name": "video edit 2.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\video edit 2.mp4",
+    "bytes": 70217293,
+    "modified": "2026-09-21T10:23:53.612610",
+    "durationSec": 98.0,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": false
+  },
+  "observed": {
+    "typography": "Bold compact Vietnamese sans captions with white text and moving yellow word emphasis. Headlines combine a small tracked uppercase eyebrow, outlined white lettering, solid yellow key phrase and a yellow underline. Dark labels and micro-copy are subordinate.",
+    "captionMotion": "The caption line remains anchored while yellow emphasis advances through words. Phrase replacement can fade from dim to full. Around 40.5–40.8s a red line draws left-to-right across a belief label; it then holds, rather than repeatedly crossing the text.",
+    "footageMotion": "Outer grid/glow stays fixed while the speaker window changes position, size and mask. Full portrait, smaller corner window, split layouts and cutout are distinct states. Window motion is not the same operation as cropping inside the source footage.",
+    "layoutAndAssets": "Near-black grid with amber glow; rounded video window, fine-border dark cards, yellow icons. Topic card stacks use tilt, scale/opacity and overlap; device cards, channel icons, a line chart, benefits and roadmap are built as different compositions.",
+    "transitions": "Window shrink/move around 17.4–17.8s; card stack builds around 21 and 22.7s; line chart draws around 32.27–33s; framed speaker blends into cutout around 51.9–52.23s; outline/yellow headline/underline/steps stage around 53.7–55.1s.",
+    "colorAndLighting": "Dark, restrained amber/yellow system with white lettering and a red correction accent. Fine grid and low-contrast glows add depth without competing with text.",
+    "visualFlow": "Each explanation gets a coordinated layout state: orient viewer, move the speaker, build one concept, hold, clear or transition. The content diagram is the motion, rather than unrelated embellishments."
+  },
+  "events": [
+    {
+      "sourceTime": "0–8.7s",
+      "observation": "CTA pill, icons/questions, large one-minute marker and moving yellow caption emphasis."
+    },
+    {
+      "sourceTime": "9–17; 17.4–17.8s",
+      "observation": "Office cards; speaker window shrinks/moves for the next section."
+    },
+    {
+      "sourceTime": "20.80–21.07; 22.53–22.80s",
+      "observation": "Product-image card appears above the speaker; social-post card joins offset in front."
+    },
+    {
+      "sourceTime": "27–35s",
+      "observation": "Personal-brand grouping, channel icons and progressive line chart."
+    },
+    {
+      "sourceTime": "40.40–41.50s",
+      "observation": "Belief label: no strike at 40.4, begins 40.5, almost across by 40.7, held by 40.8."
+    },
+    {
+      "sourceTime": "48–55.1s",
+      "observation": "Device cards, cutout transition and staged outline/yellow headline."
+    },
+    {
+      "sourceTime": "60–82s",
+      "observation": "Three course/content groups built as card/icon/chart scenes."
+    },
+    {
+      "sourceTime": "84–98s",
+      "observation": "Benefit stack, yellow CTA and final roadmap."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R17/reference.mp4",
+    "sourceStartSec": 16.8,
+    "sourceEndSec": 24,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R17/evidence/R17-timeline-01.jpg",
+      "R17/evidence/R17-timeline-02.jpg",
+      "R17/evidence/R17-timeline-03.jpg",
+      "R17/evidence/R17-timeline-04.jpg"
+    ],
+    "denseMotionSheets": [
+      "R17/evidence/R17-card-stagger.jpg",
+      "R17/evidence/R17-strikethrough.jpg"
+    ],
+    "typographyFrames": [
+      "R17/evidence/R17-headline.png",
+      "R17/evidence/R17-highlight-caption.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R17-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R17/recipe.json"
+}

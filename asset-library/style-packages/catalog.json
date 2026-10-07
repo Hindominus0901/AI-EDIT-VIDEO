@@ -1,0 +1,4154 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "packages": [
+    {
+      "id": "R01",
+      "version": "1.0.0",
+      "name": "Editorial Việt — chiều sâu",
+      "family": "Editorial",
+      "fit": "Nội dung quan điểm, thương hiệu cá nhân",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Sans nặng, chữ trắng; dòng chốt lớn hơn dòng dẫn; hook có chữ sau đầu.",
+        "assetGrammar": "Cảnh ngữ cảnh, trang hồ sơ, title card trắng; mỗi hình chứng minh đúng một ý.",
+        "motion": "Hook fade khoảng 0,07–0,23s; footage lùi độc lập; body giữ chữ sau khi vào.",
+        "storyFlow": "Luận điểm → ngữ cảnh thật → câu chốt toàn màn → trở về người nói.",
+        "avoid": "Không mask từng phụ đề; không dùng cùng cảnh ngữ cảnh cho nhiều luận điểm.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "depth-hook",
+          "context-shot",
+          "light-title",
+          "profile-card",
+          "cutout"
+        ],
+        "maxGraphicOccupancy": 0.3,
+        "maxGraphicBeatsPerMinute": 3,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R01",
+        "name": "Xây kênh thế nào khi mọi người đều theo trào lưu AI hóa-.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\Xây kênh thế nào khi mọi người đều theo trào lưu AI hóa-.mp4",
+        "bytes": 62184493,
+        "modified": "2026-09-22T21:17:27.249621",
+        "durationSec": 149.815011,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Heavy compact sans serif with Vietnamese diacritics, tight letter spacing and a soft dark shadow. Large opening letters pass visually behind the head. Captions use different sizes within one phrase: the second line can become the emphasis. Font identity remains unconfirmed.",
+        "captionMotion": "A phrase fades in and holds; a more important second line can arrive later. At the opening, faint text is visible around 0.07–0.10s, layered headline by 0.13s, strong opacity around 0.23s; it clears around 0.9–1.1s. The text does not continuously bounce. Some stretches deliberately have no caption.",
+        "footageMotion": "Opening image pulls back quickly and decelerates, independently of the typography. Background feature match estimates about 25% shrink from 0 to 1s, with some rotation/translation; this walking shot has lower transform confidence than the stationary-camera examples. Later footage contains real walking, hand movement and handheld parallax. These are separate from an edit zoom.",
+        "layoutAndAssets": "Base talking head alternates with contextual meeting/working footage, full off-white title cards, tilted profile-page cards, and an isolated speaker over dark explanatory material. Strong hierarchy and temporary changes of visual mode provide variety.",
+        "transitions": "Most contextual changes are direct cuts. Title text uses a readable fade/build. The opening masking effect and simultaneous image pullback are distinct layers; the original masking method cannot be recovered from the flattened MP4.",
+        "colorAndLighting": "Natural daylight and green foliage; interiors are warmer. Black/white editorial cards create contrast. Context footage is sometimes darkened behind text. No exact LUT or camera exposure values identified.",
+        "visualFlow": "Talking head establishes the argument, a context insert illustrates it, a large title punctuates a key idea, then attention returns to the speaker. Graphic treatment is episodic rather than continuously busy."
+      },
+      "events": [
+        {
+          "sourceTime": "0–1.1s",
+          "observation": "Layered headline entrance over a decelerating pullback."
+        },
+        {
+          "sourceTime": "5.07–8.60; 13.63–16.90; 25.17–30.60s",
+          "observation": "Meeting, outdoor group and workshop coverage."
+        },
+        {
+          "sourceTime": "39.27–43.63; 50.10–54.13s",
+          "observation": "Computer and meeting coverage, then speaker returns."
+        },
+        {
+          "sourceTime": "59.73–61.43; 74.90–77.50; 88.20–91.17; 128.03–131.93s",
+          "observation": "Full off-white headline cards with black type."
+        },
+        {
+          "sourceTime": "66.60–70.30; 82.87–85.03s",
+          "observation": "Projection and whiteboard context."
+        },
+        {
+          "sourceTime": "102.77–105.10s",
+          "observation": "Floating page/profile cards on a light field."
+        },
+        {
+          "sourceTime": "110.43–114.07; 118.30–120.90s",
+          "observation": "Isolated speaker over dark note/checklist material."
+        },
+        {
+          "sourceTime": "120.90–124.20; 132–149s",
+          "observation": "Seminar insert, then seated outdoor closing; large final like prompt."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R01",
+          "startSec": 0.0,
+          "endSec": 1.0,
+          "startFrame": 0,
+          "endFrame": 30,
+          "matches": 65,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 0.7483852053044492,
+          "scaleChangePct": -25.161479469555083,
+          "rotationDeg": -1.9491146235413879,
+          "imageCenterDxPct": -3.642302944174463,
+          "imageCenterDyPct": -0.10062515142833443,
+          "inliers": 43,
+          "inlierFraction": 0.6615384615384615,
+          "medianResidualPx": 0.4904502074344973,
+          "matrix": [
+            [
+              0.7479522103758517,
+              0.025454007787777726,
+              36.16654356184465
+            ],
+            [
+              -0.025454007787777726,
+              0.7479522103758517,
+              126.88951966857918
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R01/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 8,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R01/evidence/R01-timeline-01.jpg",
+          "R01/evidence/R01-timeline-02.jpg",
+          "R01/evidence/R01-timeline-03.jpg",
+          "R01/evidence/R01-timeline-04.jpg",
+          "R01/evidence/R01-timeline-05.jpg"
+        ],
+        "denseMotionSheets": [
+          "R01/evidence/R01-opening-pullback.jpg"
+        ],
+        "typographyFrames": [
+          "R01/evidence/R01-caption.png",
+          "R01/evidence/R01-hook.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R01-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R01/recipe.json"
+    },
+    {
+      "id": "R02",
+      "version": "1.0.0",
+      "name": "Editorial Việt — card & khoảng nghỉ",
+      "family": "Editorial",
+      "fit": "Giải thích khái niệm, chia sẻ có chiều sâu",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Hai cấp sans đậm; shadow nhẹ trên footage, trắng/đen rõ trên title card.",
+        "assetGrammar": "Card hồ sơ vào riêng rồi rời riêng; một insert bo góc; sơ đồ nhỏ khi thật sự cần.",
+        "motion": "Card rõ dần; title 34,72–35,32s blur-to-clear; đổi nền trước rồi mới đổi chữ.",
+        "storyFlow": "Người nói → cụm minh chứng → xóa cụm → title chốt → người nói.",
+        "avoid": "Không giữ card ở mọi đoạn; không bật blur cho tất cả caption.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "profile-card",
+          "profile-group",
+          "dark-title",
+          "light-title",
+          "window-insert",
+          "equation"
+        ],
+        "maxGraphicOccupancy": 0.3,
+        "maxGraphicBeatsPerMinute": 3,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R02",
+        "name": "Xây dựng -Thế giới riêng- của bạn thông qua ngôn từ của chính mình.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\Xây dựng -Thế giới riêng- của bạn thông qua ngôn từ của chính mình.mp4",
+        "bytes": 10792606,
+        "modified": "2026-09-22T21:16:57.872158",
+        "durationSec": 64.505011,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Heavy Vietnamese sans serif, white on footage or black cards, black on light cards. Two-line emphasis uses a noticeably larger key line. Soft black shadow is visible over footage; full-screen cards rely on contrast rather than a large outline.",
+        "captionMotion": "Selective emphasis rather than a subtitle on every moment. Three profile cards resolve from blur/low opacity and later fade separately. The black title at 34.72s begins blurred and is readable around 35.32s. An inversion sequence changes the background first, then fades in the new dark phrase.",
+        "footageMotion": "Main front-facing desk shot with occasional side angle and closer crops. Crop steps include a visible change around 3.48s and another around 41.5s. Stable typography is separate from those framing changes.",
+        "layoutAndAssets": "Warm desk/lamp base; three floating dark profile cards form a temporary composition around the speaker. Later: individual profile cards, a rounded film insert over a blurred base, a compact equation, books, and a bookmark/cursor CTA.",
+        "transitions": "Cards enter in a stagger, hold, and clear before the next caption. Around 8.08s, black switches to off-white; the replacement black phrase resolves from gray by about 8.48s. This is not a generic sliding transition.",
+        "colorAndLighting": "Warm amber practical lamp and soft indoor skin tones. Off-white/black cards keep visual contrast. Yellow is reserved for the final bookmark accent; no original grade recovered.",
+        "visualFlow": "Quiet speaker passages alternate with concentrated editorial moments. The reference creates polish through staging and clearing, not by putting several permanent overlays around the face."
+      },
+      "events": [
+        {
+          "sourceTime": "0.30–3.60s",
+          "observation": "Profile cards arrive left, right, lower-center; sharp by about 1.2s. Staggered clearing around 2.4–3.28s, caption returns by 3.6s."
+        },
+        {
+          "sourceTime": "6.76–9.36s",
+          "observation": "Black Worldbuilding card, then light thế giới riêng card."
+        },
+        {
+          "sourceTime": "9.36–10.68; 55.52–60.92s",
+          "observation": "Side-angle coverage."
+        },
+        {
+          "sourceTime": "14; 18–20s",
+          "observation": "Individual profile/page references."
+        },
+        {
+          "sourceTime": "22–28s",
+          "observation": "Closer talking-head framing."
+        },
+        {
+          "sourceTime": "29.40–33.60s",
+          "observation": "Rounded action-film insert over blurred speaker background."
+        },
+        {
+          "sourceTime": "34.72–37.36s",
+          "observation": "Blur-to-clear black headline card."
+        },
+        {
+          "sourceTime": "45–49s",
+          "observation": "Emphasis heading, compact value equation, then book cards."
+        },
+        {
+          "sourceTime": "53–57; 61–64s",
+          "observation": "Two-tier captions; bookmark icon becomes yellow with cursor cue and final emphasis."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R02/reference.mp4",
+        "sourceStartSec": 33.9,
+        "sourceEndSec": 38,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R02/evidence/R02-timeline-01.jpg",
+          "R02/evidence/R02-timeline-02.jpg",
+          "R02/evidence/R02-timeline-03.jpg"
+        ],
+        "denseMotionSheets": [
+          "R02/evidence/R02-profile-cards.jpg",
+          "R02/evidence/R02-title-inversion.jpg"
+        ],
+        "typographyFrames": [
+          "R02/evidence/R02-caption.png",
+          "R02/evidence/R02-title.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R02-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R02/recipe.json"
+    },
+    {
+      "id": "R03",
+      "version": "1.0.0",
+      "name": "Bài giảng — từng chương",
+      "family": "Giải thích",
+      "fit": "Nội dung thực sự có các bước hoặc chương",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Caption trắng đậm; tiêu đề chương hồng trên đen; dòng quan trọng lớn hơn.",
+        "assetGrammar": "Một sơ đồ đang học; bước hiện tại sáng, bước khác lùi; cảnh minh chứng xen kẽ.",
+        "motion": "Nguồn push khoảng +21,3% trong 3s; chữ tách lớp; hàng sơ đồ hiện theo lời.",
+        "storyFlow": "Mở vấn đề → bước → giải thích → ví dụ → bước tiếp → tổng kết.",
+        "avoid": "Không tự chia chương vô nghĩa; không đặt mọi sơ đồ nhỏ cạnh mặt.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "chapter",
+          "context-shot",
+          "step-diagram",
+          "dark-title",
+          "cutout"
+        ],
+        "maxGraphicOccupancy": 0.4,
+        "maxGraphicBeatsPerMinute": 4,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R03",
+        "name": "4 bước xây dựng doanh nghiệp tự vận hành, trở thành doanh chủ tự do.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\4 bước xây dựng doanh nghiệp tự vận hành, trở thành doanh chủ tự do.mp4",
+        "bytes": 26850773,
+        "modified": "2026-09-22T21:16:46.700696",
+        "durationSec": 129.313991,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Bold Vietnamese sans serif over footage with soft black shadow; black chapter cards use pink headings and explanatory text. Emphasis is created by line size, not constant colored karaoke. Some small diagram labels are too small to copy literally.",
+        "captionMotion": "At 0.9–1.1s the first line resolves; a larger second line appears faintly around 1.6s and is bright by 1.8–1.9s. Text holds at the neck/chest while the source image enlarges. No obvious bounce or word travel in this sampled phrase.",
+        "footageMotion": "A centered push increases background image scale about 21.3% from 0 to 3s, with almost zero rotation/center drift. Repeated wider resets separate passages; it is not one uninterrupted zoom across the entire video.",
+        "layoutAndAssets": "Talking head, short contextual footage, isolated portrait on black, black/pink chapter cards, and a progressively populated business diagram. The current step brightens while other information remains subordinate.",
+        "transitions": "Direct cuts between speaker, coverage and chapter plates. Caption phrases stage in opacity; explanatory rows build over time. Diagram motion is distinct from source framing.",
+        "colorAndLighting": "Daylight greens and white clothing; selected B-roll is deliberately darkened under white type. Black/pink graphic mode marks sections. Exact LUT remains unknown.",
+        "visualFlow": "Four chapter markers create macro structure. The edit returns to the speaker after examples and uses a short text-only pause for a question or key message."
+      },
+      "events": [
+        {
+          "sourceTime": "0–3.30s",
+          "observation": "Centered image push with independent two-stage caption emphasis."
+        },
+        {
+          "sourceTime": "3.67–8.40s",
+          "observation": "Beach then laptop coverage."
+        },
+        {
+          "sourceTime": "14.40–17; 21.10–24.30s",
+          "observation": "Isolated grayscale portrait, later expert interview."
+        },
+        {
+          "sourceTime": "29.90–34.87s",
+          "observation": "Step 1 chapter/diagram sequence."
+        },
+        {
+          "sourceTime": "39–49; 55–56s",
+          "observation": "Working/scale/boxing examples, then pink-on-black question."
+        },
+        {
+          "sourceTime": "57–59.93; 74.30–76.73; 83.77–86.60s",
+          "observation": "Steps 2, 3 and 4."
+        },
+        {
+          "sourceTime": "60–67; 72–74; 79.27–83.77; 92–95s",
+          "observation": "Contextual and interview coverage."
+        },
+        {
+          "sourceTime": "101.37–105.70; 113.17–116.60s",
+          "observation": "Three-line story/process build; text-only key-message moment."
+        },
+        {
+          "sourceTime": "120.17–124.90s",
+          "observation": "Seminar coverage before the talking-head close."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R03",
+          "startSec": 0.0,
+          "endSec": 3.0,
+          "startFrame": 0,
+          "endFrame": 90,
+          "matches": 264,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 1.2125458704686773,
+          "scaleChangePct": 21.254587046867734,
+          "rotationDeg": -0.020300348347923516,
+          "imageCenterDxPct": 0.017474592711216198,
+          "imageCenterDyPct": -0.01613517416611643,
+          "inliers": 254,
+          "inlierFraction": 0.9621212121212122,
+          "medianResidualPx": 0.4648329998399908,
+          "matrix": [
+            [
+              1.2125457943607505,
+              0.0004296145938240377,
+              -57.499216681797584
+            ],
+            [
+              -0.0004296145938240377,
+              1.2125457943607505,
+              -102.06088302482247
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R03/reference.mp4",
+        "sourceStartSec": 28.7,
+        "sourceEndSec": 35.8,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R03/evidence/R03-timeline-01.jpg",
+          "R03/evidence/R03-timeline-02.jpg",
+          "R03/evidence/R03-timeline-03.jpg",
+          "R03/evidence/R03-timeline-04.jpg",
+          "R03/evidence/R03-timeline-05.jpg"
+        ],
+        "denseMotionSheets": [
+          "R03/evidence/R03-push-in.jpg",
+          "R03/evidence/R03-caption-reveal.jpg"
+        ],
+        "typographyFrames": [
+          "R03/evidence/R03-caption.png",
+          "R03/evidence/R03-chapter.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R03-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R03/recipe.json"
+    },
+    {
+      "id": "R04",
+      "version": "1.0.0",
+      "name": "Teaser — headline giữ nguyên",
+      "family": "Headline",
+      "fit": "Thông điệp ngắn 5–10 giây, dẫn người xem đọc thêm",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Headline in hoa đậm, dòng phụ thường, số liệu đậm; CTA nghiêng.",
+        "assetGrammar": "Một cảnh chuyển động làm nền; một cụm chữ phân cấp, không thêm sticker.",
+        "motion": "Chữ giữ suốt cảnh; chuyển động đến từ video phía sau. Không có bằng chứng tween chữ.",
+        "storyFlow": "Một lời hứa rõ → thời gian đọc → CTA.",
+        "avoid": "Không dùng form sáu giây này cho cả bài nói dài; không tự tạo phần trăm.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "held-headline"
+        ],
+        "maxGraphicOccupancy": 1.0,
+        "maxGraphicBeatsPerMinute": 1,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R04",
+        "name": "AQOLG0FH4Tye6zTrTaywlqRHGMcCmk3S5FGaghetiAy9MslU-DtSv6MP6t49-1HEhnLqTPfIwjsRMobVwZd8HflCyMXa43ekT9siatA.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQOLG0FH4Tye6zTrTaywlqRHGMcCmk3S5FGaghetiAy9MslU-DtSv6MP6t49-1HEhnLqTPfIwjsRMobVwZd8HflCyMXa43ekT9siatA.mp4",
+        "bytes": 611384,
+        "modified": "2026-09-22T21:14:35.408992",
+        "durationSec": 6.034331,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "White all-cap bold heading, regular support, bold percentage statement, downward arrow and italic CTA. The hierarchy mixes weight and case rather than multiple unrelated decorative faces.",
+        "captionMotion": "The text stack stays present through the six-second shot. No distinct caption entrance animation established; holding the message is an intentional part of this reference.",
+        "footageMotion": "Meeting-room footage contains a handheld pan and moving people. A failed global transform fit does not mean the video is static.",
+        "layoutAndAssets": "Centered text stack over a darkened room, with a small upper-right watermark. Generous separation between headline, explanation, arrow and CTA.",
+        "transitions": "One held composition; no full-scene cut observed in the timeline samples.",
+        "colorAndLighting": "Dark exposure treatment increases white-text contrast while the room remains visible. No exact grading parameters recovered.",
+        "visualFlow": "A brief teaser designed to send viewers to the caption. It does not demonstrate a long-form talking-head edit flow."
+      },
+      "events": [
+        {
+          "sourceTime": "0–5.9s decoded picture",
+          "observation": "Text stack remains stable while the meeting footage moves beneath it."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R04/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 6,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R04/evidence/R04-timeline-01.jpg"
+        ],
+        "denseMotionSheets": [],
+        "typographyFrames": [
+          "R04/evidence/R04-headline.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R04-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R04/recipe.json"
+    },
+    {
+      "id": "R05",
+      "version": "1.0.0",
+      "name": "Danh sách — một ảnh mỗi ví dụ",
+      "family": "Ảnh trực tiếp",
+      "fit": "Liệt kê công cụ, ví dụ hoặc ứng dụng",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Headline đen trong pill trắng; caption trắng nhỏ; số thứ tự vàng riêng.",
+        "assetGrammar": "Một ảnh thấp dưới ngực; thay bằng ảnh MỚI khi đổi mục; cuối clip trả mặt sạch.",
+        "motion": "Ảnh thay nhanh; mẫu đổi ảnh 9→8 giữa 9,5–9,6s; header đứng yên.",
+        "storyFlow": "Giới thiệu → số mục + ảnh đúng mục → giải thích → bỏ ảnh → mục sau.",
+        "avoid": "Không dùng cùng ảnh cho mục khác; không chèn ba ảnh vì thiếu tư liệu.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "numbered-image"
+        ],
+        "maxGraphicOccupancy": 0.65,
+        "maxGraphicBeatsPerMinute": 9,
+        "maxConsecutiveGraphicBeats": 12,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R05",
+        "name": "AQMtCaLwVF4P7FlmhBf59Oh-dbNgdeSd2PJDRPcfDL0alTYYKbmaVkRMZ_Bu-z3nAs-0gJZLXSSJXHf_B0i2zAgDjWDX5MnUmpiX1Kg.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQMtCaLwVF4P7FlmhBf59Oh-dbNgdeSd2PJDRPcfDL0alTYYKbmaVkRMZ_Bu-z3nAs-0gJZLXSSJXHf_B0i2zAgDjWDX5MnUmpiX1Kg.mp4",
+        "bytes": 4165271,
+        "modified": "2026-09-22T21:14:09.607626",
+        "durationSec": 59.998957,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Black sans headline in a white rounded pill; small regular white body captions; small yellow item number above a lower image. These are three distinct text roles.",
+        "captionMotion": "Stable header and chest-level caption zone. The body phrase changes with the speech visually; exact spoken synchronization is unassessed. Number/image swaps are quick rather than a long animated transition.",
+        "footageMotion": "The desk plate is visually stable in the inspected sequence, while the person and hands move. No high-confidence persistent global zoom was established.",
+        "layoutAndAssets": "One image at a time covers the lower torso/table. A yellow countdown number identifies each topic. The image heights/aspect treatments vary in the source; this should not be mistaken for a single consistent frame size.",
+        "transitions": "At 9.5s image 9 remains; by 9.6s it is replaced by image 8. Header stays fixed. Clearing the lower card near the end returns visual attention to the person.",
+        "colorAndLighting": "Natural desk/room lighting with a blue shirt. White/black title pill and restrained yellow numbering; inserted screenshots have their own colors.",
+        "visualFlow": "The repeated number → image → explanation structure gives predictable navigation. Each replacement marks a new example rather than decorating every phrase."
+      },
+      "events": [
+        {
+          "sourceTime": "0–4.33s",
+          "observation": "Speaker and permanent headline, without the first lower image."
+        },
+        {
+          "sourceTime": "4.40–9.50s",
+          "observation": "First numbered image held."
+        },
+        {
+          "sourceTime": "9.60; 16.7; 21.5; 28.9; 33; 38.7; 44; 48s",
+          "observation": "Approximate subsequent item/image replacements."
+        },
+        {
+          "sourceTime": "54–60s",
+          "observation": "Image layer clears for the closing speaker passage."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R05/reference.mp4",
+        "sourceStartSec": 3.6,
+        "sourceEndSec": 11,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R05/evidence/R05-timeline-01.jpg",
+          "R05/evidence/R05-timeline-02.jpg"
+        ],
+        "denseMotionSheets": [
+          "R05/evidence/R05-picture-swap.jpg"
+        ],
+        "typographyFrames": [
+          "R05/evidence/R05-headline-caption-photo.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R05-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R05/recipe.json"
+    },
+    {
+      "id": "R06",
+      "version": "1.0.0",
+      "name": "Podcast — hook mạnh, body yên",
+      "family": "Talking head",
+      "fit": "Phỏng vấn, chuyên gia, lập luận bằng lời",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Hook condensed/brush và cyan; body sans trắng thường nhỏ hơn hẳn. Font brush gốc chưa rõ.",
+        "assetGrammar": "Micro và người nói là hình chính; body không có lớp ảnh trang trí lặp.",
+        "motion": "Hook vào theo lớp; flare 2,3–2,5s; punch +9% trong một frame ở 19,5s.",
+        "storyFlow": "Hook mạnh → chuyển một lần → giải thích sạch → punch đúng ý → kết.",
+        "avoid": "Không dùng chữ hook suốt bài; không biến punch cut thành zoom ngẫu nhiên.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "podcast-hook",
+          "punch-cut",
+          "warm-flare"
+        ],
+        "maxGraphicOccupancy": 0.12,
+        "maxGraphicBeatsPerMinute": 1,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R06",
+        "name": "AQN9RtMZZHm3xwQMs3z77mtA2rtefdJE1utTg9OY8dxQOkIYh3gC6f7gG3PlcPooWQsMkhGoDoZEOnS5ZqalkWT0sRX4B8gcidWwS_I.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQN9RtMZZHm3xwQMs3z77mtA2rtefdJE1utTg9OY8dxQOkIYh3gC6f7gG3PlcPooWQsMkhGoDoZEOnS5ZqalkWT0sRX4B8gcidWwS_I.mp4",
+        "bytes": 5957712,
+        "modified": "2026-09-22T21:13:30.440783",
+        "durationSec": 41.515873,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "The hook uses a very tall condensed white YOUR, cyan emphasis, wide heavy capitals and an italic brush accent. The body switches to a much quieter regular white sans. Treating the whole clip as one font preset would miss its defining contrast.",
+        "captionMotion": "Large hook words arrive in stages. From about 2.5s, small one-line body captions mostly replace directly and hold near the lower chest. Source English phrases can exceed the preferred Vietnamese word count.",
+        "footageMotion": "Abrupt crop changes rather than continuous body motion. Frame 584 at 19.4667s to frame 585 at 19.5000s has about 9.0% image enlargement plus a small downward/left reframe. This is a one-frame punch-in, independently verified with background matching.",
+        "layoutAndAssets": "Side-angle speaker with microphone and soft background. No recurring photo-card layer in the body. The hook is intentionally louder than the sustained edit.",
+        "transitions": "Orange/red film-burn-like flare around 2.3–2.4s covers a framing reset. This differs from the white flash in R07. Later crop changes are clean hard changes.",
+        "colorAndLighting": "Soft warm podcast environment with blue clothing and cyan hook accents. Flare warmth is transient, not the whole-video grade.",
+        "visualFlow": "High-energy opening, clean explanatory body, occasional reframing. Preserve that contrast rather than applying hook typography to every sentence."
+      },
+      "events": [
+        {
+          "sourceTime": "0–2.20s",
+          "observation": "Tall condensed and mixed-width/brush hook typography."
+        },
+        {
+          "sourceTime": "2.30–2.50s",
+          "observation": "Warm flare, crop reset, then quiet caption mode."
+        },
+        {
+          "sourceTime": "4.5–4.67; 19.4667–19.5000; 20.83–21s",
+          "observation": "Measured or visually supported framing-change passages."
+        },
+        {
+          "sourceTime": "2.5–41s",
+          "observation": "Mostly quiet single-line white captions and podcast footage."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R06",
+          "startSec": 19.466666666666665,
+          "endSec": 19.5,
+          "startFrame": 584,
+          "endFrame": 585,
+          "matches": 227,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 1.090156064880869,
+          "scaleChangePct": 9.015606488086902,
+          "rotationDeg": -0.06025525630835014,
+          "imageCenterDxPct": -0.9203855956711757,
+          "imageCenterDyPct": 3.0124046942273353,
+          "inliers": 215,
+          "inlierFraction": 0.947136563876652,
+          "medianResidualPx": 0.33388119149388457,
+          "matrix": [
+            [
+              1.0901554620392173,
+              0.0011464652642063137,
+              -29.862360294032058
+            ],
+            [
+              -0.0011464652642063137,
+              1.0901554620392173,
+              -14.04599109290623
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R06/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 6,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R06/evidence/R06-timeline-01.jpg",
+          "R06/evidence/R06-timeline-02.jpg"
+        ],
+        "denseMotionSheets": [
+          "R06/evidence/R06-punch-in.jpg",
+          "R06/evidence/R06-hook-motion.jpg"
+        ],
+        "typographyFrames": [
+          "R06/evidence/R06-caption.png",
+          "R06/evidence/R06-hook.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R06-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R06/recipe.json"
+    },
+    {
+      "id": "R07",
+      "version": "1.0.0",
+      "name": "Mnemonic — danh sách sang demo",
+      "family": "Giải thích",
+      "fit": "Giải thích một quy trình có ví dụ giao diện",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Chữ đầu cyan neo trái; nhãn trắng đậm; caption body nhỏ; hook có chữ brush.",
+        "assetGrammar": "Danh sách nhường chỗ cho UI; chữ gõ trong UI là một lớp riêng.",
+        "motion": "Nhãn xuất hiện lần lượt; UI rise/blur 13,7–14,4s; flash trắng ở chuyển hook.",
+        "storyFlow": "Hook → chữ viết tắt → demo thao tác → hoàn thành danh sách → giải thích sạch.",
+        "avoid": "Không chồng UI lên danh sách đã đầy; không bịa thao tác hay kết quả công cụ.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "mnemonic",
+          "ui-demo",
+          "white-flash",
+          "headline"
+        ],
+        "maxGraphicOccupancy": 0.65,
+        "maxGraphicBeatsPerMinute": 5,
+        "maxConsecutiveGraphicBeats": 8,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R07",
+        "name": "AQP1ITFtSpOakUvtJ6qgQoL27QP-CEQTxwFqJ6omVTXXEMKx13v1m77mVapxYV31r5jSXXg39-uxOQ5-v4Ci_TreFssPwBev6MT21Js.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQP1ITFtSpOakUvtJ6qgQoL27QP-CEQTxwFqJ6omVTXXEMKx13v1m77mVapxYV31r5jSXXg39-uxOQ5-v4Ci_TreFssPwBev6MT21Js.mp4",
+        "bytes": 5378102,
+        "modified": "2026-09-22T21:13:01.575182",
+        "durationSec": 51.407574,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Wide heavy white capitals and cyan brush accent in the hook; cyan initials with white bold uppercase labels in the list; smaller regular white captions in the closing body. Strong role-based typography.",
+        "captionMotion": "Blurred energetic hook resolves. List labels append progressively while their initials keep a stable left edge. The UI demonstration slides upward and resolves from blur/opacity, with typed text inside; these are separate animations.",
+        "footageMotion": "Front desk talking head with crop changes and natural gestures. UI and list movement cannot be used as evidence of a camera zoom.",
+        "layoutAndAssets": "Vertical A/G/E/N/T mnemonic, a large rounded dark UI card with cyan border/input/icon, then simpler body captions and a final CTA. The list yields space to the UI instead of permanently stacking both.",
+        "transitions": "A white flash around 2.93–3.2s separates the hook and explanation. Around 13.7–14.4s the UI rises while the previous list fades. Later it clears and list explanation resumes.",
+        "colorAndLighting": "Warm wood/desk base with navy clothing. White/cyan graphic palette. Dark UI surface gives the cyan control a clear focus.",
+        "visualFlow": "Hook → mnemonic → practical UI example → completed mnemonic → quiet explanation → CTA. Motion carries the teaching sequence."
+      },
+      "events": [
+        {
+          "sourceTime": "0–3.20s",
+          "observation": "Energetic mixed typography, then white flash."
+        },
+        {
+          "sourceTime": "3.80–3.90; 7.5; 12–13; 19.5; 24–25s",
+          "observation": "Progressive mnemonic labels."
+        },
+        {
+          "sourceTime": "13.70–18.90s",
+          "observation": "UI card entrance, typing and tool/access state changes."
+        },
+        {
+          "sourceTime": "25–38s",
+          "observation": "Completed list held while the speaker continues."
+        },
+        {
+          "sourceTime": "39–49; 50–51s",
+          "observation": "Quiet body captions, event name accent, then large final CTA."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R07/reference.mp4",
+        "sourceStartSec": 12.8,
+        "sourceEndSec": 19.2,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R07/evidence/R07-timeline-01.jpg",
+          "R07/evidence/R07-timeline-02.jpg"
+        ],
+        "denseMotionSheets": [
+          "R07/evidence/R07-ui-entrance.jpg"
+        ],
+        "typographyFrames": [
+          "R07/evidence/R07-hook.png",
+          "R07/evidence/R07-list.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R07-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R07/recipe.json"
+    },
+    {
+      "id": "R08",
+      "version": "1.0.0",
+      "name": "Danh sách hai cột — dùng có chọn lọc",
+      "family": "Giải thích",
+      "fit": "Checklist nhiều mục khi người dùng chủ động cần",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Pill trắng tiêu đề đen; nguồn có chữ danh sách rất nhỏ và viền mạnh.",
+        "assetGrammar": "Hai cột tích lũy. Bản Việt chia trang 4–6 mục để đọc được trên điện thoại.",
+        "motion": "Hàng thêm trực tiếp tại vị trí cố định; không đo được tween phức tạp.",
+        "storyFlow": "Nêu nhóm → hiện từng mục → giữ đủ đọc → xóa nhóm rồi sang nhóm mới.",
+        "avoid": "Không sao lỗi 30 mục phủ kín mặt; mặc định không chọn gói này cho clean.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "list-page"
+        ],
+        "maxGraphicOccupancy": 0.6,
+        "maxGraphicBeatsPerMinute": 4,
+        "maxConsecutiveGraphicBeats": 6,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R08",
+        "name": "AQMbta8ULZYO0zOpyIxcL45h_ge6tJmBPOOxy2jEmmcWc9RXKxgZ1VIUb2UuwmuSI1ru-iVArGElD_eLwBCWBx18ySrdai0RoP032AQ.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQMbta8ULZYO0zOpyIxcL45h_ge6tJmBPOOxy2jEmmcWc9RXKxgZ1VIUb2UuwmuSI1ru-iVArGElD_eLwBCWBx18ySrdai0RoP032AQ.mp4",
+        "bytes": 1313922,
+        "modified": "2026-09-22T21:12:05.214321",
+        "durationSec": 21.059093,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Large black regular sans in a white rounded headline pill; small white supporting text and very small outlined list text. The source uses outlines much more heavily than the clean editorial examples.",
+        "captionMotion": "Items append abruptly into fixed rows. In the close sample, additional rows become visible around 1.4s and 1.8s. No elaborate tween is established for those additions.",
+        "footageMotion": "Talking-head plate appears stable while gestures continue. Dense overlays dominate the image; global-motion analysis is not a reliable substitute for layer separation here.",
+        "layoutAndAssets": "Two columns, numbered 1–15 on the left and 16–30 on the right. Approximate left edges x=14% and 62% of the 720px canvas. Row spacing is roughly 2.3% of canvas height; visible letter height around 1.7% is very small.",
+        "transitions": "Mostly accumulative appearance and hold, without clearing early rows. Little negative space remains at the end.",
+        "colorAndLighting": "White pill, white text with dark outline over normal room footage. No restrained accent palette distinguishes list levels.",
+        "visualFlow": "The list is a completion/counting device. It shows a mechanism for accumulation but also demonstrates the clutter and readability risks the user wants to avoid."
+      },
+      "events": [
+        {
+          "sourceTime": "0–10s",
+          "observation": "Left column fills progressively."
+        },
+        {
+          "sourceTime": "10–20s",
+          "observation": "Right column fills to thirty items."
+        },
+        {
+          "sourceTime": "20–21s",
+          "observation": "Dense completed list remains visible."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R08/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 6,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R08/evidence/R08-timeline-01.jpg"
+        ],
+        "denseMotionSheets": [
+          "R08/evidence/R08-list-fill.jpg"
+        ],
+        "typographyFrames": [
+          "R08/evidence/R08-dense-list.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R08-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R08/recipe.json"
+    },
+    {
+      "id": "R09",
+      "version": "1.0.0",
+      "name": "Đối chiếu — hai làn luân phiên",
+      "family": "So sánh",
+      "fit": "So hai cách, hai công cụ hoặc hai phương án có tiêu chí",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Nhãn làn đỏ/xanh đậm; caption cùng màu làn đang nói; heading cố định.",
+        "assetGrammar": "Hai cột ổn định; logo/vật thể thuộc đúng làn; chỉ một bên hoạt động mỗi lúc.",
+        "motion": "Logo trái rời sang trái với blur khoảng 2,0–2,1s; bên phải tiếp lời sau đó.",
+        "storyFlow": "Tiêu chí → phương án A → chuyển chú ý → phương án B → kết luận theo tiêu chí.",
+        "avoid": "Không cho hai làn nhấp nháy cùng lúc; không tô tốt/xấu khi nội dung không nói vậy.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "two-lane",
+          "lane-asset",
+          "lane-handoff"
+        ],
+        "maxGraphicOccupancy": 0.7,
+        "maxGraphicBeatsPerMinute": 8,
+        "maxConsecutiveGraphicBeats": 12,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R09",
+        "name": "AQOgvT54nYly7hYl0YDjBJjK9TSkcsJeTVd3ZYAxHRZRI79ZE0_aKWLvrydn5Rfc-KhmlKPTPxLWeajXwhx8LswNAv6BLITlybnC9h0.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQOgvT54nYly7hYl0YDjBJjK9TSkcsJeTVd3ZYAxHRZRI79ZE0_aKWLvrydn5Rfc-KhmlKPTPxLWeajXwhx8LswNAv6BLITlybnC9h0.mp4",
+        "bytes": 5145536,
+        "modified": "2026-09-22T21:11:18.320745",
+        "durationSec": 42.583991,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Permanent white AI plus red BRO and green PRO, using heavy capitals with dark stroke/shadow. Matching red and green local captions identify each comparison lane.",
+        "captionMotion": "Lane captions hand off focus; one side clears as the other starts. The logo card has its own motion: around 2.0s the left card moves off-screen left with horizontal blur, gone by 2.1s.",
+        "footageMotion": "Two figures occupy a stable outdoor two-lane composition. Observations do not establish whether this was one take, a composite or a cloned performance. No unsupported identity/compositing claim is needed.",
+        "layoutAndAssets": "Fixed side-by-side lanes, colored label near each torso and a white rounded logo/object card below. The permanent heading provides orientation while the active lane changes.",
+        "transitions": "Directional logo exits and alternating caption emphasis, rather than full-frame transitions. At 2.2s the right green caption begins after the left clears.",
+        "colorAndLighting": "Natural outdoor backdrop with red/green comparison coding. Dark outlines improve separation but feel louder than the preferred premium baseline.",
+        "visualFlow": "Turn-taking is expressed through the active color, label and logo. Attention is directed to one lane at a time."
+      },
+      "events": [
+        {
+          "sourceTime": "1.50–2.60s",
+          "observation": "Left logo hold → leftward blurred exit → right caption handoff."
+        },
+        {
+          "sourceTime": "3–42s",
+          "observation": "Recurring lane-specific tool/logo and caption changes under a stable heading."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R09/reference.mp4",
+        "sourceStartSec": 1.2,
+        "sourceEndSec": 6.2,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R09/evidence/R09-timeline-01.jpg",
+          "R09/evidence/R09-timeline-02.jpg"
+        ],
+        "denseMotionSheets": [
+          "R09/evidence/R09-logo-exit.jpg"
+        ],
+        "typographyFrames": [
+          "R09/evidence/R09-comparison.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R09-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R09/recipe.json"
+    },
+    {
+      "id": "R10",
+      "version": "1.0.0",
+      "name": "Lifestyle — hard cut có nhịp",
+      "family": "Montage",
+      "fit": "Bộ footage hoạt động có sẵn, kể bằng hình",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Caption trắng ngắn ở cùng một điểm giữa khung, thay nội dung theo cảnh.",
+        "assetGrammar": "Full-frame footage thật; mỗi cảnh có hành động khác nhau; không cần collage.",
+        "motion": "Hard cut đầu ở frame 47→48 (~2s); chưa có bằng chứng speed ramp hoặc đảo video.",
+        "storyFlow": "Hành động mở dài hơn → chuỗi cảnh ngắn → cảnh thoáng để kết.",
+        "avoid": "Không tự suy rằng cảnh lùi là phát ngược; không ép cắt theo beat chưa nghe.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "context-shot",
+          "held-caption"
+        ],
+        "maxGraphicOccupancy": 1.0,
+        "maxGraphicBeatsPerMinute": 12,
+        "maxConsecutiveGraphicBeats": 20,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R10",
+        "name": "AQPRNEut8SeC5R7R3NuRAVKGFtnqrRHUSZv1uRorpyjFEW0JMVB5BeUnchDxG6shG-LZ5TDnz2CPq08Dm2gP_Zbn3J_yiveKom_Q-rs.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQPRNEut8SeC5R7R3NuRAVKGFtnqrRHUSZv1uRorpyjFEW0JMVB5BeUnchDxG6shG-LZ5TDnz2CPq08Dm2gP_Zbn3J_yiveKom_Q-rs.mp4",
+        "bytes": 1970881,
+        "modified": "2026-09-22T21:09:26.823630",
+        "durationSec": 9.842404,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Small-to-medium bold white sans centered in the frame. The same typographic anchor is retained across different activities; the actual words change.",
+        "captionMotion": "Direct short-label replacement. At the first hard cut, choose real dopamine changes to deep work. It is the position that continues, not the caption content.",
+        "footageMotion": "Movement comes mainly from the shot action: curtain opening, work, exercise, writing and outdoors. No reliable evidence of reversed playback or a speed ramp was established.",
+        "layoutAndAssets": "Full-frame shots with a single central label. No extra illustration grid, banner or permanent decorative frame.",
+        "transitions": "Hard cut from curtain to desk between frames 47 and 48, approximately 1.960–2.002s. Other shots use short durations; no transition effect is required to create pace.",
+        "colorAndLighting": "Different lighting by location, generally natural and somewhat subdued. A source LUT cannot be inferred from this alone.",
+        "visualFlow": "Longer opening action followed by shorter activity shots and an outdoor release. Beat synchronization is not assessed without listening."
+      },
+      "events": [
+        {
+          "sourceTime": "0–2.00s",
+          "observation": "Curtain-opening shot."
+        },
+        {
+          "sourceTime": "2.00–3.55s",
+          "observation": "Two desk/work shots."
+        },
+        {
+          "sourceTime": "3.55–4.55s",
+          "observation": "Meditation."
+        },
+        {
+          "sourceTime": "4.55–6.30s",
+          "observation": "Exercise shots."
+        },
+        {
+          "sourceTime": "6.30–7.80s",
+          "observation": "Short reading/writing shots."
+        },
+        {
+          "sourceTime": "7.80–9.8s",
+          "observation": "Mountain and forest closing."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R10/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 9.7,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R10/evidence/R10-timeline-01.jpg"
+        ],
+        "denseMotionSheets": [
+          "R10/evidence/R10-first-cut.jpg"
+        ],
+        "typographyFrames": [
+          "R10/evidence/R10-caption.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R10-metrics.json"
+      },
+      "screenshots": [
+        "R10/evidence/codex-clipboard-ec4faf6b-33d6-4fdf-9226-4b58c060894a.png"
+      ],
+      "recipeFile": "R10/recipe.json"
+    },
+    {
+      "id": "R11",
+      "version": "1.0.0",
+      "name": "Headline — phân tầng trên footage",
+      "family": "Headline",
+      "fit": "Mở bài ngắn và giải thích một cấu trúc",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Dòng dẫn thường → từ khóa lớn đậm → dòng bổ trợ; body canh trái, rule mảnh.",
+        "assetGrammar": "Footage tối vừa đủ; phân đoạn theo tầng nội dung, không thêm ảnh minh họa rời.",
+        "motion": "Keyword bật ở frame 19→20 (~0,67s); dòng bổ trợ ~1,33s; chữ neo khi nền trôi.",
+        "storyFlow": "Vấn đề → ba tầng giải thích → kết luận; tăng thời gian đọc so với bản gốc.",
+        "avoid": "Không mô tả text snap thành slide; không sao phần chữ dày lướt quá nhanh.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "hierarchy-title",
+          "section-text",
+          "context-shot"
+        ],
+        "maxGraphicOccupancy": 0.75,
+        "maxGraphicBeatsPerMinute": 6,
+        "maxConsecutiveGraphicBeats": 10,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R11",
+        "name": "AQMgwMUMDEJXHnMKmfJTf_kMwLxPDPJx-jn-YEfDlMI3I4lMZ0ap2s_sdrFRne9r_E2GgT3ww1KcZATsbqCk3u1qtuGUr50EDegJZOw.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQMgwMUMDEJXHnMKmfJTf_kMwLxPDPJx-jn-YEfDlMI3I4lMZ0ap2s_sdrFRne9r_E2GgT3ww1KcZATsbqCk3u1qtuGUr50EDegJZOw.mp4",
+        "bytes": 1070940,
+        "modified": "2026-09-22T21:07:23.900804",
+        "durationSec": 10.190703,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/100",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Three headline roles: regular small setup, substantially larger bold keyword, regular small support. Body sections use a left-aligned heading, thin horizontal rule and compact bullets. Tight spacing is visible, but source font identity is not established.",
+        "captionMotion": "Opening hierarchy builds in stages: setup early, keyword appears fully between frames 19 and 20 at about 0.67s, support around 1.33s. These observed additions are abrupt, not a smooth text slide. Text stays anchored while the footage moves.",
+        "footageMotion": "From 0.60 to 3.00s, background matching estimates 3.1% shrink, image-center displacement about 8.4% of canvas width left and 2.6% of height upward, with slight rotation. This is rendered-image drift; physical camera versus edit pan is unconfirmed.",
+        "layoutAndAssets": "Centered opening headline changes to left-aligned funnel-section content. TOF, MOF and BOF each use a different background/section state, retaining a consistent rule and text hierarchy.",
+        "transitions": "Direct section/background changes around 3.57, 5.31, 7.14 and 8.81s. Some body text has little reading time in this ten-second source.",
+        "colorAndLighting": "Warm, darkened lifestyle/work footage beneath white text. Contrast is achieved largely by suppressing the plate rather than outlining each letter heavily.",
+        "visualFlow": "Opening problem, three structured stages, closing. Typographic hierarchy provides coherence even when the underlying shot moves."
+      },
+      "events": [
+        {
+          "sourceTime": "0–3.3s",
+          "observation": "Anchored three-stage title above drifting/receding footage."
+        },
+        {
+          "sourceTime": "3.57–5.31s",
+          "observation": "Top-of-funnel section."
+        },
+        {
+          "sourceTime": "5.31–7.14s",
+          "observation": "Middle-of-funnel section."
+        },
+        {
+          "sourceTime": "7.14–8.81s",
+          "observation": "Bottom-of-funnel section."
+        },
+        {
+          "sourceTime": "8.81–10.1s",
+          "observation": "Closing message."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R11",
+          "startSec": 0.6006006006006006,
+          "endSec": 3.0030030030030033,
+          "startFrame": 18,
+          "endFrame": 90,
+          "matches": 324,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 0.9692331841300921,
+          "scaleChangePct": -3.0766815869907926,
+          "rotationDeg": -0.7744692871556484,
+          "imageCenterDxPct": -8.403958235806442,
+          "imageCenterDyPct": -2.6030557683199023,
+          "inliers": 228,
+          "inlierFraction": 0.7037037037037037,
+          "medianResidualPx": 0.6991948289868504,
+          "matrix": [
+            [
+              0.9691446410141158,
+              0.013100763816566836,
+              -43.33879417911814
+            ],
+            [
+              -0.013100763816566836,
+              0.9691446410141158,
+              -6.641556832173576
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R11/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 5.3,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R11/evidence/R11-timeline-01.jpg"
+        ],
+        "denseMotionSheets": [
+          "R11/evidence/R11-moving-footage.jpg"
+        ],
+        "typographyFrames": [
+          "R11/evidence/R11-body.png",
+          "R11/evidence/R11-headline.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R11-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R11/recipe.json"
+    },
+    {
+      "id": "R12",
+      "version": "1.0.0",
+      "name": "Kể chuyện — sơ đồ lược bỏ",
+      "family": "Giải thích",
+      "fit": "Giải thích hệ thống sau các ví dụ thật",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Caption trắng gọn; sơ đồ chữ đen trên trắng, một dải highlight lime.",
+        "assetGrammar": "Sơ đồ đi từ nhiều chủ đề xuống một hệ thống, connector rồi luận điểm.",
+        "motion": "Thu/xóa nhãn → lớn lên → dời lên → vẽ dây → quét highlight; khác camera zoom.",
+        "storyFlow": "Ví dụ thật → vấn đề phức tạp → lược bỏ → một cơ chế → trở về người nói.",
+        "avoid": "Không thêm graph nếu không có quan hệ thật; không sao lỗi chữ bị cắt bên trái.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "context-shot",
+          "subtract-diagram",
+          "connector",
+          "marker-phrase"
+        ],
+        "maxGraphicOccupancy": 0.4,
+        "maxGraphicBeatsPerMinute": 3,
+        "maxConsecutiveGraphicBeats": 6,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R12",
+        "name": "AQNK5gC5MoUv1MHJaplWSnqlLNsqwO5BkvyL9rTUfyxjUbBU-m7mtzGHjWYXHxSzY_GLQe3wO5xC3mdFR-tPqGNCKUiIZpX9jYQGV48.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQNK5gC5MoUv1MHJaplWSnqlLNsqwO5BkvyL9rTUfyxjUbBU-m7mtzGHjWYXHxSzY_GLQe3wO5xC3mdFR-tPqGNCKUiIZpX9jYQGV48.mp4",
+        "bytes": 6516113,
+        "modified": "2026-09-22T21:06:28.057070",
+        "durationSec": 60.183265,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Compact white sans phrase captions around the center of the portrait canvas, medium weight in the inspected sample. The graphic sequence switches to black labels on white and one lime highlighter accent.",
+        "captionMotion": "Short caption fragments hold while the background changes. In the conceptual graphic, topic labels shrink away; SYSTEMS grows from tiny, moves upward, a connector draws, then a lime highlight wipes left-to-right as a phrase builds.",
+        "footageMotion": "Varied archival/context shots and current talking head. A slow push is supported in the speaker passage around 22–24s. Graphic label scaling must not be mistaken for camera movement.",
+        "layoutAndAssets": "The white diagram is a landscape band letterboxed on black inside the portrait export. It is a sustained explanatory scene, not a white flash. The final sentence is clipped at the left edge in the source.",
+        "transitions": "Context footage mostly hard cuts. The diagram uses scale-down/removal, scale-up, repositioning, line drawing, highlight wipe and staged phrase addition. It cuts back to the speaker around 48.17s.",
+        "colorAndLighting": "Mixed archival lighting and warmer current footage. Diagram mode uses white, black and lime. Source clipping is a layout defect to avoid reproducing.",
+        "visualFlow": "Examples and biography lead into a simplifying visual argument: remove excess topics, leave a system, explain what it does, return to the speaker. The order of animation carries meaning."
+      },
+      "events": [
+        {
+          "sourceTime": "0–21s",
+          "observation": "Archival, interview and process coverage intercut with a speaker."
+        },
+        {
+          "sourceTime": "22–28s",
+          "observation": "Current talking head with a gentle push."
+        },
+        {
+          "sourceTime": "29–39s",
+          "observation": "Work/process and close interview coverage."
+        },
+        {
+          "sourceTime": "39.5–43.9s",
+          "observation": "Topic network on a white landscape band; topics recede and clear."
+        },
+        {
+          "sourceTime": "44.29–45.90s",
+          "observation": "SYSTEMS grows, shifts upward, connector begins."
+        },
+        {
+          "sourceTime": "45.75–48.17s",
+          "observation": "Lime wipe plus building → building profitable → personal brands phrase development; then cut back."
+        },
+        {
+          "sourceTime": "48.17–60s",
+          "observation": "Speaker and event/network/stage coverage."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R12/reference.mp4",
+        "sourceStartSec": 39.3,
+        "sourceEndSec": 48.4,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R12/evidence/R12-timeline-01.jpg",
+          "R12/evidence/R12-timeline-02.jpg"
+        ],
+        "denseMotionSheets": [
+          "R12/evidence/R12-graphic-subtraction.jpg",
+          "R12/evidence/R12-highlight-reveal.jpg"
+        ],
+        "typographyFrames": [
+          "R12/evidence/R12-caption.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R12-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R12/recipe.json"
+    },
+    {
+      "id": "R13",
+      "version": "1.0.0",
+      "name": "Cửa sổ — mở từ một đường mảnh",
+      "family": "Montage",
+      "fit": "Đoạn mở yên hoặc chuyển sang cụm footage có chủ đích",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "POV nhỏ hai dòng trên cửa sổ; không dùng cỡ chữ đó làm phụ đề dài.",
+        "assetGrammar": "Canvas đen, cửa sổ bo góc, khoảng trống rộng; các shot thay bên trong cùng khung.",
+        "motion": "Mask cao 6px→434px trong ~0,17–2,00s ở canvas 720×1280; không phải zoom footage.",
+        "storyFlow": "Giữ một nhịp → mở khung → vài shot trong khung → trả về nội dung chính.",
+        "avoid": "Không thu nhỏ người nói cả bài; không tự rút reveal xuống 0,2s và gọi là giống mẫu.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "window-reveal",
+          "window-shot",
+          "speaker"
+        ],
+        "maxGraphicOccupancy": 0.35,
+        "maxGraphicBeatsPerMinute": 2,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R13",
+        "name": "AQPHJceqyYPN4XS_SQtIZdCSl0nVqbcGEjMJ1j5BWEyNRTgUBtueJMc_wC5tUa-roJY6joB3IJQAs4-UUpcyFNNTYjOy6PsRUEEoOXc.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQPHJceqyYPN4XS_SQtIZdCSl0nVqbcGEjMJ1j5BWEyNRTgUBtueJMc_wC5tUa-roJY6joB3IJQAs4-UUpcyFNNTYjOy6PsRUEEoOXc.mp4",
+        "bytes": 837452,
+        "modified": "2026-09-22T21:06:01.877728",
+        "durationSec": 11.049841,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Very small centered two-line white POV heading above the image window. Upper line is bolder than the quoted second line; large negative space makes the tiny heading visible but does not make it appropriate for subtitles.",
+        "captionMotion": "Headline remains anchored. Main entrance motion belongs to the window mask: a horizontal slit opens vertically into a rounded landscape image over about two seconds.",
+        "footageMotion": "After the reveal, different activity shots cut inside the same window geometry. The window expansion is not a footage zoom and is not reversed playback.",
+        "layoutAndAssets": "Black portrait canvas, central rounded landscape window, small heading above. Thresholded visible image around 2s is approximately x=80, y=422, w=557, h=434 on 720×1280. This is an approximate visible-content box, not a recovered matte or proof of a standard aspect ratio.",
+        "transitions": "Mask/reveal opening: visible height grows from about 6px at 0.17s to 65px at 0.50s, 217px at 1.00s, 381px at 1.50s and 434px at 2.00s. Subsequent interior shots cut while the outer canvas stays fixed.",
+        "colorAndLighting": "Black negative space surrounds mixed daylight/night work scenes. Rounded edges and restrained white text define the look more than a strong accent color.",
+        "visualFlow": "Slow reveal creates an opening pause, then brief activity cuts maintain interest inside a stable frame."
+      },
+      "events": [
+        {
+          "sourceTime": "0–2.00s",
+          "observation": "Vertical reveal of the image window from a thin slit."
+        },
+        {
+          "sourceTime": "2–10.9s",
+          "observation": "Stable outer layout; alternating activity/day/night imagery inside."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R13/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 5,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R13/evidence/R13-timeline-01.jpg"
+        ],
+        "denseMotionSheets": [
+          "R13/evidence/R13-window-motion.jpg"
+        ],
+        "typographyFrames": [
+          "R13/evidence/R13-heading.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R13-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R13/recipe.json"
+    },
+    {
+      "id": "R14",
+      "version": "1.0.0",
+      "name": "Founder — lời nói dẫn hình",
+      "family": "Talking head",
+      "fit": "Chia sẻ, kể chuyện hoặc lời khuyên cần cảm giác tự nhiên",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Sans trắng thường, cỡ vừa/nhỏ; không highlight liên tục; nhẹ hơn R16.",
+        "assetGrammar": "Người nói là chính; chèn cảnh công việc cụ thể rồi trả về mặt; không có collage thường trực.",
+        "motion": "Push nguồn +26,4% trong 4,004s; caption neo; có các reset rộng hơn.",
+        "storyFlow": "Người nói → ví dụ công việc thật → trở về lập luận → khoảng nghỉ → câu chốt.",
+        "avoid": "Không tự thêm ảnh để lấp khoảng trống; không zoom liên tục suốt đoạn dài.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "context-shot",
+          "gentle-push",
+          "wide-reset"
+        ],
+        "maxGraphicOccupancy": 0.3,
+        "maxGraphicBeatsPerMinute": 3,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R14",
+        "name": "AQPtxtEp0vv3Joi6IdzuYu_8c9E8SUl66xeK4T6EpIF5Xq8mvxnx9rKdAVYalGcyC8RVzQohMmZrAuaTmhH3hvNYZJuSJAEminiRrsA.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQPtxtEp0vv3Joi6IdzuYu_8c9E8SUl66xeK4T6EpIF5Xq8mvxnx9rKdAVYalGcyC8RVzQohMmZrAuaTmhH3hvNYZJuSJAEminiRrsA.mp4",
+        "bytes": 9170777,
+        "modified": "2026-09-22T21:05:26.494599",
+        "durationSec": 66.057914,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Regular white sans phrase captions with restrained shadow. Text is much smaller and quieter than R15/R16, despite similar outdoor talking-head material. No constant colored emphasis.",
+        "captionMotion": "Caption size and screen position stay stable through the opening push. Phrases change without conspicuous travel or bounce. This restraint is a specific source behavior, not evidence that every reference has static text.",
+        "footageMotion": "Opening background scale increases about 26.4% from 0 to 4.004s, near-zero rotation. Wider crop resets later include about 21.9–22.0s and 26.2–26.4s. Architectural footage near 46–53s has forward-moving perspective; physical camera mechanics remain unconfirmed.",
+        "layoutAndAssets": "Mostly full-frame speaker and purposeful work/lifestyle coverage, with one quiet caption layer. No persistent asset collage.",
+        "transitions": "Direct coverage cuts and occasional wider reset after a push. Text remains an anchor through shot changes.",
+        "colorAndLighting": "Soft natural green background on the speaker, warm/darker work interiors and architectural light. No exact LUT is identified.",
+        "visualFlow": "Speaker-led advice breathes between coverage passages. The restrained typography makes changes of framing and shot content more noticeable."
+      },
+      "events": [
+        {
+          "sourceTime": "0–4.004s",
+          "observation": "Centered gradual push of roughly 26% rendered image scale."
+        },
+        {
+          "sourceTime": "4.3–7.17; 8.22–19.98s",
+          "observation": "Panel and work/writing coverage."
+        },
+        {
+          "sourceTime": "20–28s",
+          "observation": "Talking head with wider reframing changes."
+        },
+        {
+          "sourceTime": "29–31; 37–38s",
+          "observation": "Work and lifestyle inserts."
+        },
+        {
+          "sourceTime": "46.42–52.76; 55–59s",
+          "observation": "Architectural motion and later work coverage."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R14",
+          "startSec": 0.0,
+          "endSec": 4.004004004004004,
+          "startFrame": 0,
+          "endFrame": 96,
+          "matches": 49,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 1.263939579360814,
+          "scaleChangePct": 26.393957936081392,
+          "rotationDeg": 0.017991703405717294,
+          "imageCenterDxPct": 1.0287119368049011,
+          "imageCenterDyPct": -0.01880861497443931,
+          "inliers": 40,
+          "inlierFraction": 0.8163265306122449,
+          "medianResidualPx": 0.4867579531112602,
+          "matrix": [
+            [
+              1.263939517045381,
+              -0.0003968953010874783,
+              -65.51811539898443
+            ],
+            [
+              0.0003968953010874783,
+              1.263939517045381,
+              -126.97869261683128
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R14/reference.mp4",
+        "sourceStartSec": 0,
+        "sourceEndSec": 5,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R14/evidence/R14-timeline-01.jpg",
+          "R14/evidence/R14-timeline-02.jpg",
+          "R14/evidence/R14-timeline-03.jpg"
+        ],
+        "denseMotionSheets": [
+          "R14/evidence/R14-opening-push.jpg"
+        ],
+        "typographyFrames": [
+          "R14/evidence/R14-caption.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R14-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R14/recipe.json"
+    },
+    {
+      "id": "R15",
+      "version": "1.0.0",
+      "name": "Sách & sản phẩm — một nhóm thông tin",
+      "family": "Ảnh trực tiếp",
+      "fit": "Review sách, sản phẩm hoặc tài liệu xác định được",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Tên vật thể lime đậm, tác giả/nhãn phụ trắng nhỏ, caption lời nói trắng đậm riêng.",
+        "assetGrammar": "Hook grid bìa sách; body một vật thể + tên + tác giả; hết ý thì cả nhóm biến mất.",
+        "motion": "Nền trắng/cutout 0,58s; grid stagger 0,8–1,42s; body cover vào rồi nghiêng ổn định.",
+        "storyFlow": "Grid hứa danh sách → từng sản phẩm với luận điểm riêng → người nói sạch → kết.",
+        "avoid": "Không dùng bìa một sách để nói sách khác; không giữ grid ở toàn bài.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "product-grid",
+          "product-callout",
+          "cutout"
+        ],
+        "maxGraphicOccupancy": 0.5,
+        "maxGraphicBeatsPerMinute": 6,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R15",
+        "name": "AQOSNtq78zIvxrkpH6Mq9bi9M1El2yRX9KhH_Jr2zEGXe6KED-TBwZFvBJDaI3dS3j669sIR3JMtGA3C1q6SQa5SjW3lV7V9wCmGoHw.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQOSNtq78zIvxrkpH6Mq9bi9M1El2yRX9KhH_Jr2zEGXe6KED-TBwZFvBJDaI3dS3j669sIR3JMtGA3C1q6SQa5SjW3lV7V9wCmGoHw.mp4",
+        "bytes": 13968442,
+        "modified": "2026-09-22T21:05:25.724912",
+        "durationSec": 99.471429,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Short bold white body captions, larger than R14. Book titles use lime bold sans, authors smaller white type. The intro uses lime words inside compact black rectangles. Titles, authors and spoken captions are separate roles.",
+        "captionMotion": "Book-title phrases reveal in stages; the cover enters with opacity and changing angle. At the second callout, number 2 appears, then Essentialism, then the author line. Source English body captions are often one-to-three words and should not be copied mechanically into Vietnamese.",
+        "footageMotion": "Hook isolates the person, then shrinks/repositions the cutout down/right as the grid grows. In body footage, pushes alternate with wider resets; the reset around 10.3s makes room for the next book callout.",
+        "layoutAndAssets": "Nine covers form a 3×3 grid on white in the hook. Later each book is a grouped title/author/cover object; several covers are tilted or shown with perspective. One grouped object is clearer than disconnected ornaments.",
+        "transitions": "Background whitens around 0.58s while the person remains; covers build around 0.8–1.42s and settle by about 1.6s. Return to full footage around 4.09s. At 10.3s, wider framing and the next object entrance are coordinated.",
+        "colorAndLighting": "White/black/lime graphic hook, natural green talking head, mixed book cover colors. The cover collection contributes color while the supporting typography stays consistent.",
+        "visualFlow": "Grid promises the list; sequential book callouts explain it; empty speaker passages prevent a permanent crowded wall of covers."
+      },
+      "events": [
+        {
+          "sourceTime": "0.58–1.60s",
+          "observation": "Background removal appearance, cutout reposition/scale, staggered nine-book grid."
+        },
+        {
+          "sourceTime": "1.6–4.09s",
+          "observation": "Completed hook layout held, then return to footage."
+        },
+        {
+          "sourceTime": "About 5; 11; 17; 29; 35; 51; 66; 80; 87s",
+          "observation": "Nine book callout passages."
+        },
+        {
+          "sourceTime": "10.22–10.72s",
+          "observation": "Close shot → wider reset → cover and number/title/author build."
+        },
+        {
+          "sourceTime": "96–99s",
+          "observation": "Clean talking-head closing without the grid."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R15/reference.mp4",
+        "sourceStartSec": 10.1,
+        "sourceEndSec": 18.1,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R15/evidence/R15-timeline-01.jpg",
+          "R15/evidence/R15-timeline-02.jpg",
+          "R15/evidence/R15-timeline-03.jpg",
+          "R15/evidence/R15-timeline-04.jpg"
+        ],
+        "denseMotionSheets": [
+          "R15/evidence/R15-cutout-grid-intro.jpg",
+          "R15/evidence/R15-reframe-reset.jpg"
+        ],
+        "typographyFrames": [
+          "R15/evidence/R15-object-title.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R15-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R15/recipe.json"
+    },
+    {
+      "id": "R16",
+      "version": "1.0.0",
+      "name": "Collage — mỗi cụm một luận điểm",
+      "family": "Ảnh trực tiếp",
+      "fit": "Một ý cần 2–3 hình khác nhau để làm rõ",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Caption sans trắng đậm gọn, neo trên cụm ảnh; Inter 700 gần mẫu đã đối chiếu.",
+        "assetGrammar": "Ba thẻ thẳng hàng dưới ngực, gutter 17–18px/720; hình mỗi cụm phải mới và đúng ý.",
+        "motion": "Fade vào 0,22s; stagger 0/0,25/0,54s; giữ; rời lần lượt; pullback nguồn −17,1% độc lập.",
+        "storyFlow": "Người nói → một cụm ảnh cho một ý → giữ → xóa hết → người nói → ý mới.",
+        "avoid": "Không tái dùng bộ tranh bằng cách đảo thứ tự; tối đa hai cụm collage mỗi phút mặc định.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "collage",
+          "pullback",
+          "wide-reset"
+        ],
+        "maxGraphicOccupancy": 0.35,
+        "maxGraphicBeatsPerMinute": 2,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R16",
+        "name": "AQMHpyAmir6ORCMtes5G0Q6T1l-r8TZeka3msMIO__IAQUIWtEQ7unsfb3vHr61WNQKNc2Lr82qwpCS-Vu01mguCTEY0sYTyjELmQZM.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\AQMHpyAmir6ORCMtes5G0Q6T1l-r8TZeka3msMIO__IAQUIWtEQ7unsfb3vHr61WNQKNc2Lr82qwpCS-Vu01mguCTEY0sYTyjELmQZM.mp4",
+        "bytes": 15674378,
+        "modified": "2026-09-22T21:02:17.362302",
+        "durationSec": 107.853832,
+        "width": 720,
+        "height": 1280,
+        "frameRate": "2997/125",
+        "hasAudio": true,
+        "newReferenceBatch": true
+      },
+      "observed": {
+        "typography": "Bold white compact phrase captions above the cards. Caption scale is stronger than R14 but quieter than a large hook. Most accents come from illustrations; a later CTA uses lime. No exact font family confirmed.",
+        "captionMotion": "Captions retain size and screen anchoring while the image underneath pushes or recedes. Three cards arrive sequentially: first partially visible at 6.01s, second 6.21s, third 6.51s, all stable around 6.72s. They hold rather than constantly floating.",
+        "footageMotion": "Multiple push/pull/reset passages. From 13.013 to 15.015s, background features shrink about 17.1%, with near-zero rotation/center drift. At 11.89s, a closer framing change coincides with the collage finishing its exit.",
+        "layoutAndAssets": "Mostly two- or three-image collages on the lower torso, mixed monochrome drawings and restrained color. Around 6.715s, visible card bounds are (47,831,191,182), (256,831,189,184), (462,833,210,184) on 720×1280: top around 65% height, gutters about 17–18px. These are visible light-card boxes, not original asset bounds.",
+        "transitions": "Staggered fades in and out. Group 1 holds through about 11.59s; left clears first around 11.72s, other cards follow, all absent by 11.89s. The simultaneous reframe makes the removal feel like a deliberate new passage.",
+        "colorAndLighting": "Natural green background, dark shirt and bright restrained illustration cards. No need for a colored background panel around every caption.",
+        "visualFlow": "Illustration clusters occur in selected passages, separated by clean speaker time and occasional context shots. Clearing a group, reframing, then building a new group creates the rhythm."
+      },
+      "events": [
+        {
+          "sourceTime": "0–2; 2.21–4.38s",
+          "observation": "Opening pullback followed by short context footage."
+        },
+        {
+          "sourceTime": "6.01–11.89s",
+          "observation": "First three-card build, hold, staggered exit and framing reset."
+        },
+        {
+          "sourceTime": "13.013–15.015s",
+          "observation": "Smooth pullback under fixed caption styling; next collage starts around 14.8s."
+        },
+        {
+          "sourceTime": "15–17; 21–23; 26–32; 34s",
+          "observation": "Further collage groups."
+        },
+        {
+          "sourceTime": "43–49.84; 52–54; 57–58; 68–70s",
+          "observation": "Selected illustration groups, with clear intervals."
+        },
+        {
+          "sourceTime": "76–78; 87–91; 99; 101–105s",
+          "observation": "Single centered asset, later collages, lime waterfall CTA, final collage group."
+        }
+      ],
+      "measuredFootageTransforms": [
+        {
+          "id": "R16",
+          "startSec": 13.013013013013014,
+          "endSec": 15.015015015015015,
+          "startFrame": 312,
+          "endFrame": 360,
+          "matches": 115,
+          "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+          "scaleRatio": 0.8291244858278242,
+          "scaleChangePct": -17.087551417217583,
+          "rotationDeg": 0.011185216408727305,
+          "imageCenterDxPct": 0.05094823573966988,
+          "imageCenterDyPct": 0.0009676151895080901,
+          "inliers": 96,
+          "inlierFraction": 0.8347826086956521,
+          "medianResidualPx": 0.6652520526607979,
+          "matrix": [
+            [
+              0.8291244700286909,
+              -0.00016186073081937702,
+              46.48920671604099
+            ],
+            [
+              0.00016186073081937702,
+              0.8291244700286909,
+              81.98584109472641
+            ]
+          ]
+        }
+      ],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R16/reference.mp4",
+        "sourceStartSec": 5.6,
+        "sourceEndSec": 12.4,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R16/evidence/R16-timeline-01.jpg",
+          "R16/evidence/R16-timeline-02.jpg",
+          "R16/evidence/R16-timeline-03.jpg",
+          "R16/evidence/R16-timeline-04.jpg"
+        ],
+        "denseMotionSheets": [
+          "R16/evidence/R16-pullback.jpg",
+          "R16/evidence/R16-collage-exit.jpg"
+        ],
+        "typographyFrames": [
+          "R16/evidence/R16-caption-collage.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R16-metrics.json"
+      },
+      "screenshots": [
+        "R16/evidence/codex-clipboard-8ed9f4a9-89a4-4447-8c48-464afb77ecb2.png",
+        "R16/evidence/codex-clipboard-505a0f56-fc9b-4f50-820c-0e5845cae329.png"
+      ],
+      "recipeFile": "R16/recipe.json"
+    },
+    {
+      "id": "R17",
+      "version": "1.0.0",
+      "name": "Motion explainer — bố cục theo ý",
+      "family": "Giải thích",
+      "fit": "Bài giải thích cơ chế/quy trình có nội dung đồ họa cụ thể",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Trắng/vàng; headline outline + solid + underline; body ngắn, không nhảy từng từ.",
+        "assetGrammar": "Grid tối, glow amber thấp; cửa sổ người nói di chuyển nhường chỗ cho sơ đồ thật.",
+        "motion": "Window dời/thu 17,4–17,8s; graph vẽ 32,27–33s; cutout dissolve 51,9–52,23s.",
+        "storyFlow": "Đặt câu hỏi → chọn layout → dựng một cơ chế → giữ để hiểu → xóa → layout tiếp.",
+        "avoid": "Không dùng một card ba lần để giả vờ đa dạng; không bịa số liệu cho biểu đồ.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker-window",
+          "card-stack",
+          "branch-diagram",
+          "line-chart",
+          "strike-label",
+          "cutout",
+          "outline-headline",
+          "roadmap"
+        ],
+        "maxGraphicOccupancy": 0.75,
+        "maxGraphicBeatsPerMinute": 6,
+        "maxConsecutiveGraphicBeats": 10,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "video",
+      "source": {
+        "id": "R17",
+        "name": "video edit 2.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\video edit 2.mp4",
+        "bytes": 70217293,
+        "modified": "2026-09-21T10:23:53.612610",
+        "durationSec": 98.0,
+        "width": 1080,
+        "height": 1920,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": false
+      },
+      "observed": {
+        "typography": "Bold compact Vietnamese sans captions with white text and moving yellow word emphasis. Headlines combine a small tracked uppercase eyebrow, outlined white lettering, solid yellow key phrase and a yellow underline. Dark labels and micro-copy are subordinate.",
+        "captionMotion": "The caption line remains anchored while yellow emphasis advances through words. Phrase replacement can fade from dim to full. Around 40.5–40.8s a red line draws left-to-right across a belief label; it then holds, rather than repeatedly crossing the text.",
+        "footageMotion": "Outer grid/glow stays fixed while the speaker window changes position, size and mask. Full portrait, smaller corner window, split layouts and cutout are distinct states. Window motion is not the same operation as cropping inside the source footage.",
+        "layoutAndAssets": "Near-black grid with amber glow; rounded video window, fine-border dark cards, yellow icons. Topic card stacks use tilt, scale/opacity and overlap; device cards, channel icons, a line chart, benefits and roadmap are built as different compositions.",
+        "transitions": "Window shrink/move around 17.4–17.8s; card stack builds around 21 and 22.7s; line chart draws around 32.27–33s; framed speaker blends into cutout around 51.9–52.23s; outline/yellow headline/underline/steps stage around 53.7–55.1s.",
+        "colorAndLighting": "Dark, restrained amber/yellow system with white lettering and a red correction accent. Fine grid and low-contrast glows add depth without competing with text.",
+        "visualFlow": "Each explanation gets a coordinated layout state: orient viewer, move the speaker, build one concept, hold, clear or transition. The content diagram is the motion, rather than unrelated embellishments."
+      },
+      "events": [
+        {
+          "sourceTime": "0–8.7s",
+          "observation": "CTA pill, icons/questions, large one-minute marker and moving yellow caption emphasis."
+        },
+        {
+          "sourceTime": "9–17; 17.4–17.8s",
+          "observation": "Office cards; speaker window shrinks/moves for the next section."
+        },
+        {
+          "sourceTime": "20.80–21.07; 22.53–22.80s",
+          "observation": "Product-image card appears above the speaker; social-post card joins offset in front."
+        },
+        {
+          "sourceTime": "27–35s",
+          "observation": "Personal-brand grouping, channel icons and progressive line chart."
+        },
+        {
+          "sourceTime": "40.40–41.50s",
+          "observation": "Belief label: no strike at 40.4, begins 40.5, almost across by 40.7, held by 40.8."
+        },
+        {
+          "sourceTime": "48–55.1s",
+          "observation": "Device cards, cutout transition and staged outline/yellow headline."
+        },
+        {
+          "sourceTime": "60–82s",
+          "observation": "Three course/content groups built as card/icon/chart scenes."
+        },
+        {
+          "sourceTime": "84–98s",
+          "observation": "Benefit stack, yellow CTA and final roadmap."
+        }
+      ],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Exact font family and font-file version",
+        "Original keyframes and easing curves",
+        "Original LUT or grading parameters",
+        "Music, SFX and synchronization: not listened to in this audit",
+        "Speech-edit semantics and natural audio joins: not assessed"
+      ],
+      "referencePreview": {
+        "file": "R17/reference.mp4",
+        "sourceStartSec": 16.8,
+        "sourceEndSec": 24,
+        "kind": "original-reference-excerpt",
+        "notProductionAsset": true
+      },
+      "evidence": {
+        "timelineSheets": [
+          "R17/evidence/R17-timeline-01.jpg",
+          "R17/evidence/R17-timeline-02.jpg",
+          "R17/evidence/R17-timeline-03.jpg",
+          "R17/evidence/R17-timeline-04.jpg"
+        ],
+        "denseMotionSheets": [
+          "R17/evidence/R17-card-stagger.jpg",
+          "R17/evidence/R17-strikethrough.jpg"
+        ],
+        "typographyFrames": [
+          "R17/evidence/R17-headline.png",
+          "R17/evidence/R17-highlight-caption.png"
+        ],
+        "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R17-metrics.json"
+      },
+      "screenshots": [],
+      "recipeFile": "R17/recipe.json"
+    },
+    {
+      "id": "S01",
+      "version": "1.0.0",
+      "name": "Headline serif — hai khối trắng",
+      "family": "Headline",
+      "fit": "Mở bài chia sẻ cá nhân",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Serif đen thường; hai khối trắng nối, dòng hai hẹp hơn; không nhồi caption lên headline.",
+        "assetGrammar": "Một speaker full-frame; headline nằm vùng trống trên đầu.",
+        "motion": "Chỉ có ảnh: đề xuất fade 160ms rồi giữ, KHÔNG phải motion đo từ ref.",
+        "storyFlow": "Headline mở → thời gian đọc → bỏ headline → caption body sạch.",
+        "avoid": "Không đặt chữ lên mắt; không tự khẳng định Times New Roman là font gốc.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Times New Roman",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "serif-hook"
+        ],
+        "maxGraphicOccupancy": 0.15,
+        "maxGraphicBeatsPerMinute": 1,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "still",
+      "source": {
+        "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png",
+        "name": "codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png"
+      },
+      "observed": {
+        "typography": "Serif đen thường; hai khối trắng nối, dòng hai hẹp hơn; không nhồi caption lên headline.",
+        "layoutAndAssets": "Một speaker full-frame; headline nằm vùng trống trên đầu."
+      },
+      "events": [],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Motion/easing/timing: không xác minh từ screenshot",
+        "Font gốc chưa định danh",
+        "Nhạc/SFX không có bằng chứng từ ảnh"
+      ],
+      "referencePreview": {
+        "file": "S01/reference.png",
+        "kind": "provided-screenshot"
+      },
+      "evidence": {
+        "timelineSheets": [],
+        "denseMotionSheets": [],
+        "typographyFrames": []
+      },
+      "screenshots": [
+        "S01/evidence/codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png"
+      ],
+      "recipeFile": "S01/recipe.json"
+    },
+    {
+      "id": "S02",
+      "version": "1.0.0",
+      "name": "So sánh — khung tròn & cutout",
+      "family": "So sánh",
+      "fit": "Hai vế cần đối chiếu rõ, nguồn có thể tách người sạch",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Hai nhãn đen, số/từ xanh và đỏ lớn; nhãn giải thích đen phía dưới.",
+        "assetGrammar": "Canvas trắng ngà; nguồn trong khung tròn, đầu vượt mép; vùng chữ tách khỏi mặt.",
+        "motion": "Chỉ có ảnh: timing từng nhãn và cutout là đề xuất, không có dữ liệu chuyển động gốc.",
+        "storyFlow": "Nêu tiêu chí → nhãn hai vế → giải thích lần lượt → bỏ bảng → trở về người nói.",
+        "avoid": "Không ép cutout lên nguồn có chữ đóng vào tóc; đổi sang khung sạch nếu matte lỗi.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Inter",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "circle-comparison"
+        ],
+        "maxGraphicOccupancy": 0.3,
+        "maxGraphicBeatsPerMinute": 2,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "still",
+      "source": {
+        "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png",
+        "name": "codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png"
+      },
+      "observed": {
+        "typography": "Hai nhãn đen, số/từ xanh và đỏ lớn; nhãn giải thích đen phía dưới.",
+        "layoutAndAssets": "Canvas trắng ngà; nguồn trong khung tròn, đầu vượt mép; vùng chữ tách khỏi mặt."
+      },
+      "events": [],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Motion/easing/timing: không xác minh từ screenshot",
+        "Font gốc chưa định danh",
+        "Nhạc/SFX không có bằng chứng từ ảnh"
+      ],
+      "referencePreview": {
+        "file": "S02/reference.png",
+        "kind": "provided-screenshot"
+      },
+      "evidence": {
+        "timelineSheets": [],
+        "denseMotionSheets": [],
+        "typographyFrames": []
+      },
+      "screenshots": [
+        "S02/evidence/codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png"
+      ],
+      "recipeFile": "S02/recipe.json"
+    },
+    {
+      "id": "S03",
+      "version": "1.0.0",
+      "name": "Caption Việt — dòng chốt lớn",
+      "family": "Talking head",
+      "fit": "Talking head Việt hoặc footage minh chứng có caption",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Sans trắng đậm, shadow mềm; dòng chốt lớn hơn; cụm khoảng 4–5 từ giữ trọn nghĩa.",
+        "assetGrammar": "Chữ ở ngực dưới mặt; có thể qua cảnh b-roll nhưng vẫn giữ vùng đọc.",
+        "motion": "Ảnh chụp chỉ cho biết trạng thái chữ/opacity, không xác định đường easing hay thời gian vào.",
+        "storyFlow": "Nêu ý → cụm dẫn → từ/cụm chốt lớn hơn → trở lại cỡ thường.",
+        "avoid": "Không phóng to mọi từ, không để phụ đề dài suốt câu; không lấy số view làm nội dung.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "two-tier-caption",
+          "context-shot"
+        ],
+        "maxGraphicOccupancy": 0.2,
+        "maxGraphicBeatsPerMinute": 2,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "still",
+      "source": {
+        "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png",
+        "name": "codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png"
+      },
+      "observed": {
+        "typography": "Sans trắng đậm, shadow mềm; dòng chốt lớn hơn; cụm khoảng 4–5 từ giữ trọn nghĩa.",
+        "layoutAndAssets": "Chữ ở ngực dưới mặt; có thể qua cảnh b-roll nhưng vẫn giữ vùng đọc."
+      },
+      "events": [],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Motion/easing/timing: không xác minh từ screenshot",
+        "Font gốc chưa định danh",
+        "Nhạc/SFX không có bằng chứng từ ảnh"
+      ],
+      "referencePreview": {
+        "file": "S03/reference.png",
+        "kind": "provided-screenshot"
+      },
+      "evidence": {
+        "timelineSheets": [],
+        "denseMotionSheets": [],
+        "typographyFrames": []
+      },
+      "screenshots": [
+        "S03/evidence/codex-clipboard-d7bf4170-6f01-44cf-b43a-98afe7175cc6.png",
+        "S03/evidence/codex-clipboard-c7bc4cb3-b80c-4c3b-99a5-de68b41adb73.png",
+        "S03/evidence/codex-clipboard-5cafe740-5381-42f2-b67d-db13ab9282df.png",
+        "S03/evidence/codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png",
+        "S03/evidence/codex-clipboard-c5211a18-1f0e-4905-9d95-cd10febc5e0f.png"
+      ],
+      "recipeFile": "S03/recipe.json"
+    },
+    {
+      "id": "S04",
+      "version": "1.0.0",
+      "name": "Title break — chữ trắng nền đen",
+      "family": "Headline",
+      "fit": "Câu chuyển ý thực sự cần một nhịp nghỉ thị giác",
+      "status": "editorial-package",
+      "contract": {
+        "typography": "Hai dòng sans trắng đậm trên đen, dòng chốt lớn hơn và canh giữa.",
+        "assetGrammar": "Một vùng chữ, không thêm ảnh/icon; không lặp caption lời nói lần hai.",
+        "motion": "Chỉ có ảnh: motion chưa xác minh. Có thể dùng direct cut hoặc resolve nhẹ như một đề xuất.",
+        "storyFlow": "Người nói → title theo ý → giữ đủ đọc → trở về hình.",
+        "avoid": "Không chèn title break sau mỗi câu; không giả định ảnh chụp chứng minh blur-in.",
+        "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+        "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+        "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+        "fontCandidate": "Be Vietnam Pro",
+        "fontIdentityConfirmed": false,
+        "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+        "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+      },
+      "policy": {
+        "basis": "project adaptation, not measured source quotas",
+        "allowedLayouts": [
+          "speaker",
+          "dark-title"
+        ],
+        "maxGraphicOccupancy": 0.15,
+        "maxGraphicBeatsPerMinute": 2,
+        "maxConsecutiveGraphicBeats": 2,
+        "maxSameAssetUses": 1,
+        "maxCallbackUses": 1,
+        "callbackMinGapMs": 30000,
+        "maxCaptionWords": 5,
+        "maxSfxPerMinute": 4,
+        "defaultAspect": "9:16",
+        "supportedPlanAspects": [
+          "9:16",
+          "16:9"
+        ]
+      },
+      "renderer": {
+        "state": "contract-only",
+        "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+      },
+      "evidenceType": "still",
+      "source": {
+        "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png",
+        "name": "codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png"
+      },
+      "observed": {
+        "typography": "Hai dòng sans trắng đậm trên đen, dòng chốt lớn hơn và canh giữa.",
+        "layoutAndAssets": "Một vùng chữ, không thêm ảnh/icon; không lặp caption lời nói lần hai."
+      },
+      "events": [],
+      "measuredFootageTransforms": [],
+      "unresolved": [
+        "Motion/easing/timing: không xác minh từ screenshot",
+        "Font gốc chưa định danh",
+        "Nhạc/SFX không có bằng chứng từ ảnh"
+      ],
+      "referencePreview": {
+        "file": "S04/reference.png",
+        "kind": "provided-screenshot"
+      },
+      "evidence": {
+        "timelineSheets": [],
+        "denseMotionSheets": [],
+        "typographyFrames": []
+      },
+      "screenshots": [
+        "S04/evidence/codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png"
+      ],
+      "recipeFile": "S04/recipe.json"
+    }
+  ],
+  "coverage": {
+    "packagedVideos": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17"
+    ],
+    "providedScreenshots": [
+      {
+        "file": "S03/evidence/codex-clipboard-d7bf4170-6f01-44cf-b43a-98afe7175cc6.png",
+        "package": "S03",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-d7bf4170-6f01-44cf-b43a-98afe7175cc6.png"
+      },
+      {
+        "file": "S03/evidence/codex-clipboard-c7bc4cb3-b80c-4c3b-99a5-de68b41adb73.png",
+        "package": "S03",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-c7bc4cb3-b80c-4c3b-99a5-de68b41adb73.png"
+      },
+      {
+        "file": "S03/evidence/codex-clipboard-5cafe740-5381-42f2-b67d-db13ab9282df.png",
+        "package": "S03",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-5cafe740-5381-42f2-b67d-db13ab9282df.png"
+      },
+      {
+        "file": "S03/evidence/codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png",
+        "package": "S03",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png"
+      },
+      {
+        "file": "S03/evidence/codex-clipboard-c5211a18-1f0e-4905-9d95-cd10febc5e0f.png",
+        "package": "S03",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-c5211a18-1f0e-4905-9d95-cd10febc5e0f.png"
+      },
+      {
+        "file": "S01/evidence/codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png",
+        "package": "S01",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png"
+      },
+      {
+        "file": "R16/evidence/codex-clipboard-8ed9f4a9-89a4-4447-8c48-464afb77ecb2.png",
+        "package": "R16",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8ed9f4a9-89a4-4447-8c48-464afb77ecb2.png"
+      },
+      {
+        "file": "R16/evidence/codex-clipboard-505a0f56-fc9b-4f50-820c-0e5845cae329.png",
+        "package": "R16",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-505a0f56-fc9b-4f50-820c-0e5845cae329.png"
+      },
+      {
+        "file": "S02/evidence/codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png",
+        "package": "S02",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png"
+      },
+      {
+        "file": "R10/evidence/codex-clipboard-ec4faf6b-33d6-4fdf-9226-4b58c060894a.png",
+        "package": "R10",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-ec4faf6b-33d6-4fdf-9226-4b58c060894a.png"
+      },
+      {
+        "file": "S04/evidence/codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png",
+        "package": "S04",
+        "source": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-8847f058-4950-4da5-becb-d85f092b67a5.png"
+      }
+    ],
+    "remainingInventory": [
+      {
+        "id": "R18",
+        "name": "How Do I Build a Personal Brand - MoreMozi (720p).mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\How Do I Build a Personal Brand - MoreMozi (720p).mp4",
+        "bytes": 17520834,
+        "modified": "2026-09-19T19:59:34.191919",
+        "durationSec": 276.967619,
+        "width": 1280,
+        "height": 720,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R19",
+        "name": "47e195a7-5d91-4f23-8a03-c5a2415e48fa.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\47e195a7-5d91-4f23-8a03-c5a2415e48fa.mp4",
+        "bytes": 1209182219,
+        "modified": "2026-09-17T16:26:06.766695",
+        "durationSec": 10157.653333,
+        "width": 1920,
+        "height": 1020,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R20",
+        "name": "6fc6f748-9024-4b73-835e-d2041e8516aa.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\6fc6f748-9024-4b73-835e-d2041e8516aa.mp4",
+        "bytes": 409306495,
+        "modified": "2026-09-17T16:24:18.155575",
+        "durationSec": 4034.965333,
+        "width": 1790,
+        "height": 956,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R21",
+        "name": "111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 3.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 3.mp4",
+        "bytes": 516925530,
+        "modified": "2026-09-12T23:06:45.959483",
+        "durationSec": 4448.832,
+        "width": 1768,
+        "height": 846,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R22",
+        "name": "111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 2.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 2.mp4",
+        "bytes": 555792301,
+        "modified": "2026-09-12T23:06:04.422321",
+        "durationSec": 5099.008,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R23",
+        "name": "111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 1.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS Ngày 1 Chọn đúng hướng kinh doanh Mô hình doanh nghiệp 1 người Part 1.mp4",
+        "bytes": 716676379,
+        "modified": "2026-09-12T23:05:05.950246",
+        "durationSec": 6578.773333,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R24",
+        "name": "111 BUSINESS Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 2.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 2.mp4",
+        "bytes": 599913389,
+        "modified": "2026-09-12T22:57:34.189879",
+        "durationSec": 5819.029333,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R25",
+        "name": "111 BUSINESS Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 3.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 3.mp4",
+        "bytes": 120992120,
+        "modified": "2026-09-12T22:56:37.446947",
+        "durationSec": 1892.44,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R26",
+        "name": "111 BUSINESS  Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 1.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS  Ngày 02 Tạo sản phẩm khách hàng muốn mua Part 1.mp4",
+        "bytes": 982792629,
+        "modified": "2026-09-12T22:55:33.254906",
+        "durationSec": 8046.2,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R27",
+        "name": "111 BUSINESS  Ngày 3 Cỗ máy thu hút khách hàng Part2.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS  Ngày 3 Cỗ máy thu hút khách hàng Part2.mp4",
+        "bytes": 1071737615,
+        "modified": "2026-09-12T22:52:10.081249",
+        "durationSec": 8791.082667,
+        "width": 1854,
+        "height": 960,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R28",
+        "name": "111 BUSINESS  Ngày 3 Cỗ máy thu hút khách hàng part 1.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\111 BUSINESS  Ngày 3 Cỗ máy thu hút khách hàng part 1.mp4",
+        "bytes": 1138684199,
+        "modified": "2026-09-12T22:49:25.617350",
+        "durationSec": 8911.04,
+        "width": 1790,
+        "height": 920,
+        "frameRate": "25/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R29",
+        "name": "Cô Thanh Ai video 2..mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\Cô Thanh Ai video 2..mp4",
+        "bytes": 644856375,
+        "modified": "2026-09-06T17:45:30.066627",
+        "durationSec": 204.847007,
+        "width": 1920,
+        "height": 1080,
+        "frameRate": "60/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R30",
+        "name": "Cô Thanh Ai video 1_1.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\Cô Thanh Ai video 1_1.mp4",
+        "bytes": 1687428124,
+        "modified": "2026-09-05T21:54:05.001158",
+        "durationSec": 535.848005,
+        "width": 1920,
+        "height": 1080,
+        "frameRate": "30/1",
+        "hasAudio": true,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      },
+      {
+        "id": "R31",
+        "name": "harley_sportster_s_seamless_loop.mp4",
+        "path": "C:\\Users\\Administrator\\Downloads\\harley_sportster_s_seamless_loop.mp4",
+        "bytes": 6369407,
+        "modified": "2026-08-30T16:55:53.584008",
+        "durationSec": 16.083333,
+        "width": 1284,
+        "height": 716,
+        "frameRate": "24/1",
+        "hasAudio": false,
+        "newReferenceBatch": false,
+        "disposition": "Older source/course/other inventory; not part of the 17 short-form reference audit. No deep-style coverage claimed."
+      }
+    ],
+    "reviewBasis": "Reused full 17-video audit, all source observations/events and measured transforms; no invented exact font/LUT/easing/audio identifications.",
+    "audioReview": "No continuous listening performed; original excerpt audio available in local reference player, identified music/SFX unknown.",
+    "packageKind": "Editorial blueprints + measured evidence + enforceable plan forms. Not 21 implemented one-click renderer effects."
+  },
+  "forms": {
+    "R01": {
+      "schemaVersion": 1,
+      "stylePackage": "R01",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R01/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R02": {
+      "schemaVersion": 1,
+      "stylePackage": "R02",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R02/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R03": {
+      "schemaVersion": 1,
+      "stylePackage": "R03",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R03/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R04": {
+      "schemaVersion": 1,
+      "stylePackage": "R04",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "held-headline",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R04/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R05": {
+      "schemaVersion": 1,
+      "stylePackage": "R05",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R05/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R06": {
+      "schemaVersion": 1,
+      "stylePackage": "R06",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R06/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R07": {
+      "schemaVersion": 1,
+      "stylePackage": "R07",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R07/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R08": {
+      "schemaVersion": 1,
+      "stylePackage": "R08",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R08/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R09": {
+      "schemaVersion": 1,
+      "stylePackage": "R09",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "two-lane",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R09/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R10": {
+      "schemaVersion": 1,
+      "stylePackage": "R10",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "context-shot",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R10/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R11": {
+      "schemaVersion": 1,
+      "stylePackage": "R11",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "hierarchy-title",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R11/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R12": {
+      "schemaVersion": 1,
+      "stylePackage": "R12",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R12/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R13": {
+      "schemaVersion": 1,
+      "stylePackage": "R13",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "window-reveal",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R13/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R14": {
+      "schemaVersion": 1,
+      "stylePackage": "R14",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R14/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R15": {
+      "schemaVersion": 1,
+      "stylePackage": "R15",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R15/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R16": {
+      "schemaVersion": 1,
+      "stylePackage": "R16",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R16/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "R17": {
+      "schemaVersion": 1,
+      "stylePackage": "R17",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker-window",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "R17/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "S01": {
+      "schemaVersion": 1,
+      "stylePackage": "S01",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "S01/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "S02": {
+      "schemaVersion": 1,
+      "stylePackage": "S02",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "S02/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "S03": {
+      "schemaVersion": 1,
+      "stylePackage": "S03",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "S03/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    },
+    "S04": {
+      "schemaVersion": 1,
+      "stylePackage": "S04",
+      "packageVersion": "1.0.0",
+      "status": "draft",
+      "clip": null,
+      "timebase": "edited-clip",
+      "durationMs": null,
+      "aspect": "9:16",
+      "brief": {
+        "audience": null,
+        "promise": null,
+        "takeaway": null
+      },
+      "assets": [],
+      "captions": [],
+      "beats": [],
+      "requiredBeatFields": [
+        "id",
+        "startMs",
+        "endMs",
+        "role",
+        "layout",
+        "meaning",
+        "referenceEvent",
+        "assetIds",
+        "entryMs",
+        "exitMs"
+      ],
+      "beatForm": {
+        "id": "b01",
+        "startMs": null,
+        "endMs": null,
+        "role": "hook",
+        "layout": "speaker",
+        "meaning": null,
+        "referenceEvent": null,
+        "assetIds": [],
+        "entryMs": 0,
+        "exitMs": 0
+      },
+      "audio": {
+        "music": null,
+        "sfx": [],
+        "listeningReview": "pending"
+      },
+      "sourceEditReview": {
+        "cuts": [],
+        "joinReview": "pending"
+      },
+      "renderContract": {
+        "adapter": null,
+        "implementedLayouts": [],
+        "proofFiles": []
+      },
+      "recipeFile": "S04/recipe.json",
+      "layerBindings": {},
+      "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+    }
+  },
+  "globalRules": {
+    "onePrimaryPackage": true,
+    "noAutomaticStyleMix": true,
+    "noRandomDecorativeAssets": true,
+    "sourceFirst": "story and source cuts before graphics",
+    "captionMaxWords": 5,
+    "defaultImageReuse": "one appearance per file/crop; one explicit same-concept callback allowed after 30 seconds",
+    "rendererRule": "Never silently translate an unsupported layout into a generic collage."
+  }
+}

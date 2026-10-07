@@ -1,0 +1,75 @@
+{
+  "id": "S02",
+  "version": "1.0.0",
+  "name": "So sánh — khung tròn & cutout",
+  "family": "So sánh",
+  "fit": "Hai vế cần đối chiếu rõ, nguồn có thể tách người sạch",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Hai nhãn đen, số/từ xanh và đỏ lớn; nhãn giải thích đen phía dưới.",
+    "assetGrammar": "Canvas trắng ngà; nguồn trong khung tròn, đầu vượt mép; vùng chữ tách khỏi mặt.",
+    "motion": "Chỉ có ảnh: timing từng nhãn và cutout là đề xuất, không có dữ liệu chuyển động gốc.",
+    "storyFlow": "Nêu tiêu chí → nhãn hai vế → giải thích lần lượt → bỏ bảng → trở về người nói.",
+    "avoid": "Không ép cutout lên nguồn có chữ đóng vào tóc; đổi sang khung sạch nếu matte lỗi.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "circle-comparison"
+    ],
+    "maxGraphicOccupancy": 0.3,
+    "maxGraphicBeatsPerMinute": 2,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "still",
+  "source": {
+    "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png",
+    "name": "codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png"
+  },
+  "observed": {
+    "typography": "Hai nhãn đen, số/từ xanh và đỏ lớn; nhãn giải thích đen phía dưới.",
+    "layoutAndAssets": "Canvas trắng ngà; nguồn trong khung tròn, đầu vượt mép; vùng chữ tách khỏi mặt."
+  },
+  "events": [],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Motion/easing/timing: không xác minh từ screenshot",
+    "Font gốc chưa định danh",
+    "Nhạc/SFX không có bằng chứng từ ảnh"
+  ],
+  "referencePreview": {
+    "file": "S02/reference.png",
+    "kind": "provided-screenshot"
+  },
+  "evidence": {
+    "timelineSheets": [],
+    "denseMotionSheets": [],
+    "typographyFrames": []
+  },
+  "screenshots": [
+    "S02/evidence/codex-clipboard-d7813c02-6fda-4e7d-be9f-dec7d7b3efbf.png"
+  ],
+  "recipeFile": "S02/recipe.json"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "S01",
+  "version": "1.0.0",
+  "name": "Headline serif — hai khối trắng",
+  "family": "Headline",
+  "fit": "Mở bài chia sẻ cá nhân",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Serif đen thường; hai khối trắng nối, dòng hai hẹp hơn; không nhồi caption lên headline.",
+    "assetGrammar": "Một speaker full-frame; headline nằm vùng trống trên đầu.",
+    "motion": "Chỉ có ảnh: đề xuất fade 160ms rồi giữ, KHÔNG phải motion đo từ ref.",
+    "storyFlow": "Headline mở → thời gian đọc → bỏ headline → caption body sạch.",
+    "avoid": "Không đặt chữ lên mắt; không tự khẳng định Times New Roman là font gốc.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Times New Roman",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "serif-hook"
+    ],
+    "maxGraphicOccupancy": 0.15,
+    "maxGraphicBeatsPerMinute": 1,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "still",
+  "source": {
+    "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png",
+    "name": "codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png"
+  },
+  "observed": {
+    "typography": "Serif đen thường; hai khối trắng nối, dòng hai hẹp hơn; không nhồi caption lên headline.",
+    "layoutAndAssets": "Một speaker full-frame; headline nằm vùng trống trên đầu."
+  },
+  "events": [],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Motion/easing/timing: không xác minh từ screenshot",
+    "Font gốc chưa định danh",
+    "Nhạc/SFX không có bằng chứng từ ảnh"
+  ],
+  "referencePreview": {
+    "file": "S01/reference.png",
+    "kind": "provided-screenshot"
+  },
+  "evidence": {
+    "timelineSheets": [],
+    "denseMotionSheets": [],
+    "typographyFrames": []
+  },
+  "screenshots": [
+    "S01/evidence/codex-clipboard-372c5f1f-0402-4c12-9d2c-d355b69934dd.png"
+  ],
+  "recipeFile": "S01/recipe.json"
+}

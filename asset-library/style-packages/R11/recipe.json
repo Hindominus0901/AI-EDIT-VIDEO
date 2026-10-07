@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "packageId": "R11",
+  "packageVersion": "1.0.0",
+  "status": "adaptation-spec-not-render-adapter",
+  "provenance": "All layer coordinates, typography tokens, colors and tweens are proposed adaptation defaults unless separately marked as measured evidence. Still images do not prove motion.",
+  "coordinateSystem": {
+    "rect": "normalized [x,y,width,height] before safe-area reflow",
+    "baseCanvases": {
+      "9:16": [
+        720,
+        1280
+      ],
+      "16:9": [
+        1280,
+        720
+      ]
+    },
+    "scalePixelsBy": "output short edge / 720",
+    "landscapeStatus": "proposed adaptation, no landscape reference audit"
+  },
+  "signature": {
+    "layout": "hierarchy-title",
+    "semanticTrigger": "Ba tầng: câu dẫn, ý chính và phần hỗ trợ.",
+    "layers": [
+      {
+        "id": "footage",
+        "kind": "video",
+        "zIndex": 0,
+        "rect": {
+          "9:16": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "16:9": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "contentBinding": "beat.sourceRange",
+        "instruction": "Reframe the original; never enlarge the 360px reference preview."
+      },
+      {
+        "id": "scrim",
+        "kind": "solid",
+        "zIndex": 5,
+        "rect": {
+          "9:16": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "16:9": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "contentBinding": "palette.scrim"
+      },
+      {
+        "id": "setup",
+        "kind": "text",
+        "zIndex": 30,
+        "rect": {
+          "9:16": [
+            0.09,
+            0.27,
+            0.82,
+            0.08
+          ],
+          "16:9": [
+            0.12,
+            0.22,
+            0.76,
+            0.11
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "textToken": "support",
+        "contentBinding": "beat.setup"
+      },
+      {
+        "id": "headline",
+        "kind": "text",
+        "zIndex": 30,
+        "rect": {
+          "9:16": [
+            0.09,
+            0.36,
+            0.82,
+            0.16
+          ],
+          "16:9": [
+            0.12,
+            0.36,
+            0.76,
+            0.2
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 670,
+        "textToken": "headline",
+        "contentBinding": "beat.headline"
+      },
+      {
+        "id": "support",
+        "kind": "text",
+        "zIndex": 30,
+        "rect": {
+          "9:16": [
+            0.09,
+            0.54,
+            0.82,
+            0.12
+          ],
+          "16:9": [
+            0.16,
+            0.63,
+            0.68,
+            0.15
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 1330,
+        "textToken": "support",
+        "contentBinding": "beat.support"
+      }
+    ]
+  },
+  "coverage": {
+    "parameterizedLayouts": [
+      "hierarchy-title"
+    ],
+    "remainingLayoutsReadSourceEvidence": [
+      "section-text",
+      "context-shot"
+    ],
+    "warning": "One signature scene is parameterized per package. Implement and inspect other layouts explicitly; this is not full renderer coverage."
+  },
+  "typography": {
+    "caption": {
+      "familyCandidate": "Inter",
+      "weight": 700,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "headline": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 58,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "support": {
+      "familyCandidate": "Inter",
+      "weight": 500,
+      "fontPxAtShortEdge720": 28,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "accent": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 54,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#D0F14B",
+      "align": "center"
+    },
+    "ink": {
+      "familyCandidate": "Inter",
+      "weight": 700,
+      "fontPxAtShortEdge720": 40,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#151515",
+      "align": "center"
+    },
+    "laneA": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#41DD57",
+      "align": "center"
+    },
+    "laneB": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#EF4141",
+      "align": "center"
+    },
+    "serif": {
+      "familyCandidate": "Times New Roman",
+      "weight": 400,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#171717",
+      "align": "center"
+    },
+    "emphasis": {
+      "familyCandidate": "Inter",
+      "weight": 800,
+      "fontPxAtShortEdge720": 64,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    }
+  },
+  "motions": {
+    "cut-hold": {
+      "entryMs": 0,
+      "exitMs": 0,
+      "hold": "until next semantic cue; stable geometry"
+    }
+  },
+  "palette": {
+    "background": "#0B0B0C",
+    "paper": "#F7F6F2",
+    "scrim": "rgba(0,0,0,0.30)"
+  },
+  "captionRules": {
+    "targetWordsPerPhrase": [
+      4,
+      5
+    ],
+    "maxWords": 5,
+    "shorterAtMeaningfulPause": true,
+    "maxLines": 2,
+    "highlight": "one meaningful word/span only; stable font size and position through the cue",
+    "measureVietnameseDiacritics": true,
+    "neverSplit": "a proper name, negation or short inseparable phrase purely to fill a row",
+    "fit": "measure with the actual loaded font; rewrap or move before shrinking; ensure all marks remain visible",
+    "collision": "Move the group away from face/mouth/hands and platform UI; proposed rects are not guarantees."
+  },
+  "timelineRules": {
+    "timebase": "edited-clip",
+    "layerTimeOrigin": "beat.startMs + delayMs",
+    "assetSlots": "Map a/b/c to registered asset IDs in the beat; these must also appear in beat.assetIds for reuse checks.",
+    "hold": "until explicit exit cue; entry + latest stagger + readable hold + exit must fit inside beat",
+    "minimumReadableHoldMs": 900,
+    "playbackDirection": "forward unless reversed motion is verified and explicitly requested",
+    "separateTracks": [
+      "source cuts",
+      "footage transform",
+      "window/mask",
+      "graphic",
+      "caption",
+      "audio"
+    ],
+    "footageTransform": "Use measuredFootageTransforms as source evidence; choose explicit new cue/duration. Do not apply camera scale to text/cards.",
+    "assetExit": "clear the complete group before the next concept; do not recycle it under another sentence"
+  },
+  "audioCuePolicy": {
+    "defaultSfx": null,
+    "automaticWhooshPerCaption": false,
+    "optionalCue": "one quiet cue for a meaningful layout change, after listening and checking the license",
+    "maxSfxPerMinute": 4,
+    "sourceSoundtrackIsProductionAsset": false
+  },
+  "implementationChecks": [
+    "No missing glyphs or font substitution.",
+    "No one-frame caption holes, re-entry on emphasis, or unintentional scale resets.",
+    "Source trims preserve meaning, breaths and final consonants; listen across joins.",
+    "Compare entry, hold and exit on a short render at normal speed.",
+    "Verify separate portrait/landscape compositions, mask edges and face clearance."
+  ],
+  "measuredGeometry": null
+}

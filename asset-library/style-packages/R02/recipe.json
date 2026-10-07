@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "packageId": "R02",
+  "packageVersion": "1.0.0",
+  "status": "adaptation-spec-not-render-adapter",
+  "provenance": "All layer coordinates, typography tokens, colors and tweens are proposed adaptation defaults unless separately marked as measured evidence. Still images do not prove motion.",
+  "coordinateSystem": {
+    "rect": "normalized [x,y,width,height] before safe-area reflow",
+    "baseCanvases": {
+      "9:16": [
+        720,
+        1280
+      ],
+      "16:9": [
+        1280,
+        720
+      ]
+    },
+    "scalePixelsBy": "output short edge / 720",
+    "landscapeStatus": "proposed adaptation, no landscape reference audit"
+  },
+  "signature": {
+    "layout": "profile-group",
+    "semanticTrigger": "Cụm bằng chứng gồm các hồ sơ khác nhau cho cùng một ý.",
+    "layers": [
+      {
+        "id": "footage",
+        "kind": "video",
+        "zIndex": 0,
+        "rect": {
+          "9:16": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "16:9": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "motion": "cut-hold",
+        "delayMs": 0,
+        "contentBinding": "beat.sourceRange",
+        "instruction": "Reframe the original; never enlarge the 360px reference preview."
+      },
+      {
+        "id": "a",
+        "kind": "image",
+        "zIndex": 10,
+        "rect": {
+          "9:16": [
+            0.08,
+            0.6,
+            0.38,
+            0.19
+          ],
+          "16:9": [
+            0.56,
+            0.2,
+            0.18,
+            0.42
+          ]
+        },
+        "motion": "soft-resolve",
+        "delayMs": 0,
+        "contentBinding": "beat.assetSlots.a"
+      },
+      {
+        "id": "b",
+        "kind": "image",
+        "zIndex": 10,
+        "rect": {
+          "9:16": [
+            0.54,
+            0.62,
+            0.38,
+            0.19
+          ],
+          "16:9": [
+            0.76,
+            0.24,
+            0.18,
+            0.42
+          ]
+        },
+        "motion": "soft-resolve",
+        "delayMs": 260,
+        "contentBinding": "beat.assetSlots.b"
+      },
+      {
+        "id": "caption",
+        "kind": "text",
+        "zIndex": 50,
+        "rect": {
+          "9:16": [
+            0.1,
+            0.49,
+            0.8,
+            0.1
+          ],
+          "16:9": [
+            0.06,
+            0.78,
+            0.88,
+            0.12
+          ]
+        },
+        "motion": "caption-stable",
+        "delayMs": 0,
+        "textToken": "caption",
+        "contentBinding": "caption.phrase"
+      }
+    ]
+  },
+  "coverage": {
+    "parameterizedLayouts": [
+      "profile-group"
+    ],
+    "remainingLayoutsReadSourceEvidence": [
+      "speaker",
+      "profile-card",
+      "dark-title",
+      "light-title",
+      "window-insert",
+      "equation"
+    ],
+    "warning": "One signature scene is parameterized per package. Implement and inspect other layouts explicitly; this is not full renderer coverage."
+  },
+  "typography": {
+    "caption": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 700,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "headline": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 800,
+      "fontPxAtShortEdge720": 58,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "support": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 500,
+      "fontPxAtShortEdge720": 28,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    },
+    "accent": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 800,
+      "fontPxAtShortEdge720": 54,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#D0F14B",
+      "align": "center"
+    },
+    "ink": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 700,
+      "fontPxAtShortEdge720": 40,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#151515",
+      "align": "center"
+    },
+    "laneA": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#41DD57",
+      "align": "center"
+    },
+    "laneB": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 800,
+      "fontPxAtShortEdge720": 52,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#EF4141",
+      "align": "center"
+    },
+    "serif": {
+      "familyCandidate": "Times New Roman",
+      "weight": 400,
+      "fontPxAtShortEdge720": 38,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#171717",
+      "align": "center"
+    },
+    "emphasis": {
+      "familyCandidate": "Be Vietnam Pro",
+      "weight": 800,
+      "fontPxAtShortEdge720": 64,
+      "lineHeight": 1.16,
+      "letterSpacingEm": -0.02,
+      "color": "#FFFFFF",
+      "align": "center"
+    }
+  },
+  "motions": {
+    "caption-stable": {
+      "entryMs": 0,
+      "exitMs": 0,
+      "hold": "continuous phrase interval",
+      "rules": [
+        "Keep the phrase node and anchor stable through word emphasis.",
+        "Do not fade out/in between adjacent phrases or animate on every frame.",
+        "Resolve time to integer frame boundaries once; no hidden one-frame gaps."
+      ]
+    },
+    "cut-hold": {
+      "entryMs": 0,
+      "exitMs": 0,
+      "hold": "until next semantic cue; stable geometry"
+    },
+    "soft-resolve": {
+      "entryMs": 160,
+      "exitMs": 100,
+      "from": {
+        "opacity": 0
+      },
+      "to": {
+        "opacity": 1
+      },
+      "easing": "cubic-bezier(0.22,1,0.36,1)"
+    }
+  },
+  "palette": {
+    "background": "#0B0B0C",
+    "paper": "#F7F6F2",
+    "scrim": "rgba(0,0,0,0.30)"
+  },
+  "captionRules": {
+    "targetWordsPerPhrase": [
+      4,
+      5
+    ],
+    "maxWords": 5,
+    "shorterAtMeaningfulPause": true,
+    "maxLines": 2,
+    "highlight": "one meaningful word/span only; stable font size and position through the cue",
+    "measureVietnameseDiacritics": true,
+    "neverSplit": "a proper name, negation or short inseparable phrase purely to fill a row",
+    "fit": "measure with the actual loaded font; rewrap or move before shrinking; ensure all marks remain visible",
+    "collision": "Move the group away from face/mouth/hands and platform UI; proposed rects are not guarantees."
+  },
+  "timelineRules": {
+    "timebase": "edited-clip",
+    "layerTimeOrigin": "beat.startMs + delayMs",
+    "assetSlots": "Map a/b/c to registered asset IDs in the beat; these must also appear in beat.assetIds for reuse checks.",
+    "hold": "until explicit exit cue; entry + latest stagger + readable hold + exit must fit inside beat",
+    "minimumReadableHoldMs": 900,
+    "playbackDirection": "forward unless reversed motion is verified and explicitly requested",
+    "separateTracks": [
+      "source cuts",
+      "footage transform",
+      "window/mask",
+      "graphic",
+      "caption",
+      "audio"
+    ],
+    "footageTransform": "Use measuredFootageTransforms as source evidence; choose explicit new cue/duration. Do not apply camera scale to text/cards.",
+    "assetExit": "clear the complete group before the next concept; do not recycle it under another sentence"
+  },
+  "audioCuePolicy": {
+    "defaultSfx": null,
+    "automaticWhooshPerCaption": false,
+    "optionalCue": "one quiet cue for a meaningful layout change, after listening and checking the license",
+    "maxSfxPerMinute": 4,
+    "sourceSoundtrackIsProductionAsset": false
+  },
+  "implementationChecks": [
+    "No missing glyphs or font substitution.",
+    "No one-frame caption holes, re-entry on emphasis, or unintentional scale resets.",
+    "Source trims preserve meaning, breaths and final consonants; listen across joins.",
+    "Compare entry, hold and exit on a short render at normal speed.",
+    "Verify separate portrait/landscape compositions, mask edges and face clearance."
+  ],
+  "measuredGeometry": null
+}

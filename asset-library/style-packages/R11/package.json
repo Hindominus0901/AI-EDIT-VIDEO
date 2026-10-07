@@ -1,0 +1,152 @@
+{
+  "id": "R11",
+  "version": "1.0.0",
+  "name": "Headline — phân tầng trên footage",
+  "family": "Headline",
+  "fit": "Mở bài ngắn và giải thích một cấu trúc",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Dòng dẫn thường → từ khóa lớn đậm → dòng bổ trợ; body canh trái, rule mảnh.",
+    "assetGrammar": "Footage tối vừa đủ; phân đoạn theo tầng nội dung, không thêm ảnh minh họa rời.",
+    "motion": "Keyword bật ở frame 19→20 (~0,67s); dòng bổ trợ ~1,33s; chữ neo khi nền trôi.",
+    "storyFlow": "Vấn đề → ba tầng giải thích → kết luận; tăng thời gian đọc so với bản gốc.",
+    "avoid": "Không mô tả text snap thành slide; không sao phần chữ dày lướt quá nhanh.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "hierarchy-title",
+      "section-text",
+      "context-shot"
+    ],
+    "maxGraphicOccupancy": 0.75,
+    "maxGraphicBeatsPerMinute": 6,
+    "maxConsecutiveGraphicBeats": 10,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R11",
+    "name": "AQMgwMUMDEJXHnMKmfJTf_kMwLxPDPJx-jn-YEfDlMI3I4lMZ0ap2s_sdrFRne9r_E2GgT3ww1KcZATsbqCk3u1qtuGUr50EDegJZOw.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQMgwMUMDEJXHnMKmfJTf_kMwLxPDPJx-jn-YEfDlMI3I4lMZ0ap2s_sdrFRne9r_E2GgT3ww1KcZATsbqCk3u1qtuGUr50EDegJZOw.mp4",
+    "bytes": 1070940,
+    "modified": "2026-09-22T21:07:23.900804",
+    "durationSec": 10.190703,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/100",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Three headline roles: regular small setup, substantially larger bold keyword, regular small support. Body sections use a left-aligned heading, thin horizontal rule and compact bullets. Tight spacing is visible, but source font identity is not established.",
+    "captionMotion": "Opening hierarchy builds in stages: setup early, keyword appears fully between frames 19 and 20 at about 0.67s, support around 1.33s. These observed additions are abrupt, not a smooth text slide. Text stays anchored while the footage moves.",
+    "footageMotion": "From 0.60 to 3.00s, background matching estimates 3.1% shrink, image-center displacement about 8.4% of canvas width left and 2.6% of height upward, with slight rotation. This is rendered-image drift; physical camera versus edit pan is unconfirmed.",
+    "layoutAndAssets": "Centered opening headline changes to left-aligned funnel-section content. TOF, MOF and BOF each use a different background/section state, retaining a consistent rule and text hierarchy.",
+    "transitions": "Direct section/background changes around 3.57, 5.31, 7.14 and 8.81s. Some body text has little reading time in this ten-second source.",
+    "colorAndLighting": "Warm, darkened lifestyle/work footage beneath white text. Contrast is achieved largely by suppressing the plate rather than outlining each letter heavily.",
+    "visualFlow": "Opening problem, three structured stages, closing. Typographic hierarchy provides coherence even when the underlying shot moves."
+  },
+  "events": [
+    {
+      "sourceTime": "0–3.3s",
+      "observation": "Anchored three-stage title above drifting/receding footage."
+    },
+    {
+      "sourceTime": "3.57–5.31s",
+      "observation": "Top-of-funnel section."
+    },
+    {
+      "sourceTime": "5.31–7.14s",
+      "observation": "Middle-of-funnel section."
+    },
+    {
+      "sourceTime": "7.14–8.81s",
+      "observation": "Bottom-of-funnel section."
+    },
+    {
+      "sourceTime": "8.81–10.1s",
+      "observation": "Closing message."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R11",
+      "startSec": 0.6006006006006006,
+      "endSec": 3.0030030030030033,
+      "startFrame": 18,
+      "endFrame": 90,
+      "matches": 324,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 0.9692331841300921,
+      "scaleChangePct": -3.0766815869907926,
+      "rotationDeg": -0.7744692871556484,
+      "imageCenterDxPct": -8.403958235806442,
+      "imageCenterDyPct": -2.6030557683199023,
+      "inliers": 228,
+      "inlierFraction": 0.7037037037037037,
+      "medianResidualPx": 0.6991948289868504,
+      "matrix": [
+        [
+          0.9691446410141158,
+          0.013100763816566836,
+          -43.33879417911814
+        ],
+        [
+          -0.013100763816566836,
+          0.9691446410141158,
+          -6.641556832173576
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R11/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 5.3,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R11/evidence/R11-timeline-01.jpg"
+    ],
+    "denseMotionSheets": [
+      "R11/evidence/R11-moving-footage.jpg"
+    ],
+    "typographyFrames": [
+      "R11/evidence/R11-body.png",
+      "R11/evidence/R11-headline.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R11-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R11/recipe.json"
+}
