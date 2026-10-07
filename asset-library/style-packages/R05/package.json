@@ -1,0 +1,117 @@
+{
+  "id": "R05",
+  "version": "1.0.0",
+  "name": "Danh sách — một ảnh mỗi ví dụ",
+  "family": "Ảnh trực tiếp",
+  "fit": "Liệt kê công cụ, ví dụ hoặc ứng dụng",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Headline đen trong pill trắng; caption trắng nhỏ; số thứ tự vàng riêng.",
+    "assetGrammar": "Một ảnh thấp dưới ngực; thay bằng ảnh MỚI khi đổi mục; cuối clip trả mặt sạch.",
+    "motion": "Ảnh thay nhanh; mẫu đổi ảnh 9→8 giữa 9,5–9,6s; header đứng yên.",
+    "storyFlow": "Giới thiệu → số mục + ảnh đúng mục → giải thích → bỏ ảnh → mục sau.",
+    "avoid": "Không dùng cùng ảnh cho mục khác; không chèn ba ảnh vì thiếu tư liệu.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "numbered-image"
+    ],
+    "maxGraphicOccupancy": 0.65,
+    "maxGraphicBeatsPerMinute": 9,
+    "maxConsecutiveGraphicBeats": 12,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R05",
+    "name": "AQMtCaLwVF4P7FlmhBf59Oh-dbNgdeSd2PJDRPcfDL0alTYYKbmaVkRMZ_Bu-z3nAs-0gJZLXSSJXHf_B0i2zAgDjWDX5MnUmpiX1Kg.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQMtCaLwVF4P7FlmhBf59Oh-dbNgdeSd2PJDRPcfDL0alTYYKbmaVkRMZ_Bu-z3nAs-0gJZLXSSJXHf_B0i2zAgDjWDX5MnUmpiX1Kg.mp4",
+    "bytes": 4165271,
+    "modified": "2026-09-22T21:14:09.607626",
+    "durationSec": 59.998957,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Black sans headline in a white rounded pill; small regular white body captions; small yellow item number above a lower image. These are three distinct text roles.",
+    "captionMotion": "Stable header and chest-level caption zone. The body phrase changes with the speech visually; exact spoken synchronization is unassessed. Number/image swaps are quick rather than a long animated transition.",
+    "footageMotion": "The desk plate is visually stable in the inspected sequence, while the person and hands move. No high-confidence persistent global zoom was established.",
+    "layoutAndAssets": "One image at a time covers the lower torso/table. A yellow countdown number identifies each topic. The image heights/aspect treatments vary in the source; this should not be mistaken for a single consistent frame size.",
+    "transitions": "At 9.5s image 9 remains; by 9.6s it is replaced by image 8. Header stays fixed. Clearing the lower card near the end returns visual attention to the person.",
+    "colorAndLighting": "Natural desk/room lighting with a blue shirt. White/black title pill and restrained yellow numbering; inserted screenshots have their own colors.",
+    "visualFlow": "The repeated number → image → explanation structure gives predictable navigation. Each replacement marks a new example rather than decorating every phrase."
+  },
+  "events": [
+    {
+      "sourceTime": "0–4.33s",
+      "observation": "Speaker and permanent headline, without the first lower image."
+    },
+    {
+      "sourceTime": "4.40–9.50s",
+      "observation": "First numbered image held."
+    },
+    {
+      "sourceTime": "9.60; 16.7; 21.5; 28.9; 33; 38.7; 44; 48s",
+      "observation": "Approximate subsequent item/image replacements."
+    },
+    {
+      "sourceTime": "54–60s",
+      "observation": "Image layer clears for the closing speaker passage."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R05/reference.mp4",
+    "sourceStartSec": 3.6,
+    "sourceEndSec": 11,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R05/evidence/R05-timeline-01.jpg",
+      "R05/evidence/R05-timeline-02.jpg"
+    ],
+    "denseMotionSheets": [
+      "R05/evidence/R05-picture-swap.jpg"
+    ],
+    "typographyFrames": [
+      "R05/evidence/R05-headline-caption-photo.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R05-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R05/recipe.json"
+}

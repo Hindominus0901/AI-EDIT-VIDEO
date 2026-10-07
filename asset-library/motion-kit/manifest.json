@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "textPresets": [
+    {
+      "id": "rise",
+      "name": "Trượt lên mềm",
+      "use": "Phụ đề thường; chuyển động nhẹ, giữ chữ ổn định."
+    },
+    {
+      "id": "mask-up",
+      "name": "Mở chữ từ dưới",
+      "use": "Đổi ý hoặc mở một câu mới."
+    },
+    {
+      "id": "soft-pop",
+      "name": "Nhấn rồi ổn định",
+      "use": "Câu chốt; không dùng ở mọi cụm."
+    },
+    {
+      "id": "word-rise",
+      "name": "Lên lần lượt theo cụm",
+      "use": "Hook ngắn; đây là hiệu ứng vào, không phải karaoke theo giọng."
+    },
+    {
+      "id": "slide-left",
+      "name": "Trượt ngang nhẹ",
+      "use": "Chuyển sang ý đối chiếu."
+    },
+    {
+      "id": "blur-in",
+      "name": "Rõ dần",
+      "use": "Tiêu đề ngắn; tránh dùng liên tục cho phụ đề."
+    },
+    {
+      "id": "wipe",
+      "name": "Mở từ trái sang phải",
+      "use": "Headline hoặc câu kết ngắn."
+    },
+    {
+      "id": "tracking",
+      "name": "Thu khoảng chữ",
+      "use": "Headline; thay đổi khoảng chữ rất nhẹ."
+    }
+  ],
+  "emphasisPresets": [
+    {
+      "id": "color",
+      "name": "Đổi màu"
+    },
+    {
+      "id": "underline",
+      "name": "Gạch chân vẽ vào"
+    },
+    {
+      "id": "marker",
+      "name": "Quét bút đánh dấu"
+    },
+    {
+      "id": "ring",
+      "name": "Khoanh nét mảnh"
+    }
+  ],
+  "graphicPresets": [
+    {
+      "id": "photo-window",
+      "name": "Ảnh mở qua khung"
+    },
+    {
+      "id": "photo-circle",
+      "name": "Crop tròn"
+    },
+    {
+      "id": "photo-collage",
+      "name": "Collage hai ảnh"
+    },
+    {
+      "id": "line-arrow",
+      "name": "Mũi tên vẽ nét"
+    },
+    {
+      "id": "focus-ring",
+      "name": "Vòng nhấn"
+    },
+    {
+      "id": "steps",
+      "name": "Ba bước nối tiếp"
+    },
+    {
+      "id": "icon",
+      "name": "Minh họa vẽ nét"
+    }
+  ],
+  "rules": {
+    "maxCaptionWords": 5,
+    "maxSimultaneousGraphics": 1,
+    "defaultTextPreset": "rise",
+    "defaultAccent": "#F3CE83",
+    "maxEntryFraction": 0.35,
+    "sfxPolicy": "Chỉ gắn vào điểm nhấn có chủ ý, không gắn tự động vào mọi phụ đề."
+  },
+  "assets": [
+    {
+      "id": "target",
+      "name": "Mục tiêu",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/target.svg"
+    },
+    {
+      "id": "proof",
+      "name": "Bằng chứng",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/proof.svg"
+    },
+    {
+      "id": "chat",
+      "name": "Trao đổi",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/chat.svg"
+    },
+    {
+      "id": "idea",
+      "name": "Ý tưởng",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/idea.svg"
+    },
+    {
+      "id": "growth",
+      "name": "Tiến bộ",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/growth.svg"
+    },
+    {
+      "id": "time",
+      "name": "Thời gian",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/time.svg"
+    },
+    {
+      "id": "compass",
+      "name": "Chọn hướng",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/compass.svg"
+    },
+    {
+      "id": "spark",
+      "name": "Điểm sáng",
+      "source": "Original vector authored in this project",
+      "file": "public/graphics/motion-kit/spark.svg"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "R15",
+  "version": "1.0.0",
+  "name": "Sách & sản phẩm — một nhóm thông tin",
+  "family": "Ảnh trực tiếp",
+  "fit": "Review sách, sản phẩm hoặc tài liệu xác định được",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Tên vật thể lime đậm, tác giả/nhãn phụ trắng nhỏ, caption lời nói trắng đậm riêng.",
+    "assetGrammar": "Hook grid bìa sách; body một vật thể + tên + tác giả; hết ý thì cả nhóm biến mất.",
+    "motion": "Nền trắng/cutout 0,58s; grid stagger 0,8–1,42s; body cover vào rồi nghiêng ổn định.",
+    "storyFlow": "Grid hứa danh sách → từng sản phẩm với luận điểm riêng → người nói sạch → kết.",
+    "avoid": "Không dùng bìa một sách để nói sách khác; không giữ grid ở toàn bài.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "product-grid",
+      "product-callout",
+      "cutout"
+    ],
+    "maxGraphicOccupancy": 0.5,
+    "maxGraphicBeatsPerMinute": 6,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R15",
+    "name": "AQOSNtq78zIvxrkpH6Mq9bi9M1El2yRX9KhH_Jr2zEGXe6KED-TBwZFvBJDaI3dS3j669sIR3JMtGA3C1q6SQa5SjW3lV7V9wCmGoHw.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQOSNtq78zIvxrkpH6Mq9bi9M1El2yRX9KhH_Jr2zEGXe6KED-TBwZFvBJDaI3dS3j669sIR3JMtGA3C1q6SQa5SjW3lV7V9wCmGoHw.mp4",
+    "bytes": 13968442,
+    "modified": "2026-09-22T21:05:25.724912",
+    "durationSec": 99.471429,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Short bold white body captions, larger than R14. Book titles use lime bold sans, authors smaller white type. The intro uses lime words inside compact black rectangles. Titles, authors and spoken captions are separate roles.",
+    "captionMotion": "Book-title phrases reveal in stages; the cover enters with opacity and changing angle. At the second callout, number 2 appears, then Essentialism, then the author line. Source English body captions are often one-to-three words and should not be copied mechanically into Vietnamese.",
+    "footageMotion": "Hook isolates the person, then shrinks/repositions the cutout down/right as the grid grows. In body footage, pushes alternate with wider resets; the reset around 10.3s makes room for the next book callout.",
+    "layoutAndAssets": "Nine covers form a 3×3 grid on white in the hook. Later each book is a grouped title/author/cover object; several covers are tilted or shown with perspective. One grouped object is clearer than disconnected ornaments.",
+    "transitions": "Background whitens around 0.58s while the person remains; covers build around 0.8–1.42s and settle by about 1.6s. Return to full footage around 4.09s. At 10.3s, wider framing and the next object entrance are coordinated.",
+    "colorAndLighting": "White/black/lime graphic hook, natural green talking head, mixed book cover colors. The cover collection contributes color while the supporting typography stays consistent.",
+    "visualFlow": "Grid promises the list; sequential book callouts explain it; empty speaker passages prevent a permanent crowded wall of covers."
+  },
+  "events": [
+    {
+      "sourceTime": "0.58–1.60s",
+      "observation": "Background removal appearance, cutout reposition/scale, staggered nine-book grid."
+    },
+    {
+      "sourceTime": "1.6–4.09s",
+      "observation": "Completed hook layout held, then return to footage."
+    },
+    {
+      "sourceTime": "About 5; 11; 17; 29; 35; 51; 66; 80; 87s",
+      "observation": "Nine book callout passages."
+    },
+    {
+      "sourceTime": "10.22–10.72s",
+      "observation": "Close shot → wider reset → cover and number/title/author build."
+    },
+    {
+      "sourceTime": "96–99s",
+      "observation": "Clean talking-head closing without the grid."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R15/reference.mp4",
+    "sourceStartSec": 10.1,
+    "sourceEndSec": 18.1,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R15/evidence/R15-timeline-01.jpg",
+      "R15/evidence/R15-timeline-02.jpg",
+      "R15/evidence/R15-timeline-03.jpg",
+      "R15/evidence/R15-timeline-04.jpg"
+    ],
+    "denseMotionSheets": [
+      "R15/evidence/R15-cutout-grid-intro.jpg",
+      "R15/evidence/R15-reframe-reset.jpg"
+    ],
+    "typographyFrames": [
+      "R15/evidence/R15-object-title.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R15-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R15/recipe.json"
+}

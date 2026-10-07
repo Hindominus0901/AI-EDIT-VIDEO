@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sets": [
+    "studio",
+    "paper",
+    "mono"
+  ],
+  "tokens": "../../src/premium-kit/sets.json",
+  "textEntrances": [
+    "silk-rise",
+    "quiet-reveal",
+    "soft-focus"
+  ],
+  "imageLayouts": [
+    "photo-mat",
+    "photo-diptych",
+    "photo-detail"
+  ],
+  "illustrations": [
+    {
+      "concept": "opportunity",
+      "asset": "compass"
+    },
+    {
+      "concept": "experience",
+      "asset": "time"
+    },
+    {
+      "concept": "feedback",
+      "asset": "chat"
+    }
+  ],
+  "preview": "premium-sets.mp4",
+  "chapters": [
+    {
+      "set": "studio",
+      "startSec": 0,
+      "endSec": 8
+    },
+    {
+      "set": "paper",
+      "startSec": 8,
+      "endSec": 16
+    },
+    {
+      "set": "mono",
+      "startSec": 16,
+      "endSec": 24
+    }
+  ],
+  "rules": {
+    "maxCaptionWords": 5,
+    "maxSimultaneousGraphics": 1,
+    "sourceColorPreserved": true,
+    "optIn": true
+  },
+  "provenance": "README.md"
+}

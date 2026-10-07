@@ -1,0 +1,125 @@
+{
+  "id": "R07",
+  "version": "1.0.0",
+  "name": "Mnemonic — danh sách sang demo",
+  "family": "Giải thích",
+  "fit": "Giải thích một quy trình có ví dụ giao diện",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Chữ đầu cyan neo trái; nhãn trắng đậm; caption body nhỏ; hook có chữ brush.",
+    "assetGrammar": "Danh sách nhường chỗ cho UI; chữ gõ trong UI là một lớp riêng.",
+    "motion": "Nhãn xuất hiện lần lượt; UI rise/blur 13,7–14,4s; flash trắng ở chuyển hook.",
+    "storyFlow": "Hook → chữ viết tắt → demo thao tác → hoàn thành danh sách → giải thích sạch.",
+    "avoid": "Không chồng UI lên danh sách đã đầy; không bịa thao tác hay kết quả công cụ.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "mnemonic",
+      "ui-demo",
+      "white-flash",
+      "headline"
+    ],
+    "maxGraphicOccupancy": 0.65,
+    "maxGraphicBeatsPerMinute": 5,
+    "maxConsecutiveGraphicBeats": 8,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R07",
+    "name": "AQP1ITFtSpOakUvtJ6qgQoL27QP-CEQTxwFqJ6omVTXXEMKx13v1m77mVapxYV31r5jSXXg39-uxOQ5-v4Ci_TreFssPwBev6MT21Js.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQP1ITFtSpOakUvtJ6qgQoL27QP-CEQTxwFqJ6omVTXXEMKx13v1m77mVapxYV31r5jSXXg39-uxOQ5-v4Ci_TreFssPwBev6MT21Js.mp4",
+    "bytes": 5378102,
+    "modified": "2026-09-22T21:13:01.575182",
+    "durationSec": 51.407574,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Wide heavy white capitals and cyan brush accent in the hook; cyan initials with white bold uppercase labels in the list; smaller regular white captions in the closing body. Strong role-based typography.",
+    "captionMotion": "Blurred energetic hook resolves. List labels append progressively while their initials keep a stable left edge. The UI demonstration slides upward and resolves from blur/opacity, with typed text inside; these are separate animations.",
+    "footageMotion": "Front desk talking head with crop changes and natural gestures. UI and list movement cannot be used as evidence of a camera zoom.",
+    "layoutAndAssets": "Vertical A/G/E/N/T mnemonic, a large rounded dark UI card with cyan border/input/icon, then simpler body captions and a final CTA. The list yields space to the UI instead of permanently stacking both.",
+    "transitions": "A white flash around 2.93–3.2s separates the hook and explanation. Around 13.7–14.4s the UI rises while the previous list fades. Later it clears and list explanation resumes.",
+    "colorAndLighting": "Warm wood/desk base with navy clothing. White/cyan graphic palette. Dark UI surface gives the cyan control a clear focus.",
+    "visualFlow": "Hook → mnemonic → practical UI example → completed mnemonic → quiet explanation → CTA. Motion carries the teaching sequence."
+  },
+  "events": [
+    {
+      "sourceTime": "0–3.20s",
+      "observation": "Energetic mixed typography, then white flash."
+    },
+    {
+      "sourceTime": "3.80–3.90; 7.5; 12–13; 19.5; 24–25s",
+      "observation": "Progressive mnemonic labels."
+    },
+    {
+      "sourceTime": "13.70–18.90s",
+      "observation": "UI card entrance, typing and tool/access state changes."
+    },
+    {
+      "sourceTime": "25–38s",
+      "observation": "Completed list held while the speaker continues."
+    },
+    {
+      "sourceTime": "39–49; 50–51s",
+      "observation": "Quiet body captions, event name accent, then large final CTA."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R07/reference.mp4",
+    "sourceStartSec": 12.8,
+    "sourceEndSec": 19.2,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R07/evidence/R07-timeline-01.jpg",
+      "R07/evidence/R07-timeline-02.jpg"
+    ],
+    "denseMotionSheets": [
+      "R07/evidence/R07-ui-entrance.jpg"
+    ],
+    "typographyFrames": [
+      "R07/evidence/R07-hook.png",
+      "R07/evidence/R07-list.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R07-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R07/recipe.json"
+}

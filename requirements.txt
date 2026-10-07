@@ -3,7 +3,8 @@
 # Python 3.10+ required.
 
 numpy>=1.24
-opencv-python>=4.8        # cv2 — face zones, palette, motion, frame sampling
+opencv-python>=4.8,<5     # CascadeClassifier is required by detect-face-zones.py
+Pillow>=12,<13           # Antialiased Vietnamese type in directed video compositions
 faster-whisper>=1.0       # local word-level STT, no API key
 # scenedetect / librosa removed 2026-07-05 — not imported by any current script.
 

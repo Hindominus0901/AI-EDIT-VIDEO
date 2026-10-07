@@ -1,0 +1,145 @@
+{
+  "id": "R02",
+  "version": "1.0.0",
+  "name": "Editorial Việt — card & khoảng nghỉ",
+  "family": "Editorial",
+  "fit": "Giải thích khái niệm, chia sẻ có chiều sâu",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Hai cấp sans đậm; shadow nhẹ trên footage, trắng/đen rõ trên title card.",
+    "assetGrammar": "Card hồ sơ vào riêng rồi rời riêng; một insert bo góc; sơ đồ nhỏ khi thật sự cần.",
+    "motion": "Card rõ dần; title 34,72–35,32s blur-to-clear; đổi nền trước rồi mới đổi chữ.",
+    "storyFlow": "Người nói → cụm minh chứng → xóa cụm → title chốt → người nói.",
+    "avoid": "Không giữ card ở mọi đoạn; không bật blur cho tất cả caption.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "profile-card",
+      "profile-group",
+      "dark-title",
+      "light-title",
+      "window-insert",
+      "equation"
+    ],
+    "maxGraphicOccupancy": 0.3,
+    "maxGraphicBeatsPerMinute": 3,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R02",
+    "name": "Xây dựng -Thế giới riêng- của bạn thông qua ngôn từ của chính mình.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\Xây dựng -Thế giới riêng- của bạn thông qua ngôn từ của chính mình.mp4",
+    "bytes": 10792606,
+    "modified": "2026-09-22T21:16:57.872158",
+    "durationSec": 64.505011,
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "25/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Heavy Vietnamese sans serif, white on footage or black cards, black on light cards. Two-line emphasis uses a noticeably larger key line. Soft black shadow is visible over footage; full-screen cards rely on contrast rather than a large outline.",
+    "captionMotion": "Selective emphasis rather than a subtitle on every moment. Three profile cards resolve from blur/low opacity and later fade separately. The black title at 34.72s begins blurred and is readable around 35.32s. An inversion sequence changes the background first, then fades in the new dark phrase.",
+    "footageMotion": "Main front-facing desk shot with occasional side angle and closer crops. Crop steps include a visible change around 3.48s and another around 41.5s. Stable typography is separate from those framing changes.",
+    "layoutAndAssets": "Warm desk/lamp base; three floating dark profile cards form a temporary composition around the speaker. Later: individual profile cards, a rounded film insert over a blurred base, a compact equation, books, and a bookmark/cursor CTA.",
+    "transitions": "Cards enter in a stagger, hold, and clear before the next caption. Around 8.08s, black switches to off-white; the replacement black phrase resolves from gray by about 8.48s. This is not a generic sliding transition.",
+    "colorAndLighting": "Warm amber practical lamp and soft indoor skin tones. Off-white/black cards keep visual contrast. Yellow is reserved for the final bookmark accent; no original grade recovered.",
+    "visualFlow": "Quiet speaker passages alternate with concentrated editorial moments. The reference creates polish through staging and clearing, not by putting several permanent overlays around the face."
+  },
+  "events": [
+    {
+      "sourceTime": "0.30–3.60s",
+      "observation": "Profile cards arrive left, right, lower-center; sharp by about 1.2s. Staggered clearing around 2.4–3.28s, caption returns by 3.6s."
+    },
+    {
+      "sourceTime": "6.76–9.36s",
+      "observation": "Black Worldbuilding card, then light thế giới riêng card."
+    },
+    {
+      "sourceTime": "9.36–10.68; 55.52–60.92s",
+      "observation": "Side-angle coverage."
+    },
+    {
+      "sourceTime": "14; 18–20s",
+      "observation": "Individual profile/page references."
+    },
+    {
+      "sourceTime": "22–28s",
+      "observation": "Closer talking-head framing."
+    },
+    {
+      "sourceTime": "29.40–33.60s",
+      "observation": "Rounded action-film insert over blurred speaker background."
+    },
+    {
+      "sourceTime": "34.72–37.36s",
+      "observation": "Blur-to-clear black headline card."
+    },
+    {
+      "sourceTime": "45–49s",
+      "observation": "Emphasis heading, compact value equation, then book cards."
+    },
+    {
+      "sourceTime": "53–57; 61–64s",
+      "observation": "Two-tier captions; bookmark icon becomes yellow with cursor cue and final emphasis."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R02/reference.mp4",
+    "sourceStartSec": 33.9,
+    "sourceEndSec": 38,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R02/evidence/R02-timeline-01.jpg",
+      "R02/evidence/R02-timeline-02.jpg",
+      "R02/evidence/R02-timeline-03.jpg"
+    ],
+    "denseMotionSheets": [
+      "R02/evidence/R02-profile-cards.jpg",
+      "R02/evidence/R02-title-inversion.jpg"
+    ],
+    "typographyFrames": [
+      "R02/evidence/R02-caption.png",
+      "R02/evidence/R02-title.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R02-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R02/recipe.json"
+}

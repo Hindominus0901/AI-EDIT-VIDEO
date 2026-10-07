@@ -1,0 +1,176 @@
+{
+  "id": "R03",
+  "version": "1.0.0",
+  "name": "Bài giảng — từng chương",
+  "family": "Giải thích",
+  "fit": "Nội dung thực sự có các bước hoặc chương",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Caption trắng đậm; tiêu đề chương hồng trên đen; dòng quan trọng lớn hơn.",
+    "assetGrammar": "Một sơ đồ đang học; bước hiện tại sáng, bước khác lùi; cảnh minh chứng xen kẽ.",
+    "motion": "Nguồn push khoảng +21,3% trong 3s; chữ tách lớp; hàng sơ đồ hiện theo lời.",
+    "storyFlow": "Mở vấn đề → bước → giải thích → ví dụ → bước tiếp → tổng kết.",
+    "avoid": "Không tự chia chương vô nghĩa; không đặt mọi sơ đồ nhỏ cạnh mặt.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "chapter",
+      "context-shot",
+      "step-diagram",
+      "dark-title",
+      "cutout"
+    ],
+    "maxGraphicOccupancy": 0.4,
+    "maxGraphicBeatsPerMinute": 4,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R03",
+    "name": "4 bước xây dựng doanh nghiệp tự vận hành, trở thành doanh chủ tự do.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\4 bước xây dựng doanh nghiệp tự vận hành, trở thành doanh chủ tự do.mp4",
+    "bytes": 26850773,
+    "modified": "2026-09-22T21:16:46.700696",
+    "durationSec": 129.313991,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "30/1",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Bold Vietnamese sans serif over footage with soft black shadow; black chapter cards use pink headings and explanatory text. Emphasis is created by line size, not constant colored karaoke. Some small diagram labels are too small to copy literally.",
+    "captionMotion": "At 0.9–1.1s the first line resolves; a larger second line appears faintly around 1.6s and is bright by 1.8–1.9s. Text holds at the neck/chest while the source image enlarges. No obvious bounce or word travel in this sampled phrase.",
+    "footageMotion": "A centered push increases background image scale about 21.3% from 0 to 3s, with almost zero rotation/center drift. Repeated wider resets separate passages; it is not one uninterrupted zoom across the entire video.",
+    "layoutAndAssets": "Talking head, short contextual footage, isolated portrait on black, black/pink chapter cards, and a progressively populated business diagram. The current step brightens while other information remains subordinate.",
+    "transitions": "Direct cuts between speaker, coverage and chapter plates. Caption phrases stage in opacity; explanatory rows build over time. Diagram motion is distinct from source framing.",
+    "colorAndLighting": "Daylight greens and white clothing; selected B-roll is deliberately darkened under white type. Black/pink graphic mode marks sections. Exact LUT remains unknown.",
+    "visualFlow": "Four chapter markers create macro structure. The edit returns to the speaker after examples and uses a short text-only pause for a question or key message."
+  },
+  "events": [
+    {
+      "sourceTime": "0–3.30s",
+      "observation": "Centered image push with independent two-stage caption emphasis."
+    },
+    {
+      "sourceTime": "3.67–8.40s",
+      "observation": "Beach then laptop coverage."
+    },
+    {
+      "sourceTime": "14.40–17; 21.10–24.30s",
+      "observation": "Isolated grayscale portrait, later expert interview."
+    },
+    {
+      "sourceTime": "29.90–34.87s",
+      "observation": "Step 1 chapter/diagram sequence."
+    },
+    {
+      "sourceTime": "39–49; 55–56s",
+      "observation": "Working/scale/boxing examples, then pink-on-black question."
+    },
+    {
+      "sourceTime": "57–59.93; 74.30–76.73; 83.77–86.60s",
+      "observation": "Steps 2, 3 and 4."
+    },
+    {
+      "sourceTime": "60–67; 72–74; 79.27–83.77; 92–95s",
+      "observation": "Contextual and interview coverage."
+    },
+    {
+      "sourceTime": "101.37–105.70; 113.17–116.60s",
+      "observation": "Three-line story/process build; text-only key-message moment."
+    },
+    {
+      "sourceTime": "120.17–124.90s",
+      "observation": "Seminar coverage before the talking-head close."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R03",
+      "startSec": 0.0,
+      "endSec": 3.0,
+      "startFrame": 0,
+      "endFrame": 90,
+      "matches": 264,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 1.2125458704686773,
+      "scaleChangePct": 21.254587046867734,
+      "rotationDeg": -0.020300348347923516,
+      "imageCenterDxPct": 0.017474592711216198,
+      "imageCenterDyPct": -0.01613517416611643,
+      "inliers": 254,
+      "inlierFraction": 0.9621212121212122,
+      "medianResidualPx": 0.4648329998399908,
+      "matrix": [
+        [
+          1.2125457943607505,
+          0.0004296145938240377,
+          -57.499216681797584
+        ],
+        [
+          -0.0004296145938240377,
+          1.2125457943607505,
+          -102.06088302482247
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R03/reference.mp4",
+    "sourceStartSec": 28.7,
+    "sourceEndSec": 35.8,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R03/evidence/R03-timeline-01.jpg",
+      "R03/evidence/R03-timeline-02.jpg",
+      "R03/evidence/R03-timeline-03.jpg",
+      "R03/evidence/R03-timeline-04.jpg",
+      "R03/evidence/R03-timeline-05.jpg"
+    ],
+    "denseMotionSheets": [
+      "R03/evidence/R03-push-in.jpg",
+      "R03/evidence/R03-caption-reveal.jpg"
+    ],
+    "typographyFrames": [
+      "R03/evidence/R03-caption.png",
+      "R03/evidence/R03-chapter.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R03-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R03/recipe.json"
+}

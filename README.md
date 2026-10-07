@@ -1,139 +1,30 @@
-# Video Editor Kit
+# Video Editor Kit — dành cho người Việt
 
-Local-first talking-head reel editor. The pipeline turns a raw clip into an
-`edl.json`, then Remotion renders the final video.
+Bắt đầu với [BAT-DAU.md](BAT-DAU.md) hoặc [trang hướng dẫn](bat-dau.html). Hướng dẫn chi tiết: [HUONG-DAN.md](HUONG-DAN.md).
 
-```text
-raw clip
--> local STT
--> silence cut
--> local face-zone detection
--> local/CLI EDL reasoning
--> edl.json
--> Remotion render
-```
+Người dùng nói nhu cầu bằng tiếng Việt. AI hỏi tối đa ba câu còn thiếu, kiểm tra môi trường, đọc hồ sơ kênh và dựng một bản hoàn chỉnh. Gói plugin điều phối cùng engine trên host có đủ quyền và công cụ; không đồng nghĩa đã cài hay đã kiểm thử trên mọi tài khoản Work.
 
-## Default Providers
+## Luồng hiện tại
 
-The default path does not require an API key.
+Nguồn → transcript có cache → cắt khoảng im lặng đã xác minh → AI duyệt nội dung và viết kế hoạch → EDL được bảo vệ → Remotion xuất MP4/SRT. Tách mỗi video vào `out/<ma-du-an>` và `public/raw/<ma-du-an>`.
 
-| Layer | Default | Notes |
-|---|---|---|
-| Speech-to-text | `faster-whisper` local | word timestamps |
-| Edit reasoning | Claude CLI | configurable via `CLAUDE_CLI_CMD` |
-| Offline fallback | deterministic rules | `--llm offline` |
-| Face detection | OpenCV local | no network |
-| Media | ffmpeg / ffprobe | local |
-| Render | Remotion | local |
+Luồng clean không gọi thêm LLM: AI trong cuộc trò chuyện chọn nội dung, ảnh, chữ và âm thanh một lần. Chỉ `--edit-style legacy` mới dùng các nhà cung cấp CLI cũ. Không cần API key cho luồng clean local.
 
-## Install
+## Dành cho người triển khai
 
-```powershell
-npm install
-pip install -r requirements.txt
-```
+- Python 3.10+, Node.js 18+, FFmpeg/ffprobe.
+- Kiểm tra: `python scripts/doctor.py --json`.
+- Chuẩn bị phụ thuộc dự án: `python scripts/setup-runtime.py --install`.
+- Windows có `.venv`: dùng `.venv/Scripts/python.exe`; npm dùng `npm.cmd`.
+- Kiểm thử: `python -m unittest discover -s tests` và `npm run typecheck`.
+- Đóng gói: `python scripts/pack-kit.py`. Chỉ các tệp trong danh sách cho phép được đưa vào gói; không có video cá nhân, bản dựng hay hồ sơ kênh.
 
-Also install these on PATH:
+Hướng dẫn engine/host plan: [CLEAN-AUTO-FLOW.md](CLEAN-AUTO-FLOW.md). Skill chuẩn: [Dựng video Việt](integrations/video-editor-viet/skills/dung-video-viet/SKILL.md) trong mã nguồn; bản cài local trong `.agents/skills/dung-video-viet`.
 
-- Node.js 18+
-- Python 3.10+
-- ffmpeg + ffprobe
-- Claude CLI, if using `--llm claude-cli`
+## Bộ gu
 
-For Claude CLI command customization:
+[Studio, Paper, Mono](asset-library/premium-kit/index.html) có chữ vào nhẹ, nhấn từ khóa, ảnh và đồ họa theo ý. Gu clean hiện có vẫn dùng tiếp nếu người dùng đã chọn. Người mới chưa có hồ sơ được đề xuất Studio. Motion mở rộng: `asset-library/motion-kit`.
 
-```powershell
-$env:CLAUDE_CLI_CMD = "claude -p"
-```
+## Giới hạn được giữ rõ
 
-## Use with Claude Code (recommended)
-
-The kit ships as a self-contained Claude Code project: skills, slash commands,
-agents and workflows live in `.claude/` and load automatically.
-
-```powershell
-cd path\to\video-editor-kit
-npm install
-pip install -r requirements.txt
-claude
-```
-
-Then, inside Claude Code:
-
-- `/biz-help` - start here: checks the machine is ready + shows the menu
-- `/biz-edit-video D:\clips\talk.mp4 minimal black-white` - talking-head:
-  auto captions, graphics, cuts; describe the style you want in free words
-- `/biz-broll-video D:\clips\beach.mp4 "3 morning habits" soft feminine` -
-  b-roll: hook strips + handwritten sub-hook + CTA + background music
-- `/biz-review-video` - pro-panel review of the finished video
-- or just type naturally: "edit this video for me: D:\clips\video.mp4"
-  (don't know where the file is? say "find my video from yesterday")
-
-Claude asks at most 2 questions (edit type + style), announces how long the
-run takes (~7-12 min talking-head, ~1-3 min b-roll), opens `out/final.mp4`,
-then takes natural-language tweaks ("fix the caption at 0:20", "fewer
-graphics", "change the style"). Switching to a new clip auto-archives the
-previous project to `out/archive/<clip>/`.
-
-Package a build for distribution: `python scripts/pack-kit.py` (whitelist
-copy + zip into `dist/`).
-
-## Run manually (CLI)
-
-Check the environment first (friendly Vietnamese messages):
-
-```powershell
-python scripts\doctor.py
-```
-
-Place source clips under `public/raw/`, then one command renders `out/final.mp4`:
-
-```powershell
-python scripts\run-pipeline.py raw\clip.mp4 --smart --render
-```
-
-Without `--render` the pipeline stops after writing `out/edl.json`. Edit it by
-hand, preview with `npm run studio:edl`, then render with `npm run render:edl`.
-(`studio:edl` snapshots props at startup — restart it after editing `edl.json`.)
-Re-running the pipeline never overwrites an existing `edl.json` (your manual
-edits are safe); the fresh machine output lands in `out/edl.generated.json`,
-and `--force-regen` promotes it explicitly.
-
-Fully offline deterministic mode:
-
-```powershell
-python scripts\run-pipeline.py raw\clip.mp4 --llm offline --render
-```
-
-Render-only demo:
-
-```powershell
-npm run studio
-npx remotion render Reel out\demo.mp4
-```
-
-## Structure
-
-```text
-scripts/
-  run-pipeline.py          local-first orchestrator
-  transcribe.py            local faster-whisper STT
-  local_llm.py             Claude CLI + offline fallback
-  silence-cut.py           silence/filler cut + timestamp remap
-  detect-face-zones.py     local OpenCV face-zone detection
-  generate-edl.py          EDL planner
-  edl_passes.py            provider-neutral JSON prompts
-
-src/
-  edl-types.ts             EDL v2 schema
-  Reel.tsx                 Remotion composition
-  components/              graphics, transitions, captions, SFX
-  style-themes.json        design-system theme tokens
-```
-
-## Useful Validation
-
-```powershell
-python scripts\validate-edl-risk.py out\edl.json
-npm run typecheck
-```
+Engine không tự hiểu câu chuyện dài chỉ bằng cắt im lặng. AI phải duyệt nội dung và điểm nối. Tỷ lệ 9:16/16:9 dùng chung kế hoạch nhưng cần kiểm tra bố cục riêng. Chưa có timeline kéo thả hoàn chỉnh; kiểm thử Work thực tế cần một phiên Work có quyền và công cụ tương ứng.

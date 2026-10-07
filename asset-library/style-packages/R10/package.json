@@ -1,0 +1,126 @@
+{
+  "id": "R10",
+  "version": "1.0.0",
+  "name": "Lifestyle — hard cut có nhịp",
+  "family": "Montage",
+  "fit": "Bộ footage hoạt động có sẵn, kể bằng hình",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Caption trắng ngắn ở cùng một điểm giữa khung, thay nội dung theo cảnh.",
+    "assetGrammar": "Full-frame footage thật; mỗi cảnh có hành động khác nhau; không cần collage.",
+    "motion": "Hard cut đầu ở frame 47→48 (~2s); chưa có bằng chứng speed ramp hoặc đảo video.",
+    "storyFlow": "Hành động mở dài hơn → chuỗi cảnh ngắn → cảnh thoáng để kết.",
+    "avoid": "Không tự suy rằng cảnh lùi là phát ngược; không ép cắt theo beat chưa nghe.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "context-shot",
+      "held-caption"
+    ],
+    "maxGraphicOccupancy": 1.0,
+    "maxGraphicBeatsPerMinute": 12,
+    "maxConsecutiveGraphicBeats": 20,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R10",
+    "name": "AQPRNEut8SeC5R7R3NuRAVKGFtnqrRHUSZv1uRorpyjFEW0JMVB5BeUnchDxG6shG-LZ5TDnz2CPq08Dm2gP_Zbn3J_yiveKom_Q-rs.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQPRNEut8SeC5R7R3NuRAVKGFtnqrRHUSZv1uRorpyjFEW0JMVB5BeUnchDxG6shG-LZ5TDnz2CPq08Dm2gP_Zbn3J_yiveKom_Q-rs.mp4",
+    "bytes": 1970881,
+    "modified": "2026-09-22T21:09:26.823630",
+    "durationSec": 9.842404,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Small-to-medium bold white sans centered in the frame. The same typographic anchor is retained across different activities; the actual words change.",
+    "captionMotion": "Direct short-label replacement. At the first hard cut, choose real dopamine changes to deep work. It is the position that continues, not the caption content.",
+    "footageMotion": "Movement comes mainly from the shot action: curtain opening, work, exercise, writing and outdoors. No reliable evidence of reversed playback or a speed ramp was established.",
+    "layoutAndAssets": "Full-frame shots with a single central label. No extra illustration grid, banner or permanent decorative frame.",
+    "transitions": "Hard cut from curtain to desk between frames 47 and 48, approximately 1.960–2.002s. Other shots use short durations; no transition effect is required to create pace.",
+    "colorAndLighting": "Different lighting by location, generally natural and somewhat subdued. A source LUT cannot be inferred from this alone.",
+    "visualFlow": "Longer opening action followed by shorter activity shots and an outdoor release. Beat synchronization is not assessed without listening."
+  },
+  "events": [
+    {
+      "sourceTime": "0–2.00s",
+      "observation": "Curtain-opening shot."
+    },
+    {
+      "sourceTime": "2.00–3.55s",
+      "observation": "Two desk/work shots."
+    },
+    {
+      "sourceTime": "3.55–4.55s",
+      "observation": "Meditation."
+    },
+    {
+      "sourceTime": "4.55–6.30s",
+      "observation": "Exercise shots."
+    },
+    {
+      "sourceTime": "6.30–7.80s",
+      "observation": "Short reading/writing shots."
+    },
+    {
+      "sourceTime": "7.80–9.8s",
+      "observation": "Mountain and forest closing."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R10/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 9.7,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R10/evidence/R10-timeline-01.jpg"
+    ],
+    "denseMotionSheets": [
+      "R10/evidence/R10-first-cut.jpg"
+    ],
+    "typographyFrames": [
+      "R10/evidence/R10-caption.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R10-metrics.json"
+  },
+  "screenshots": [
+    "R10/evidence/codex-clipboard-ec4faf6b-33d6-4fdf-9226-4b58c060894a.png"
+  ],
+  "recipeFile": "R10/recipe.json"
+}

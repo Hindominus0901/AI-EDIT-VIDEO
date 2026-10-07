@@ -1,0 +1,58 @@
+{
+  "studio": {
+    "name": "Studio",
+    "background": "#101214",
+    "foreground": "#F2F1ED",
+    "muted": "#A8ACAD",
+    "accent": "#C6D7D2",
+    "surface": "#1C2022",
+    "line": "#41494A",
+    "font": "Inter",
+    "weight": 500,
+    "radius": 14,
+    "entry": "silk-rise",
+    "use": "Talking head, expertise, business. Quiet type and precise image windows."
+  },
+  "paper": {
+    "name": "Paper",
+    "background": "#F4F2EC",
+    "foreground": "#262C29",
+    "muted": "#6B716C",
+    "accent": "#3D6557",
+    "surface": "#E8E8E0",
+    "line": "#B7C1B8",
+    "font": "Be Vietnam Pro",
+    "weight": 500,
+    "radius": 4,
+    "entry": "soft-focus",
+    "use": "Stories, education, lifestyle. Warm white space and editorial photographs."
+  },
+  "mono": {
+    "name": "Mono",
+    "background": "#080808",
+    "foreground": "#F4F4F2",
+    "muted": "#AAAAA6",
+    "accent": "#FFFFFF",
+    "surface": "#1B1B1B",
+    "line": "#525252",
+    "font": "Inter",
+    "weight": 600,
+    "radius": 0,
+    "entry": "quiet-reveal",
+    "use": "Strong opinions and concise statements. Monochrome, controlled masks, sharp crops."
+  },
+  "editorial-c": {
+    "name": "Editorial C",
+    "background": "#141216",
+    "foreground": "#FFFFFF",
+    "muted": "#B9ADB5",
+    "accent": "#F62F80",
+    "surface": "#211820",
+    "line": "#533447",
+    "font": "Manrope Editorial",
+    "weight": 700,
+    "radius": 0,
+    "entry": "silk-rise",
+    "use": "Playfair italic accents and bold Manrope. Optional full-frame portrait; no global default change."
+  }
+}

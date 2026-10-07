@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "defaultLook": "studio",
+  "looks": {
+    "quiet": "studio",
+    "editorial": "paper",
+    "direct": "mono"
+  },
+  "motion": {
+    "entryMs": 220,
+    "exitMs": 120,
+    "easing": "ease-out-cubic",
+    "highlightGapMs": 1700,
+    "strongGapMs": 7500,
+    "graphicGapMs": 6500,
+    "openingClearMs": 3000,
+    "graphicMinMs": 900,
+    "graphicMaxMs": 3200
+  },
+  "captions": {
+    "maxWords": 5,
+    "maxStrongPer10Sec": 2,
+    "minimumReadableMs": 650
+  },
+  "audio": {
+    "musicMaxVolume": 0.08,
+    "sfxMaxVolume": 0.1,
+    "minimumMusicFadeOutSec": 1.2
+  }
+}

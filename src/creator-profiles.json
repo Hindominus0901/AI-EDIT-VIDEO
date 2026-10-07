@@ -1,0 +1,5 @@
+{
+  "iman": {"name":"Iman / cinematic essay","accent":"#D9C39C","background":"#101011","surface":"#202022","captionSize":60,"headlineSize":106,"entryMs":420,"serif":true,"intent":"Luận điểm → ngữ cảnh/bằng chứng → tương phản → kết. Khoảng yên có chủ đích.","evidenceStatus":"proposed-adaptation; exact reference calibration pending"},
+  "hormozi": {"name":"Hormozi / direct argument","accent":"#F5E642","background":"#101114","surface":"#24262A","captionSize":76,"headlineSize":104,"entryMs":160,"serif":false,"intent":"Hook rõ → giải thích cơ chế/ví dụ → payoff. Nhấn từ chọn lọc, giữ phủ định.","evidenceStatus":"proposed-adaptation; exact reference calibration pending"},
+  "martell": {"name":"Martell / practical coaching","accent":"#72D6FC","background":"#0D1822","surface":"#1C2B38","captionSize":64,"headlineSize":88,"entryMs":280,"serif":false,"intent":"Vấn đề → đổi cách nhìn → quy trình cụ thể → hành động. Sơ đồ xây theo lời.","evidenceStatus":"proposed-adaptation; exact reference calibration pending"}
+}

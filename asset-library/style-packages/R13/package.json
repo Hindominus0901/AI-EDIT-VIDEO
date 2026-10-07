@@ -1,0 +1,109 @@
+{
+  "id": "R13",
+  "version": "1.0.0",
+  "name": "Cửa sổ — mở từ một đường mảnh",
+  "family": "Montage",
+  "fit": "Đoạn mở yên hoặc chuyển sang cụm footage có chủ đích",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "POV nhỏ hai dòng trên cửa sổ; không dùng cỡ chữ đó làm phụ đề dài.",
+    "assetGrammar": "Canvas đen, cửa sổ bo góc, khoảng trống rộng; các shot thay bên trong cùng khung.",
+    "motion": "Mask cao 6px→434px trong ~0,17–2,00s ở canvas 720×1280; không phải zoom footage.",
+    "storyFlow": "Giữ một nhịp → mở khung → vài shot trong khung → trả về nội dung chính.",
+    "avoid": "Không thu nhỏ người nói cả bài; không tự rút reveal xuống 0,2s và gọi là giống mẫu.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "window-reveal",
+      "window-shot",
+      "speaker"
+    ],
+    "maxGraphicOccupancy": 0.35,
+    "maxGraphicBeatsPerMinute": 2,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R13",
+    "name": "AQPHJceqyYPN4XS_SQtIZdCSl0nVqbcGEjMJ1j5BWEyNRTgUBtueJMc_wC5tUa-roJY6joB3IJQAs4-UUpcyFNNTYjOy6PsRUEEoOXc.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQPHJceqyYPN4XS_SQtIZdCSl0nVqbcGEjMJ1j5BWEyNRTgUBtueJMc_wC5tUa-roJY6joB3IJQAs4-UUpcyFNNTYjOy6PsRUEEoOXc.mp4",
+    "bytes": 837452,
+    "modified": "2026-09-22T21:06:01.877728",
+    "durationSec": 11.049841,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Very small centered two-line white POV heading above the image window. Upper line is bolder than the quoted second line; large negative space makes the tiny heading visible but does not make it appropriate for subtitles.",
+    "captionMotion": "Headline remains anchored. Main entrance motion belongs to the window mask: a horizontal slit opens vertically into a rounded landscape image over about two seconds.",
+    "footageMotion": "After the reveal, different activity shots cut inside the same window geometry. The window expansion is not a footage zoom and is not reversed playback.",
+    "layoutAndAssets": "Black portrait canvas, central rounded landscape window, small heading above. Thresholded visible image around 2s is approximately x=80, y=422, w=557, h=434 on 720×1280. This is an approximate visible-content box, not a recovered matte or proof of a standard aspect ratio.",
+    "transitions": "Mask/reveal opening: visible height grows from about 6px at 0.17s to 65px at 0.50s, 217px at 1.00s, 381px at 1.50s and 434px at 2.00s. Subsequent interior shots cut while the outer canvas stays fixed.",
+    "colorAndLighting": "Black negative space surrounds mixed daylight/night work scenes. Rounded edges and restrained white text define the look more than a strong accent color.",
+    "visualFlow": "Slow reveal creates an opening pause, then brief activity cuts maintain interest inside a stable frame."
+  },
+  "events": [
+    {
+      "sourceTime": "0–2.00s",
+      "observation": "Vertical reveal of the image window from a thin slit."
+    },
+    {
+      "sourceTime": "2–10.9s",
+      "observation": "Stable outer layout; alternating activity/day/night imagery inside."
+    }
+  ],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R13/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 5,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R13/evidence/R13-timeline-01.jpg"
+    ],
+    "denseMotionSheets": [
+      "R13/evidence/R13-window-motion.jpg"
+    ],
+    "typographyFrames": [
+      "R13/evidence/R13-heading.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R13-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R13/recipe.json"
+}

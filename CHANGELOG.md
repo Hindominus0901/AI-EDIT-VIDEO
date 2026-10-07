@@ -3,6 +3,17 @@
 Semver bắt đầu từ 1.1.0. Trước đó kit phát triển qua các vòng nội bộ "v1..v8"
 (không phải semver — xem Lore bên dưới).
 
+## [1.6.3] - 2026-09-29
+
+### Added
+- Luồng `pureEdit` mở rộng host plan ngắn thành ba look deterministic, không đọc lại nguồn nghiên cứu ở runtime.
+- Ba graphic Uiverse MIT đã curate (`ui-grid`, `ui-glass`, `ui-notification`) cùng source, attribution và license.
+- `pure-edit-audit.py` kiểm tra caption, mật độ nhấn, visual overlap và ngưỡng mix bằng code local.
+
+### Changed
+- Motion text/card dùng entry ease-out 220–280ms và exit nhanh hơn.
+- Skill `edit-video-thuan` hướng dẫn plan tối thiểu và quality gate mới.
+
 ## [1.3.0] - 2026-07-08
 
 V1 ship candidate: workflow B + distributable Claude Code package.

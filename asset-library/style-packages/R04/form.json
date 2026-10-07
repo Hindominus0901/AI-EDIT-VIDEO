@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "stylePackage": "R04",
+  "packageVersion": "1.0.0",
+  "status": "draft",
+  "clip": null,
+  "timebase": "edited-clip",
+  "durationMs": null,
+  "aspect": "9:16",
+  "brief": {
+    "audience": null,
+    "promise": null,
+    "takeaway": null
+  },
+  "assets": [],
+  "captions": [],
+  "beats": [],
+  "requiredBeatFields": [
+    "id",
+    "startMs",
+    "endMs",
+    "role",
+    "layout",
+    "meaning",
+    "referenceEvent",
+    "assetIds",
+    "entryMs",
+    "exitMs"
+  ],
+  "beatForm": {
+    "id": "b01",
+    "startMs": null,
+    "endMs": null,
+    "role": "hook",
+    "layout": "held-headline",
+    "meaning": null,
+    "referenceEvent": null,
+    "assetIds": [],
+    "entryMs": 0,
+    "exitMs": 0
+  },
+  "audio": {
+    "music": null,
+    "sfx": [],
+    "listeningReview": "pending"
+  },
+  "sourceEditReview": {
+    "cuts": [],
+    "joinReview": "pending"
+  },
+  "renderContract": {
+    "adapter": null,
+    "implementedLayouts": [],
+    "proofFiles": []
+  },
+  "recipeFile": "R04/recipe.json",
+  "layerBindings": {},
+  "instructions": "Điền theo nội dung thật. Không lấp beat bằng hình cho đủ số lượng. Gói chưa có adapter renderer không được tự rơi về preset clean."
+}

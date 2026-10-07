@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dựng video Việt"
+  short_description: "Dựng video gọn, đẹp; phụ đề Việt và thiết lập dễ dùng"
+  default_prompt: "Dùng $dung-video-viet để thiết lập bộ dựng, hỏi những điều còn thiếu và dựng video giúp tôi."
+policy:
+  allow_implicit_invocation: true

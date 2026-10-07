@@ -1,0 +1,6 @@
+interface:
+  display_name: "Edit video thuan"
+  short_description: "Dung video hien tai, khong doc cache noi dung"
+  default_prompt: "Dung $edit-video-thuan de dung video nay tu dau vao hien tai, khong doc cache hay ho so cu."
+policy:
+  allow_implicit_invocation: true

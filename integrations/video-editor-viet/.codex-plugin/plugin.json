@@ -1,0 +1,18 @@
+{
+  "name": "video-editor-viet",
+  "version": "1.6.3",
+  "description": "Bộ dựng video cho người Việt, gồm chế độ edit thuần không đọc cache nội dung.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dựng video Việt",
+    "shortDescription": "Dựng video gọn, đẹp và dễ dùng bằng tiếng Việt",
+    "longDescription": "Dựng video bằng tiếng Việt; có luồng đầy đủ và luồng edit thuần chỉ dùng đầu vào hiện tại, không đọc cache nội dung. Cần quyền đọc tệp và công cụ dựng trên host.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Thiết lập bộ dựng và dựng video giúp tôi; chỉ hỏi những thông tin còn thiếu."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "principle": "Footage explains the idea; typography carries the argument; effects mark a change in meaning.",
+  "captionPresets": {
+    "editorial-creator": {
+      "bodyFont": "Manrope Editorial",
+      "bodyWeight": 700,
+      "bodySize9x16": 82,
+      "keywordFont": "Playfair Editorial",
+      "keywordStyle": "italic",
+      "case": "sentence",
+      "maxWords": 5,
+      "revealMode": "word-timed",
+      "activeWord": "coral lift with 120ms ease-out",
+      "motionGrammar": ["word-rise for hook", "rise for normal replacement", "mask-up for a new argument", "soft-pop plus underline for the conclusion"]
+    }
+  },
+  "retentionPreset": {
+    "id": "creator-first-3s",
+    "opening": "0-3s authored headline over full-screen speaker, immediate punch-in, one low impact, and a second cue on the first semantic keyword",
+    "bodyEmphasis": "Use short full-frame flash or zoom-blur only at changes in meaning; allow two independent typography beats per minute outside captions.",
+    "rule": "A retention cue must mark a new claim, proof, metaphor, or consequence. Never add motion only to fill time."
+  },
+  "tokenPolicy": {
+    "contentCacheReads": 0,
+    "referenceRereadsPerVideo": 0,
+    "hostPlan": "compact IDs and timestamps only",
+    "stt": "one fresh local pass; second pass only for low-confidence words",
+    "render": "quiet 10-second hook preview, then one full render after approval or visual QA",
+    "qa": "one contact sheet plus decode and loudness checks"
+  },
+  "brollRecipes": {
+    "user-footage": {
+      "priority": 1,
+      "mediaType": "video",
+      "rule": "Use the user's own relevant moving footage before any generated or stock asset.",
+      "windowSec": [2.2, 4.0],
+      "fadeSec": 0.18
+    },
+    "licensed-stock": {
+      "priority": 2,
+      "mediaType": "video",
+      "rule": "Use moving stock footage only when the action or location is concrete and the source plus license are recorded.",
+      "windowSec": [2.2, 4.0],
+      "fadeSec": 0.18
+    },
+    "generated-video": {
+      "priority": 3,
+      "mediaType": "video",
+      "rule": "Generate a short realistic moving shot for a specific visual idea when suitable user footage or licensed stock is unavailable.",
+      "windowSec": [2.6, 4.0],
+      "fadeSec": 0.18
+    },
+    "generated-photo-ken-burns-fallback": {
+      "priority": 4,
+      "mediaType": "image-derived-video",
+      "rule": "Last resort only. Generate a realistic still without text and animate a restrained 1.0 to 1.035 push-in.",
+      "windowSec": [2.6, 3.5],
+      "fadeSec": 0.18,
+      "builder": "scripts/build-image-broll.py"
+    }
+  },
+  "colorLooks": {
+    "skin-neutral-social": {
+      "use": "Bright indoor phone footage with warm skin and cool background.",
+      "ffmpegVideoFilter": "eq=contrast=1.045:brightness=-0.018:saturation=0.9:gamma=1.01,colorbalance=rs=-0.012:bs=0.014",
+      "caption": "#FFF8F2",
+      "accent": "#E85D67"
+    }
+  },
+  "audioPreset": {
+    "id": "dialogue-first-social",
+    "integratedLufs": -16,
+    "truePeakDb": -1.5,
+    "musicCeiling": 0.06,
+    "sfxCeiling": 0.08
+  }
+}

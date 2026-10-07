@@ -1,0 +1,154 @@
+{
+  "id": "R14",
+  "version": "1.0.0",
+  "name": "Founder — lời nói dẫn hình",
+  "family": "Talking head",
+  "fit": "Chia sẻ, kể chuyện hoặc lời khuyên cần cảm giác tự nhiên",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Sans trắng thường, cỡ vừa/nhỏ; không highlight liên tục; nhẹ hơn R16.",
+    "assetGrammar": "Người nói là chính; chèn cảnh công việc cụ thể rồi trả về mặt; không có collage thường trực.",
+    "motion": "Push nguồn +26,4% trong 4,004s; caption neo; có các reset rộng hơn.",
+    "storyFlow": "Người nói → ví dụ công việc thật → trở về lập luận → khoảng nghỉ → câu chốt.",
+    "avoid": "Không tự thêm ảnh để lấp khoảng trống; không zoom liên tục suốt đoạn dài.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Inter",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "context-shot",
+      "gentle-push",
+      "wide-reset"
+    ],
+    "maxGraphicOccupancy": 0.3,
+    "maxGraphicBeatsPerMinute": 3,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "video",
+  "source": {
+    "id": "R14",
+    "name": "AQPtxtEp0vv3Joi6IdzuYu_8c9E8SUl66xeK4T6EpIF5Xq8mvxnx9rKdAVYalGcyC8RVzQohMmZrAuaTmhH3hvNYZJuSJAEminiRrsA.mp4",
+    "path": "C:\\Users\\Administrator\\Downloads\\AQPtxtEp0vv3Joi6IdzuYu_8c9E8SUl66xeK4T6EpIF5Xq8mvxnx9rKdAVYalGcyC8RVzQohMmZrAuaTmhH3hvNYZJuSJAEminiRrsA.mp4",
+    "bytes": 9170777,
+    "modified": "2026-09-22T21:05:26.494599",
+    "durationSec": 66.057914,
+    "width": 720,
+    "height": 1280,
+    "frameRate": "2997/125",
+    "hasAudio": true,
+    "newReferenceBatch": true
+  },
+  "observed": {
+    "typography": "Regular white sans phrase captions with restrained shadow. Text is much smaller and quieter than R15/R16, despite similar outdoor talking-head material. No constant colored emphasis.",
+    "captionMotion": "Caption size and screen position stay stable through the opening push. Phrases change without conspicuous travel or bounce. This restraint is a specific source behavior, not evidence that every reference has static text.",
+    "footageMotion": "Opening background scale increases about 26.4% from 0 to 4.004s, near-zero rotation. Wider crop resets later include about 21.9–22.0s and 26.2–26.4s. Architectural footage near 46–53s has forward-moving perspective; physical camera mechanics remain unconfirmed.",
+    "layoutAndAssets": "Mostly full-frame speaker and purposeful work/lifestyle coverage, with one quiet caption layer. No persistent asset collage.",
+    "transitions": "Direct coverage cuts and occasional wider reset after a push. Text remains an anchor through shot changes.",
+    "colorAndLighting": "Soft natural green background on the speaker, warm/darker work interiors and architectural light. No exact LUT is identified.",
+    "visualFlow": "Speaker-led advice breathes between coverage passages. The restrained typography makes changes of framing and shot content more noticeable."
+  },
+  "events": [
+    {
+      "sourceTime": "0–4.004s",
+      "observation": "Centered gradual push of roughly 26% rendered image scale."
+    },
+    {
+      "sourceTime": "4.3–7.17; 8.22–19.98s",
+      "observation": "Panel and work/writing coverage."
+    },
+    {
+      "sourceTime": "20–28s",
+      "observation": "Talking head with wider reframing changes."
+    },
+    {
+      "sourceTime": "29–31; 37–38s",
+      "observation": "Work and lifestyle inserts."
+    },
+    {
+      "sourceTime": "46.42–52.76; 55–59s",
+      "observation": "Architectural motion and later work coverage."
+    }
+  ],
+  "measuredFootageTransforms": [
+    {
+      "id": "R14",
+      "startSec": 0.0,
+      "endSec": 4.004004004004004,
+      "startFrame": 0,
+      "endFrame": 96,
+      "matches": 49,
+      "method": "Independent SIFT background-biased feature match at 540x960; partial affine RANSAC. Flattened image transform, not recovered editor keyframes.",
+      "scaleRatio": 1.263939579360814,
+      "scaleChangePct": 26.393957936081392,
+      "rotationDeg": 0.017991703405717294,
+      "imageCenterDxPct": 1.0287119368049011,
+      "imageCenterDyPct": -0.01880861497443931,
+      "inliers": 40,
+      "inlierFraction": 0.8163265306122449,
+      "medianResidualPx": 0.4867579531112602,
+      "matrix": [
+        [
+          1.263939517045381,
+          -0.0003968953010874783,
+          -65.51811539898443
+        ],
+        [
+          0.0003968953010874783,
+          1.263939517045381,
+          -126.97869261683128
+        ]
+      ]
+    }
+  ],
+  "unresolved": [
+    "Exact font family and font-file version",
+    "Original keyframes and easing curves",
+    "Original LUT or grading parameters",
+    "Music, SFX and synchronization: not listened to in this audit",
+    "Speech-edit semantics and natural audio joins: not assessed"
+  ],
+  "referencePreview": {
+    "file": "R14/reference.mp4",
+    "sourceStartSec": 0,
+    "sourceEndSec": 5,
+    "kind": "original-reference-excerpt",
+    "notProductionAsset": true
+  },
+  "evidence": {
+    "timelineSheets": [
+      "R14/evidence/R14-timeline-01.jpg",
+      "R14/evidence/R14-timeline-02.jpg",
+      "R14/evidence/R14-timeline-03.jpg"
+    ],
+    "denseMotionSheets": [
+      "R14/evidence/R14-opening-push.jpg"
+    ],
+    "typographyFrames": [
+      "R14/evidence/R14-caption.png"
+    ],
+    "metrics": "C:\\edit video ai\\video-editor\\out\\references\\downloads-2026-09-22\\deep\\R14-metrics.json"
+  },
+  "screenshots": [],
+  "recipeFile": "R14/recipe.json"
+}

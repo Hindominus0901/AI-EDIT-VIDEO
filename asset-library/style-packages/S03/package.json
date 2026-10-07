@@ -1,0 +1,80 @@
+{
+  "id": "S03",
+  "version": "1.0.0",
+  "name": "Caption Việt — dòng chốt lớn",
+  "family": "Talking head",
+  "fit": "Talking head Việt hoặc footage minh chứng có caption",
+  "status": "editorial-package",
+  "contract": {
+    "typography": "Sans trắng đậm, shadow mềm; dòng chốt lớn hơn; cụm khoảng 4–5 từ giữ trọn nghĩa.",
+    "assetGrammar": "Chữ ở ngực dưới mặt; có thể qua cảnh b-roll nhưng vẫn giữ vùng đọc.",
+    "motion": "Ảnh chụp chỉ cho biết trạng thái chữ/opacity, không xác định đường easing hay thời gian vào.",
+    "storyFlow": "Nêu ý → cụm dẫn → từ/cụm chốt lớn hơn → trở lại cỡ thường.",
+    "avoid": "Không phóng to mọi từ, không để phụ đề dài suốt câu; không lấy số view làm nội dung.",
+    "cutPolicy": "Cắt theo ý, giữ phủ định/điều kiện/hơi thở. Nghe điểm nối trước khi gọi là tự nhiên.",
+    "colorPolicy": "Giữ đặc tính nguồn, chỉnh exposure/WB theo shot; không bịa LUT gốc từ MP4.",
+    "audioPolicy": "Chưa định danh nhạc/SFX gốc. Chọn tài nguyên có giấy phép, nhạc dưới giọng, SFX theo điểm có nghĩa; đo mức âm và nghe mix.",
+    "fontCandidate": "Be Vietnam Pro",
+    "fontIdentityConfirmed": false,
+    "portrait": "Lấy geometry từ ref; chừa vùng mặt/miệng/tay và UI nền tảng. Cận mặt cần dịch hoặc giảm nhóm hình, không ép khung mẫu.",
+    "landscape": "Bản chuyển thể 16:9: người nói và vùng nội dung chia ngang, caption theo vùng đọc; không kéo giãn bố cục dọc. Chưa có ref landscape đối chiếu."
+  },
+  "policy": {
+    "basis": "project adaptation, not measured source quotas",
+    "allowedLayouts": [
+      "speaker",
+      "two-tier-caption",
+      "context-shot"
+    ],
+    "maxGraphicOccupancy": 0.2,
+    "maxGraphicBeatsPerMinute": 2,
+    "maxConsecutiveGraphicBeats": 2,
+    "maxSameAssetUses": 1,
+    "maxCallbackUses": 1,
+    "callbackMinGapMs": 30000,
+    "maxCaptionWords": 5,
+    "maxSfxPerMinute": 4,
+    "defaultAspect": "9:16",
+    "supportedPlanAspects": [
+      "9:16",
+      "16:9"
+    ]
+  },
+  "renderer": {
+    "state": "contract-only",
+    "instruction": "Read package evidence and implement/verify required layouts explicitly; no automatic mapping to clean/premium presets."
+  },
+  "evidenceType": "still",
+  "source": {
+    "path": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png",
+    "name": "codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png"
+  },
+  "observed": {
+    "typography": "Sans trắng đậm, shadow mềm; dòng chốt lớn hơn; cụm khoảng 4–5 từ giữ trọn nghĩa.",
+    "layoutAndAssets": "Chữ ở ngực dưới mặt; có thể qua cảnh b-roll nhưng vẫn giữ vùng đọc."
+  },
+  "events": [],
+  "measuredFootageTransforms": [],
+  "unresolved": [
+    "Motion/easing/timing: không xác minh từ screenshot",
+    "Font gốc chưa định danh",
+    "Nhạc/SFX không có bằng chứng từ ảnh"
+  ],
+  "referencePreview": {
+    "file": "S03/reference.png",
+    "kind": "provided-screenshot"
+  },
+  "evidence": {
+    "timelineSheets": [],
+    "denseMotionSheets": [],
+    "typographyFrames": []
+  },
+  "screenshots": [
+    "S03/evidence/codex-clipboard-d7bf4170-6f01-44cf-b43a-98afe7175cc6.png",
+    "S03/evidence/codex-clipboard-c7bc4cb3-b80c-4c3b-99a5-de68b41adb73.png",
+    "S03/evidence/codex-clipboard-5cafe740-5381-42f2-b67d-db13ab9282df.png",
+    "S03/evidence/codex-clipboard-dd149c6e-e29e-4944-88b0-c7c9550aae4e.png",
+    "S03/evidence/codex-clipboard-c5211a18-1f0e-4905-9d95-cd10febc5e0f.png"
+  ],
+  "recipeFile": "S03/recipe.json"
+}

@@ -1,0 +1,25 @@
+{
+  "source": "https://github.com/uiverse-io/galaxy",
+  "license": "MIT",
+  "purpose": "Three curated UI patterns adapted into deterministic Remotion graphics. Source HTML is retained for provenance and is never loaded into the model at edit time.",
+  "items": [
+    {
+      "id": "ui-grid",
+      "author": "adamgiebl",
+      "sourceFile": "sources/adamgiebl_curvy-earwig-79.html",
+      "adaptation": "Quiet grid surface for structured explanations"
+    },
+    {
+      "id": "ui-glass",
+      "author": "adamgiebl",
+      "sourceFile": "sources/adamgiebl_blue-mole-92.html",
+      "adaptation": "Glass card with restrained color blobs"
+    },
+    {
+      "id": "ui-notification",
+      "author": "alexruix",
+      "sourceFile": "sources/alexruix_gentle-octopus-87.html",
+      "adaptation": "Compact notification reveal for proof, result, or milestone"
+    }
+  ]
+}
